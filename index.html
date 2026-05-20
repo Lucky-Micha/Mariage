@@ -15,18 +15,61 @@
 
     <div class="form-section">
       <div class="input-group">
-        <label for="drink-select">술 종류</label>
-        <div class="select-wrapper">
-          <select id="drink-select">
-            <option value="">선택하세요</option>
-            <option value="soju">소주</option>
-            <option value="beer">맥주</option>
-            <option value="makgeolli">막걸리</option>
-            <option value="wine">와인</option>
-            <option value="whiskey">위스키</option>
-            <option value="cocktail">칵테일</option>
-          </select>
-        </div>
+        <label for="drink-input">술 이름 <span class="label-hint">브랜드명도 OK (예: 발베니, 조니워커 블루)</span></label>
+        <input
+          type="text"
+          id="drink-input"
+          list="drink-suggestions"
+          placeholder="마실 술을 입력하세요"
+          autocomplete="off"
+        />
+        <datalist id="drink-suggestions">
+          <option value="발베니">
+          <option value="맥캘란">
+          <option value="글렌피딕">
+          <option value="조니워커 블루">
+          <option value="조니워커 블랙">
+          <option value="잭다니엘">
+          <option value="짐빔">
+          <option value="버팔로트레이스">
+          <option value="메이커스마크">
+          <option value="야마자키">
+          <option value="히비키">
+          <option value="라프로익">
+          <option value="탈리스커">
+          <option value="아벨라워">
+          <option value="시바스리갈">
+          <option value="발렌타인">
+          <option value="로얄살루트">
+          <option value="올드파">
+          <option value="진로">
+          <option value="참이슬">
+          <option value="처음처럼">
+          <option value="새로">
+          <option value="한라산">
+          <option value="화요">
+          <option value="카스">
+          <option value="테라">
+          <option value="하이네켄">
+          <option value="기네스">
+          <option value="아사히">
+          <option value="칭따오">
+          <option value="호가든">
+          <option value="코로나">
+          <option value="지평 막걸리">
+          <option value="느린마을 막걸리">
+          <option value="샤도네이">
+          <option value="카베르네 소비뇽">
+          <option value="피노누아">
+          <option value="모스카토">
+          <option value="샴페인">
+          <option value="모히또">
+          <option value="마가리타">
+          <option value="네그로니">
+          <option value="올드패션드">
+          <option value="진토닉">
+        </datalist>
+        <p id="drink-category-hint" class="category-hint hidden"></p>
       </div>
 
       <div class="input-group">
@@ -45,6 +88,7 @@
       </div>
 
       <button id="recommend-btn" onclick="recommend()">안주 추천받기</button>
+      <p id="unrecognized-msg" class="unrecognized-msg hidden"></p>
     </div>
 
     <div id="result" class="result hidden">

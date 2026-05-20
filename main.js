@@ -49,16 +49,105 @@ const data = {
   },
 };
 
-function recommend() {
-  const drink = document.getElementById('drink-select').value;
-  const weather = document.getElementById('weather-select').value;
+const drinkKeywords = {
+  soju: [
+    '소주', '진로', '참이슬', '처음처럼', '새로', '한라산', '화요', '이슬톡톡',
+    '청하', '별빛청하', '제주한라산', '좋은데이', '맑은이슬',
+  ],
+  beer: [
+    '맥주', '카스', '테라', '한맥', '하이네켄', '기네스', '아사히', '삿포로',
+    '칭따오', '호가든', '버드와이저', '코로나', '에일', 'ipa', '라거', '스타우트',
+    '밀맥주', '페일에일', '크래프트', '흑맥주', '생맥주', '캔맥',
+  ],
+  makgeolli: [
+    '막걸리', '동동주', '탁주', '생막걸리', '느린마을', '지평', '쌀막걸리',
+    '복순도가', '예술막걸리', '서울장수',
+  ],
+  wine: [
+    '와인', '샤도네이', '카베르네', '피노누아', '소비뇽', '리슬링', '모스카토',
+    '샴페인', '프로세코', '로제', '보르도', '부르고뉴', '키안티', '말벡', '시라',
+    '그르나슈', '뱅쇼', '뮬드와인', '스파클링', '화이트와인', '레드와인', '로제와인',
+    '아이스와인', '포트와인',
+  ],
+  whiskey: [
+    '위스키', '위스꺼', '발베니', '조니워커', '잭다니엘', '글렌피딕', '맥캘란',
+    '글렌리벳', '라프로익', '달모어', '아벨라워', '오반', '탈리스커', '하이랜드파크',
+    '버팔로트레이스', '메이커스마크', '짐빔', '와일드터키', '부커스', '블랜튼',
+    '니카', '야마자키', '히비키', '치타', '발렌타인', '시바스리갈', '로얄살루트',
+    '올드파', '그란츠', '패스포트', '스카치', '버번', '싱글몰트', '블렌디드',
+    '아이리시', '테네시', '라가불린', '글렌모렌지', '달위니', '크라겐모어',
+    '아드벡', '스프링뱅크', '글렌드로낙', '글렌알라키', '토모어', '녹두',
+  ],
+  cocktail: [
+    '칵테일', '모히또', '마가리타', '코스모폴리탄', '네그로니', '올드패션드',
+    '맨하탄', '다이키리', '진토닉', '보드카', '럼', '진', '테킬라', '압생트',
+    '스프리츠', '아페롤', '캄파리', '상그리아', '블러디메리', '위스키사워',
+    '롱아일랜드', '피나콜라다', '섹스온더비치', '마티니', '사제락',
+  ],
+};
 
-  if (!drink || !weather) {
-    alert('술 종류와 날씨를 모두 선택해주세요!');
+const categoryLabel = {
+  soju: '소주 계열',
+  beer: '맥주 계열',
+  makgeolli: '막걸리 계열',
+  wine: '와인 계열',
+  whiskey: '위스키 계열',
+  cocktail: '칵테일 계열',
+};
+
+function classifyDrink(input) {
+  const q = input.trim().toLowerCase();
+  if (!q) return null;
+  for (const [category, keywords] of Object.entries(drinkKeywords)) {
+    if (keywords.some(k => q.includes(k.toLowerCase()) || k.toLowerCase().includes(q))) {
+      return category;
+    }
+  }
+  return null;
+}
+
+document.getElementById('drink-input').addEventListener('input', function () {
+  const hint = document.getElementById('drink-category-hint');
+  const msg = document.getElementById('unrecognized-msg');
+  const category = classifyDrink(this.value);
+  msg.classList.add('hidden');
+  if (this.value.trim() && category) {
+    hint.textContent = categoryLabel[category] + '로 인식했어요';
+    hint.classList.remove('hidden');
+  } else {
+    hint.classList.add('hidden');
+  }
+});
+
+function recommend() {
+  const drinkInput = document.getElementById('drink-input').value.trim();
+  const weather = document.getElementById('weather-select').value;
+  const hint = document.getElementById('drink-category-hint');
+  const msg = document.getElementById('unrecognized-msg');
+
+  msg.classList.add('hidden');
+
+  if (!drinkInput) {
+    document.getElementById('drink-input').focus();
+    return;
+  }
+  if (!weather) {
+    alert('날씨를 선택해주세요!');
     return;
   }
 
-  const result = data[drink][weather];
+  const category = classifyDrink(drinkInput);
+  if (!category) {
+    msg.textContent = '"' + drinkInput + '"은(는) 아직 인식하지 못했어요. 소주 / 맥주 / 막걸리 / 와인 / 위스키 / 칵테일 중 하나를 입력해보세요.';
+    msg.classList.remove('hidden');
+    document.getElementById('result').classList.add('hidden');
+    return;
+  }
+
+  hint.textContent = categoryLabel[category] + '로 인식했어요';
+  hint.classList.remove('hidden');
+
+  const result = data[category][weather];
   const resultBox = document.getElementById('result');
 
   document.getElementById('result-emoji').textContent = result.emoji;
