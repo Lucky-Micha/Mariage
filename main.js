@@ -230,9 +230,15 @@ const foodFallbackEmoji = {
   '에다마메':'🫛','초콜릿 퐁뒤':'🍫','마시멜로':'🍬','생강쿠키':'🍪',
 };
 
+function hashStr(str) {
+  let h = 0;
+  for (let i = 0; i < str.length; i++) h = (Math.imul(31, h) + str.charCodeAt(i)) | 0;
+  return (Math.abs(h) % 9000) + 1000;
+}
+
 function foodImgUrl(name) {
   const kw = foodImageKeywords[name] || name.replace(/\s+/g, '-') + ',food';
-  return `https://loremflickr.com/300/225/${encodeURIComponent(kw)}/all`;
+  return `https://loremflickr.com/400/533/${encodeURIComponent(kw)}?lock=${hashStr(name)}`;
 }
 
 function makeFoodCard(name) {
@@ -243,14 +249,9 @@ function makeFoodCard(name) {
     <div class="food-card-img-wrap">
       <div class="food-card-skeleton"></div>
       <div class="food-card-fallback">${fallbackEmoji}</div>
-      <img
-        src="${foodImgUrl(name)}"
-        alt="${name}"
-        class="loading"
-        loading="lazy"
-      />
+      <img src="${foodImgUrl(name)}" alt="${name}" class="loading" loading="lazy" />
     </div>
-    <div class="food-card-name">${name}</div>
+    <div class="food-card-label">${name}</div>
   `;
   const img = card.querySelector('img');
   const skeleton = card.querySelector('.food-card-skeleton');
