@@ -450,11 +450,11 @@ const drinkDatabase = [
     fullName: 'Chardonnay',
     badge: '화이트 와인 · 부르고뉴 원산',
     abv: '12~14%', flag: '🍾',
-    history: '부르고뉴 원산의 화이트 품종 중 가장 많이 재배되는 품종입니다. 강한 개성이 없어 테루아와 양조 방식을 그대로 반영하는 "백지 캔버스"입니다. 샤블리의 석회암 토양에서는 미네랄리티, 나파 밸리의 햇볕에서는 열대과일, 부르고뉴 코트 드 본에서는 버터 풍미로 변신합니다.',
+    history: '부르고뉴 원산의 화이트 품종 중 가장 많이 재배되며, 강한 개성이 없어 테루아와 양조 방식을 그대로 반영하는 백지 캔버스로 불립니다. 샤블리의 차가운 석회암 토양에서는 강렬한 미네랄리티가, 캘리포니아 나파 밸리의 뜨거운 햇볕에서는 열대과일이, 부르고뉴 코트 드 본에서는 버터·헤이즐넛의 풍성함이 납니다. 같은 품종임에도 산지와 양조에 따라 전혀 다른 와인이 되는 유연성이 세계 최다 재배 화이트 품종의 비결입니다.',
     characteristics: '스타일이 산지와 양조 방식에 따라 완전히 달라집니다. 서늘한 샤블리에서는 청사과·레몬·분필 같은 미네랄리티가, 따뜻한 캘리포니아·호주에서는 망고·파인애플의 열대과일이 납니다. 말로락틱 발효(MLF)를 거치면 버터·헤이즐넛이 더해지고, 오크 숙성은 바닐라·토스트·스모크를 입혀 세계에서 가장 다양한 스타일의 화이트 와인을 만들어냅니다.',
     flavorTags: ['사과', '레몬', '버터', '바닐라', '열대과일'],
     items: ['로스트 치킨', '버터구이 새우', '훈제연어', '브리 치즈 구이', '버섯 크림 수프'],
-    pairingNote: '오크 숙성 샤도네이의 버터·바닐라 풍미는 로스트 치킨 껍질의 기름기나 버섯 크림 수프의 농도와 함께할 때 서로를 배가시킵니다. 무오크 스타일(샤블리)은 생굴과 새우의 바다 향을 미네랄리티로 증폭시키는 클래식 페어링이며, 훈제연어는 두 스타일 모두와 잘 어울리는 만능 파트너입니다.',
+    pairingNote: '오크 숙성 샤도네이의 버터·바닐라 풍미는 로스트 치킨 껍질의 기름기나 버섯 크림 수프의 농도와 서로를 배가시킵니다. 무오크 스타일인 샤블리는 생굴·버터구이 새우의 바다 미네랄리티를 그대로 증폭시키는 클래식 페어링이며, 훈제연어는 두 스타일 모두와 어울리는 만능 파트너입니다. 브리 치즈 구이의 크리미하고 고소한 지방이 버터 샤도네이와 만나면 같은 결의 풍미가 서로를 배가시키는 완벽한 공명 페어링을 이룹니다.',
   },
   {
     key: '피노누아',
@@ -463,11 +463,11 @@ const drinkDatabase = [
     fullName: 'Pinot Noir',
     badge: '레드 와인 · 부르고뉴 원산',
     abv: '12~14%', flag: '🍾',
-    history: '부르고뉴 원산의 레드 와인 중 재배가 가장 까다로운 품종입니다. 껍질이 얇아 서리·병충해·변이에 취약하지만, 완벽한 조건이 맞으면 어떤 포도도 넘보지 못할 복합미를 냅니다. 로마네 콩티 한 병의 가격이 1,000만 원을 넘는 이유는 마케팅이 아니라 진짜 희소성입니다.',
+    history: '부르고뉴 원산의 레드 품종 중 재배가 가장 까다롭습니다. 껍질이 얇아 서리·병충해·과숙에 취약하고, 촘촘한 포도송이가 수분을 가두어 곰팡이가 피기 쉽습니다. 하지만 완벽한 조건이 맞으면 어떤 포도도 넘보지 못할 복합미를 냅니다. 로마네 콩티 한 병이 1,000만 원을 넘는 이유는 마케팅이 아니라 이 진짜 희소성 때문이며, 부르고뉴 그랑 크뤼는 수십 년이 지나야 비로소 정점에 오릅니다.',
     characteristics: '어릴 때는 체리·라즈베리·딸기의 선명한 붉은 과일 향과 장미꽃 아로마가, 숙성되면 버섯·젖은 낙엽·건장미·가죽의 복합적 풍미가 더해집니다. 레드 와인 중 탄닌이 가장 가벼워 섬세한 식재료와 함께할 때 진가를 발휘하며, 높은 산도는 수십 년 장기 숙성을 가능케 하는 핵심 구조입니다.',
     flavorTags: ['체리', '라즈베리', '버섯', '흙향', '낮은 탄닌'],
     items: ['오리가슴살', '연어구이', '버섯요리', '카망베르 치즈', '연어 타르타르'],
-    pairingNote: '피노 누아의 낮은 탄닌과 밝은 산도는 지방이 풍부한 연어·오리가슴살과 만나면 서로의 부족한 부분을 채워주는 교과서적 보완 마리아주를 이룹니다. 버섯이나 오리 콩피처럼 흙향·감칠맛 나는 식재료는 이 와인의 숲 바닥 뉘앙스와 자연스럽게 공명합니다.',
+    pairingNote: '피노 누아의 낮은 탄닌과 밝은 산도는 지방이 풍부한 연어·오리가슴살과 만나면 서로의 부족한 부분을 채워주는 교과서적 보완 마리아주를 이룹니다. 버섯이나 오리 콩피처럼 흙향·감칠맛 나는 식재료는 이 와인의 숲 바닥 뉘앙스와 자연스럽게 공명합니다. 카망베르 치즈의 부드러운 곰팡이향이 와인의 복합미와 어우러지고, 연어 타르타르의 생생한 산미가 와인의 날렵한 산도와 함께 더욱 선명해집니다.',
   },
   {
     key: '카베르네 소비뇽',
@@ -476,11 +476,11 @@ const drinkDatabase = [
     fullName: 'Cabernet Sauvignon',
     badge: '레드 와인 · 보르도 원산',
     abv: '13~15%', flag: '🍾',
-    history: '보르도에서 카베르네 프랑과 소비뇽 블랑이 우연히 교배되어 탄생했습니다. 1976년 파리 블라인드 테이스팅에서 캘리포니아 카베르네가 보르도 최고급 와인을 이기는 충격적인 사건("파리의 심판")이 일어났고, 그 이후 이 품종은 전 세계 와이너리의 필수 품종이 됐습니다.',
+    history: '17세기 보르도에서 카베르네 프랑과 소비뇽 블랑의 우연한 교배로 탄생했습니다. 1976년 파리 블라인드 테이스팅에서 캘리포니아 카베르네가 보르도 최고급 와인을 이기는 파리의 심판 사건이 일어났고, 이 충격이 캘리포니아 와인 산업을 폭발적으로 성장시켰습니다. 두꺼운 껍질과 강한 탄닌 덕분에 50년 이상 숙성이 가능하며, 지금은 칠레·호주·아르헨티나 등 전 세계 와이너리의 필수 품종이 됐습니다.',
     characteristics: '서늘한 지역(보르도)에서는 블랙커런트·피망, 따뜻한 지역(나파)에서는 블랙체리·올리브 풍미가 납니다. 숙성되면 삼나무·담배·시가박스·흑연의 복합적인 뉘앙스가 발전합니다. 레드 와인 중 탄닌이 가장 강해 육류의 단백질과 결합하면 탄닌의 떫음이 줄고 풍미가 폭발하며, 최고 보르도는 50년 이상 숙성됩니다.',
     flavorTags: ['블랙커런트', '삼나무', '민트', '강한 탄닌', '풀바디'],
     items: ['스테이크', '양고기구이', '다크 초콜릿', '포르치니 버섯', '체다 치즈'],
-    pairingNote: '카베르네 소비뇽의 강한 탄닌은 스테이크의 단백질·지방과 화학적으로 결합해 탄닌의 떫음을 줄이고 육류의 풍미를 폭발시킵니다. 포르치니 버섯의 감칠맛이 와인의 흙향과 공명하고, 다크 초콜릿의 쌉쌀함이 긴 여운을 이어받습니다. 맵고 자극적인 요리는 탄닌을 더 거칠게 만들어 피하는 것이 좋습니다.',
+    pairingNote: '카베르네 소비뇽의 강한 탄닌은 스테이크의 단백질·지방과 화학적으로 결합해 탄닌의 떫음이 줄고 육류의 풍미가 폭발하는 과학적 마리아주를 만듭니다. 포르치니 버섯의 깊은 감칠맛이 와인의 삼나무·흙향과 공명하고, 다크 초콜릿의 쌉쌀함이 긴 탄닌 피니시를 완벽하게 이어받습니다. 맵고 자극적인 요리는 탄닌을 더 거칠게 만들어 피하는 것이 좋으며, 체다 치즈의 묵직한 지방이 와인의 날카로운 탄닌을 부드럽게 감싸줍니다.',
   },
   // ── 화이트 와인 ──────────────────────────────────────────────────────────
   {
@@ -490,11 +490,11 @@ const drinkDatabase = [
     fullName: 'Sauvignon Blanc',
     badge: '화이트 와인 · 프랑스 루아르 / 뉴질랜드 말버러',
     abv: '11~13%', flag: '🍾',
-    history: '루아르 밸리 원산이지만 뉴질랜드 말버러가 현재 세계 최고 산지입니다. 1979년 말버러 첫 상업 양조가 이루어진 후, 클라우디 베이의 구스베리·풀향이 10년 만에 세계 소믈리에 필수 목록에 올랐습니다. 뉴질랜드 와인을 세계 무대에 올린 품종입니다.',
+    history: '루아르 밸리 원산이지만 뉴질랜드 말버러가 현재 세계 최고 산지입니다. 1979년 말버러 첫 상업 양조 이전까지 뉴질랜드 와인을 아는 사람은 거의 없었습니다. 클라우디 베이의 구스베리·풀향이 10년 만에 세계 소믈리에 필수 목록에 올랐고, 이 성공이 뉴질랜드 와인 수출액을 수십 배로 늘려 한 품종이 나라 경제를 바꾼 사례가 됐습니다. 말버러 스타일은 루아르와 전혀 달라 화이트 와인의 새로운 플레이버 언어를 창조했습니다.',
     characteristics: '서늘한 지역에서는 풀·피망·구스베리의 날카로운 식물성 향과 자몽·라임이, 따뜻한 지역에서는 패션프루트·망고의 열대과일 향이 납니다. 항상 드라이하고 높은 산도를 유지하며 오크 숙성 없이 신선하게 출시되어 스시·해산물과 잘 어울리는 몇 안 되는 화이트 와인으로, 뉴질랜드 말버러가 세계 소믈리에 목록에 올린 품종입니다.',
     flavorTags: ['자몽', '구스베리', '허브', '패션프루트', '미네랄'],
     items: ['생굴', '염소 치즈', '회', '새우칵테일', '그린샐러드'],
-    pairingNote: '소비뇽 블랑의 날카로운 산도는 염소 치즈의 새콤한 풍미와 만나 둘 다를 더욱 생생하게 만드는 클래식 페어링입니다. 생굴과 회의 바다 미네랄리티를 이 와인의 허브향이 증폭시키고, 새우칵테일의 신선한 단맛과 그린샐러드의 채소 향도 자연스럽게 어우러집니다.',
+    pairingNote: '소비뇽 블랑의 날카로운 산도는 염소 치즈의 새콤한 풍미와 만나 둘 다를 더욱 생생하게 만드는 클래식 페어링입니다. 생굴과 회의 바다 미네랄리티를 이 와인의 허브·미네랄 향이 증폭시키고, 새우칵테일의 신선한 단맛과 그린샐러드의 채소 향도 자연스럽게 어우러집니다. 아스파라거스나 고수처럼 다른 와인이 감당하기 힘든 강한 채소 풍미도 소비뇽 블랑의 식물성 아로마 앞에서는 오히려 조화로운 페어링이 됩니다.',
   },
   {
     key: '리슬링',
@@ -503,11 +503,11 @@ const drinkDatabase = [
     fullName: 'Riesling',
     badge: '화이트 와인 · 독일 모젤 / 프랑스 알자스',
     abv: '7~13%', flag: '🍾',
-    history: '독일 모젤이 원산지인 화이트 품종입니다. 1970~80년대 저가 스위트 제품이 시장에 넘치면서 이미지가 추락했지만, 소믈리에들은 세계 최고 화이트로 평가합니다. 드라이부터 귀부(TBA)까지 같은 품질 수준에서 다양한 당도가 가능한 유일한 화이트 품종이며, 50년 이상 숙성도 가능합니다.',
+    history: '독일 모젤이 원산지인 화이트 품종입니다. 1970~80년대 저가 스위트 제품이 시장에 넘치면서 이미지가 추락했지만, 마스터 오브 와인들은 세계 최고 화이트 품종으로 평가합니다. 드라이(트로켄)부터 귀부와인(TBA)까지 같은 품질 수준에서 다양한 당도가 가능한 유일한 화이트이며, 50년 이상 숙성이 가능합니다. 낮은 알코올로도 높은 강도의 풍미를 유지하는 이 효율성이 와인 전문가들이 리슬링을 최고로 꼽는 이유입니다.',
     characteristics: '어릴 때는 꽃향·복숭아·살구·라임이, 숙성되면 꿀·석유(페트롤, TDN 화합물) 향이 납니다. 세계에서 산도가 가장 높은 화이트 와인 중 하나로 드라이(트로켄)부터 달콤한(아우스레제, TBA)까지 같은 품질 수준에서 다양한 당도를 구현하며, 태국·중국 요리처럼 강한 향신료와 함께할 수 있는 몇 안 되는 와인입니다.',
     flavorTags: ['복숭아', '살구', '꿀', '미네랄', '페트롤(숙성)'],
     items: ['훈제 고등어', '목살구이', '생선구이', '블루치즈', '사과 크럼블'],
-    pairingNote: '리슬링의 높은 산도와 잔당의 달콤함이 훈제 고등어의 기름진 지방과 짠맛을 균형 있게 잡아줍니다. 목살구이처럼 지방이 풍부한 돼지고기 요리는 이 와인의 최고 파트너이며, 달콤한 스파이스가 들어간 요리와도 탁월한 궁합을 자랑합니다. 블루치즈의 강한 개성도 리슬링의 높은 산도 앞에서 균형을 찾습니다.',
+    pairingNote: '리슬링의 높은 산도와 잔당의 달콤함이 훈제 고등어의 기름진 지방과 짠맛을 균형 있게 잡아줍니다. 목살구이처럼 지방이 풍부한 돼지고기 요리는 이 와인의 최고 파트너이며, 달콤한 스파이스가 들어간 아시아 요리와도 탁월한 궁합을 자랑합니다. 블루치즈의 강한 개성도 리슬링의 높은 산도 앞에서 균형을 찾고, 사과 크럼블이나 살구 타르트의 달콤쌉쌀함이 와인의 살구·복숭아 풍미와 자연스럽게 공명합니다.',
   },
   {
     key: '모스카토',
@@ -516,11 +516,11 @@ const drinkDatabase = [
     fullName: "Moscato d'Asti",
     badge: '스위트 스파클링 · 이탈리아 피에몬테',
     abv: '5~7%', flag: '🍾',
-    history: '피에몬테 아스티의 모스카토 비앙코로 만드는 스위트 스파클링 와인입니다. 무스카 품종은 고대 이집트까지 거슬러 올라가는 가장 오래된 포도 중 하나입니다. 2011년 드레이크의 가사에 "모스카토"가 등장하면서 전 세계 힙합 세대에게 이탈리아 스파클링 와인을 소개한 문화적 사건이 됐습니다.',
+    history: '무스카 품종은 고대 이집트까지 거슬러 올라가는 세계 최고령 재배 포도입니다. 피에몬테 아스티의 모스카토 비앙코로 만드는 이 섬세한 스파클링 와인은 5~7%의 낮은 알코올과 은은한 거품이 특징입니다. 2011년 드레이크의 가사에 모스카토가 등장하면서 전 세계 힙합 세대에게 이탈리아 와인을 소개한 문화적 사건이 됐고, 이후 와인 입문자들이 가장 먼저 경험하는 이탈리아 스파클링의 대명사가 됐습니다.',
     characteristics: '복숭아·살구·오렌지 꽃·머스크의 향긋하고 달콤한 아로마가 글라스를 채웁니다. 5~7%의 낮은 알코올과 섬세한 프리잔테(frizzante) 버블, 풍부한 당도가 특징으로 무겁지 않고 상쾌하게 마실 수 있습니다. 와인 입문자부터 마니아까지 즐거운 식후주·아페리티보로 사랑받는 이탈리아 피에몬테의 여름 선물입니다.',
     flavorTags: ['복숭아', '오렌지 꽃', '꿀', '살구', '섬세한 버블'],
     items: ['프루트 타르트', '사과 크럼블', '구운 아몬드', '카망베르 치즈', '견과류'],
-    pairingNote: '모스카토의 달콤한 복숭아·오렌지 꽃 아로마는 프루트 타르트나 사과 크럼블처럼 가벼운 과일 디저트와 서로를 배가시키는 환상적인 공명 페어링을 만듭니다. 카망베르처럼 부드러운 치즈는 달콤한 풍미와 크리미한 대비를 이루고, 구운 아몬드의 고소함이 섬세한 버블과 함께 기분 좋은 여운을 만들어냅니다.',
+    pairingNote: '모스카토의 달콤한 복숭아·오렌지 꽃 아로마는 프루트 타르트나 사과 크럼블처럼 가벼운 과일 디저트와 서로를 배가시키는 환상적인 공명 페어링을 만듭니다. 카망베르처럼 부드러운 치즈는 달콤한 풍미와 크리미한 대비를 이루고, 구운 아몬드의 고소함이 섬세한 프리잔테 버블과 함께 기분 좋은 여운을 만들어냅니다. 낮은 알코올 덕분에 식사 전 아페리티보로도, 식후 디저트 와인으로도 부담 없이 즐길 수 있는 이탈리아 피에몬테의 여름 선물입니다.',
   },
   {
     key: '피노 그리지오',
@@ -529,11 +529,11 @@ const drinkDatabase = [
     fullName: 'Pinot Grigio',
     badge: '화이트 와인 · 이탈리아 북부 / 프랑스 알자스',
     abv: '11~13%', flag: '🍾',
-    history: '이탈리아와 프랑스 알자스에서 완전히 다른 두 스타일로 표현되는 품종입니다. 같은 포도지만 이탈리아에서는 "피노 그리지오"로 가볍고 산뜻하게, 알자스에서는 "피노 그리"로 황금빛 풀바디로 만들어집니다. 이탈리아 스타일은 2000년대 전 세계에서 가장 많이 팔리는 스틸 화이트 와인이 됐습니다.',
+    history: '이탈리아와 프랑스 알자스에서 완전히 다른 두 스타일로 표현되는 품종입니다. 이탈리아에서는 피노 그리지오로 가볍고 산뜻하게, 알자스에서는 피노 그리로 황금빛 풀바디로 만들어집니다. 2000년대 이탈리아 스타일이 전 세계에서 가장 많이 팔리는 스틸 화이트 와인이 됐으며, 레스토랑에서 화이트 와인 한 잔을 주문할 때 전 세계 바텐더의 머릿속에 가장 먼저 떠오르는 품종이 됐습니다.',
     characteristics: '레몬·청사과·흰 복숭아·미네랄의 가볍고 청아한 아로마가 특징입니다. 이탈리안 스타일은 라이트~미디엄 바디에 산뜻한 산도와 깔끔한 피니시로 어떤 음식과도 부담 없이 어울리고, 알자스 스타일(피노 그리)은 풀바디에 훈제 아몬드·생강·화이트 트러플의 풍성한 풍미로 완전히 다른 경험을 선사합니다.',
     flavorTags: ['레몬', '청사과', '흰 복숭아', '미네랄', '산뜻함'],
     items: ['봉골레 파스타', '카프레제', '새우칵테일', '훈제연어', '그린샐러드'],
-    pairingNote: '피노 그리지오의 산뜻한 산도와 미네랄리티는 봉골레 파스타의 조개 향을 한껏 끌어올리고 파스타의 기름기를 깔끔하게 정리해줍니다. 카프레제의 신선한 토마토·바질과도 자연스럽게 어우러지고, 새우칵테일의 달콤하고 신선한 해산물 풍미도 이 와인의 가벼운 미네랄리티와 훌륭하게 조화됩니다.',
+    pairingNote: '피노 그리지오의 산뜻한 산도와 미네랄리티는 봉골레 파스타의 조개 향을 한껏 끌어올리고 파스타의 기름기를 깔끔하게 정리해줍니다. 카프레제의 신선한 토마토·바질과도 자연스럽게 어우러지고, 새우칵테일의 달콤하고 신선한 해산물 풍미도 이 와인의 가벼운 미네랄리티와 훌륭하게 조화됩니다. 알자스 피노 그리 스타일은 한층 풍성해져 훈제연어의 지방이나 가금류 요리와도 잘 어울리는 넓은 페어링 폭을 자랑합니다.',
   },
   {
     key: '게뷔르츠트라미너',
@@ -542,11 +542,11 @@ const drinkDatabase = [
     fullName: 'Gewürztraminer',
     badge: '화이트 와인 · 프랑스 알자스',
     abv: '12~14%', flag: '🍾',
-    history: '이름 자체가 "향신료(Gewürz) + 트라미노 마을"의 합성어입니다. 남티롤의 트라미노 마을에서 유래해 알자스로 건너간 품종으로, 1980~90년대에는 "너무 이국적"이라는 이유로 외면받았습니다. 지금은 가장 즉각적이고 강렬한 아로마 덕에 소믈리에들이 블라인드 테이스팅에서 가장 먼저 맞히는 품종이 됐습니다.',
+    history: '이름 자체가 향신료(Gewürz)와 트라미노 마을의 합성어입니다. 남티롤의 트라미노 마을에서 유래해 알자스로 건너간 품종으로, 1980~90년대에는 너무 이국적이라는 이유로 세계 시장에서 외면받았습니다. 알자스에서는 10월 말까지 포도를 과숙시켜 극도로 강렬한 아로마를 끌어내며, 지금은 소믈리에들이 블라인드 테이스팅에서 가장 빠르게 맞히는 품종이자 아시아 음식과 페어링할 수 있는 몇 안 되는 유럽 화이트 와인입니다.',
     characteristics: '리치·장미꽃·생강·향신료의 매우 강렬하고 이국적인 아로마가 글라스를 코에 대기 전부터 방 안을 채웁니다. 오프-드라이~스위트 스타일이 많고 풀바디에 낮은 산도, 긴 스파이시한 여운이 특징입니다. 소믈리에들이 블라인드 테이스팅에서 가장 먼저 맞히는, 세계에서 가장 즉각적으로 인식 가능한 화이트 와인입니다.',
     flavorTags: ['리치', '장미꽃', '생강', '향신료', '이국적'],
     items: ['오리가슴살', '푸아그라', '카망베르 치즈', '블루치즈', '사과 크럼블'],
-    pairingNote: '게뷔르츠트라미너의 이국적인 향신료 아로마는 푸아그라의 풍부한 기름진 지방과 와인의 향기로운 달콤함이 만나는 알자스의 전통적인 클래식 페어링입니다. 오리가슴살의 진한 감칠맛과도 잘 어울리며, 블루치즈의 자극적인 짠맛·곰팡이향이 와인의 강렬함과 맞서는 흥미로운 대비 마리아주를 만들어냅니다.',
+    pairingNote: '게뷔르츠트라미너의 이국적인 향신료 아로마는 푸아그라의 풍부한 기름진 지방과 와인의 달콤한 향기가 만나는 알자스의 전통적인 클래식 페어링입니다. 오리가슴살의 진한 감칠맛과도 잘 어울리며, 블루치즈의 자극적인 짠맛·곰팡이향이 와인의 강렬함과 맞서는 흥미로운 대비 마리아주를 만들어냅니다. 태국·인도 커리처럼 강한 향신료 요리도 와인의 오프-드라이한 달콤함이 열기를 눌러주어 유럽 화이트 중 유일하게 시도해볼 만한 아시아 퓨전 페어링입니다.',
   },
   // ── 스파클링 와인 ─────────────────────────────────────────────────────────
   {
@@ -556,11 +556,11 @@ const drinkDatabase = [
     fullName: 'Champagne',
     badge: '스파클링 와인 · 프랑스 샹파뉴',
     abv: '11~13%', flag: '🥂',
-    history: '동 페리뇽 수도사는 샴페인을 발명한 것이 아니라 기포를 없애려 평생 싸웠습니다—병이 폭발했으니까요. 1772년 뵈브 클리코의 르뮈아주(gyropalette) 발명으로 흐린 와인 문제가 해결됐고 현대 샴페인 산업이 시작됐습니다. 지금도 샹파뉴 319개 코뮌만이 이 이름을 사용할 수 있습니다.',
+    history: '동 페리뇽 수도사는 샴페인을 발명한 것이 아니라 오히려 기포를 없애려 평생 싸웠습니다. 병이 폭발했으니까요. 1772년 뵈브 클리코의 르뮈아주 발명으로 흐린 와인 문제가 해결됐고 현대 샴페인 산업이 시작됐습니다. 나폴레옹이 원정마다 셀러를 챙길 정도로 전쟁과 함께 전 세계에 퍼졌으며, 지금도 프랑스 샹파뉴 319개 코뮌만이 이 이름을 사용할 법적 권리를 갖습니다.',
     characteristics: '청사과·레몬의 날카로운 과일 향과 이스트 숙성이 더하는 브리오슈·토스트의 복합적 향이 특징입니다. 섬세하고 지속적인 버블이 향기를 코로 효율적으로 전달하며, 논빈티지(NV)부터 20~40년 숙성이 가능한 프레스티지 퀴베(동 페리뇽·크리스탈)까지 다양한 스타일이 존재하는 세계 최고 복합성의 스파클링 와인입니다.',
     flavorTags: ['사과', '레몬', '토스트', '브리오슈', '섬세한 버블'],
     items: ['생굴', '캐비어', '훈제연어', '카나페', '새우칵테일'],
-    pairingNote: '샴페인의 높은 산도와 섬세한 버블은 캐비어의 짠맛·지방을 동시에 증폭하고 중화해 그 어떤 음료도 대체할 수 없는 천상의 조합을 만듭니다. 생굴은 두 재료 모두의 바다 미네랄리티가 공명하는 클래식이며, 훈제연어·카나페·새우칵테일 등 파티 핑거푸드 전반과도 완벽하게 어울립니다.',
+    pairingNote: '샴페인의 높은 산도와 섬세한 버블은 캐비어의 짠맛·지방을 동시에 증폭하고 중화해 그 어떤 음료도 대체할 수 없는 천상의 조합을 만듭니다. 생굴은 두 재료의 바다 미네랄리티가 공명하는 클래식이며, 훈제연어·카나페 등 파티 핑거푸드 전반과도 완벽합니다. 새우칵테일의 달콤하고 시원한 해산물 풍미가 와인의 이스트 숙성 노트와 대비를 이루며, 샴페인의 브리오슈 향이 카나페의 바삭한 빵과 함께 완벽한 질감의 조화를 이룹니다.',
   },
   {
     key: '프로세코',
@@ -569,11 +569,11 @@ const drinkDatabase = [
     fullName: 'Prosecco',
     badge: '스파클링 와인 · 이탈리아 베네토',
     abv: '10~12%', flag: '🥂',
-    history: '베네토의 글레라 품종으로 만드는 이탈리아 스파클링 와인입니다. 2차 발효를 병 속이 아닌 탱크에서 진행하는 샤르마 방식으로 샴페인보다 빠르고 저렴하게 만들어집니다. 2010년대 아페롤 스프리츠의 폭발적 유행이 프로세코를 전 세계 칵테일 바에 등장시킨 결정적 계기가 됐습니다.',
-    characteristics: '복숭아·배·사과·흰 꽃의 가볍고 산뜻한 아로마가 샴페인보다 더 직접적이고 접근하기 쉽습니다. 탱크 2차 발효(샤르마 방식)의 큰 버블이 부드럽고 친근한 청량감을 주며, 브루트(Brut)부터 엑스트라 드라이(Extra Dry)까지 다양한 당도 스타일이 있고 2~3년 내 신선할 때 즐기는 것이 최적입니다.',
+    history: '베네토의 글레라 품종으로 만드는 이탈리아 스파클링 와인입니다. 병 속이 아닌 탱크에서 2차 발효하는 샤르마 방식으로 샴페인보다 빠르고 저렴하게 만들어집니다. 2010년대 아페롤 스프리츠의 폭발적 유행이 프로세코를 전 세계 칵테일 바에 등장시킨 결정적 계기가 됐으며, 지금은 샴페인을 제치고 세계에서 가장 많이 팔리는 스파클링 와인이 됐습니다. 베네토 도카지(DOCG) 구역의 글레라 포도만이 최상급 라벨을 사용할 수 있습니다.',
+    characteristics: '복숭아·배·사과·흰 꽃의 가볍고 산뜻한 아로마가 샴페인보다 더 직접적이고 접근하기 쉽습니다. 탱크 2차 발효(샤르마 방식)의 큰 버블이 부드럽고 친근한 청량감을 주며, 브루트(Brut)부터 엑스트라 드라이(Extra Dry)까지 다양한 당도 스타일이 있습니다. 이스트 숙성의 복잡함 없이 신선한 과일 풍미를 그대로 전달하며, 2~3년 내 신선할 때 즐기는 것이 이 와인의 진수를 경험하는 최선의 방법입니다.',
     flavorTags: ['복숭아', '배', '사과', '흰 꽃', '가벼운 버블'],
     items: ['카프레제', '과일 플레이터', '브루스케타', '안티파스토', '살라미'],
-    pairingNote: '프로세코의 상큼한 복숭아·배 과일 향과 가벼운 버블은 브루스케타·카프레제·살라미 같은 이탈리안 아페리티보 전채 요리와 완벽한 궁합을 자랑합니다. 과일 플레이터의 신선한 단맛과도 자연스럽게 어우러지며, 안티파스토의 다양한 풍미를 압도하지 않고 가볍게 뒷받침하는 역할을 합니다.',
+    pairingNote: '프로세코의 상큼한 복숭아·배 과일 향과 가벼운 버블은 브루스케타·카프레제·살라미 같은 이탈리안 아페리티보 전채 요리와 완벽한 궁합을 자랑합니다. 과일 플레이터의 신선한 단맛과도 자연스럽게 어우러지며, 안티파스토의 다양한 풍미를 압도하지 않고 가볍게 뒷받침합니다. 아페롤 스프리츠의 베이스로 활용될 때처럼 쌉쌀한 음료와 섞어도 신선한 과일 풍미가 살아남아, 칵테일과 단독 음용 모두에서 탁월한 이탈리아의 여름 스파클링입니다.',
   },
   {
     key: '로제 와인',
@@ -582,11 +582,11 @@ const drinkDatabase = [
     fullName: 'Rosé (Provence)',
     badge: '로제 와인 · 프랑스 프로방스',
     abv: '11~13%', flag: '🍾',
-    history: '프로방스는 기원전 600년 그리스인이 마르세유 근방에 포도를 심은 프랑스 최고(最古) 와인 산지입니다. 20세기까지 저가 지역 와인이었으나, 2000년대 유명인 소유 샤토들이 프리미엄 이미지를 구축했고 인스타그램이 연한 살몬핑크 색을 전 세계 여름 미학으로 만들었습니다.',
+    history: '프로방스는 기원전 600년 그리스인이 마르세유 근방에 포도를 심은 프랑스 최고(最古) 와인 산지입니다. 20세기까지 저가 지역 와인이었으나 2000년대 브래드 피트·안젤리나 졸리 소유의 샤토 미라발 등 유명인 소유 샤토들이 프리미엄 이미지를 구축했고, 인스타그램이 연한 살몬핑크 색을 전 세계 여름 미학으로 만들었습니다. 지금은 프로방스 로제가 전 세계 로제 시장의 절반 이상을 점유합니다.',
     characteristics: '딸기·수박·복숭아·장미꽃·허브의 신선하고 섬세한 아로마가 특징입니다. 껍질을 12~24시간만 접촉해 만들어내는 연한 살몬핑크 색상은 법적으로 허용되는 가장 옅은 로제이며, 드라이하고 가벼운 바디에 상쾌한 산도로 화이트 와인의 신선함과 레드 와인의 과일 풍미를 동시에 즐길 수 있습니다.',
     flavorTags: ['딸기', '수박', '복숭아', '장미꽃', '프레시'],
     items: ['그린샐러드', '훈제연어', '새우칵테일', '카프레제', '올리브'],
-    pairingNote: '로제 와인의 신선한 과일 향과 드라이한 피니시는 그린샐러드·카프레제처럼 가볍고 신선한 지중해 요리와 이상적인 여름 마리아주를 완성합니다. 훈제연어의 지방이 와인의 신선함으로 균형을 잡고, 새우칵테일의 달콤하고 시원한 해산물 풍미가 로제의 딸기·복숭아 아로마와 자연스럽게 조화됩니다.',
+    pairingNote: '로제 와인의 신선한 과일 향과 드라이한 피니시는 그린샐러드·카프레제처럼 가볍고 신선한 지중해 요리와 이상적인 여름 마리아주를 완성합니다. 훈제연어의 지방이 와인의 신선함으로 균형을 잡고, 새우칵테일의 달콤하고 시원한 해산물 풍미가 로제의 딸기·복숭아 아로마와 자연스럽게 조화됩니다. 올리브와 허브의 지중해 식재료가 와인의 프로방스 허브 노트와 완벽하게 공명하며, 여름 바비큐의 가벼운 해산물 그릴 요리에도 훌륭한 파트너가 됩니다.',
   },
   // ── 레드 와인 (보르도/론 계열) ────────────────────────────────────────────
   {
@@ -596,11 +596,11 @@ const drinkDatabase = [
     fullName: 'Merlot',
     badge: '레드 와인 · 프랑스 보르도 우안',
     abv: '13~15%', flag: '🍾',
-    history: '보르도 우안 포므롤을 대표하는 품종입니다. 2004년 영화 "사이드웨이스"에서 주인공이 "메를로는 절대 안 마셔!"라고 외치는 장면이 나온 뒤 전 세계 메를로 판매량이 하룻밤에 2% 감소했습니다. 아이러니하게도 그가 영화 내내 예찬한 와인(페트뤼스)이 거의 순수 메를로였습니다.',
+    history: '보르도 우안 포므롤을 대표하는 품종입니다. 2004년 영화 사이드웨이스에서 주인공이 메를로는 절대 안 마셔!라고 외치는 장면 이후 전 세계 메를로 판매량이 하룻밤에 2% 감소했습니다. 아이러니하게도 그가 영화 내내 예찬한 페트뤼스가 거의 순수 메를로였습니다. 판매는 회복됐지만 이 사건은 영화 한 편이 와인 산업 전체를 흔든 역사상 전례 없는 사례로 남았습니다.',
     characteristics: '서늘한 지역(보르도 우안)에서는 딸기·자두·삼나무가, 따뜻한 지역(나파·칠레)에서는 블랙베리·자두·초콜릿·케이크 풍미가 납니다. 오크 숙성 시 모카·카라멜·바닐라가 더해지며, 카베르네 소비뇽보다 탄닌이 부드럽고 일찍 숙성되는 벨벳처럼 매끄러운 질감이 이 품종의 최대 매력입니다.',
     flavorTags: ['자두', '블랙체리', '초콜릿', '바닐라', '벨벳 탄닌'],
     items: ['스테이크', '연어구이', '버섯요리', '가리비 구이', '포르치니 버섯'],
-    pairingNote: '메를로의 부드러운 탄닌은 연어·가리비처럼 지방이 있는 해산물과도 어울리는, 레드 와인 중 보기 드문 유연성을 보여줍니다. 그릴에 구운 스테이크의 단백질이 탄닌을 부드럽게 하고 풍미를 배가하며, 포르치니 버섯의 깊은 감칠맛이 와인의 흙향과 공명하는 보완적 마리아주를 만듭니다.',
+    pairingNote: '메를로의 부드러운 탄닌은 연어·가리비처럼 지방이 있는 해산물과도 어울리는, 레드 와인 중 보기 드문 유연성을 보여줍니다. 그릴에 구운 스테이크의 단백질이 탄닌을 부드럽게 하고 풍미를 배가하며, 포르치니 버섯의 깊은 감칠맛이 와인의 흙향과 공명하는 보완적 마리아주를 만듭니다. 가리비 구이의 달콤하고 고소한 풍미가 메를로의 자두·초콜릿 노트와 의외로 완벽하게 어우러지며, 버섯 크림 소스 요리와의 조합은 이 와인의 최고 식탁 파트너 중 하나입니다.',
   },
   {
     key: '시라',
@@ -609,11 +609,11 @@ const drinkDatabase = [
     fullName: 'Syrah / Shiraz',
     badge: '레드 와인 · 프랑스 북부 론 / 호주 바로사',
     abv: '13~15%', flag: '🍾',
-    history: '수백 년간 페르시아 시라즈 도시가 원산지라는 낭만적 전설이 있었지만, 1999년 DNA 분석이 프랑스 북부 론 토착 품종임을 밝혔습니다. 1840년대 호주에 이식된 포도나무 중 일부가 아직 살아 있어, 바로사 밸리에는 세계에서 가장 오래된 150년 이상의 시라 나무들이 있습니다.',
+    history: '수백 년간 페르시아 시라즈 도시가 원산지라는 낭만적 전설이 있었지만, 1999년 DNA 분석이 프랑스 북부 론 토착 품종임을 밝혔습니다. 1840년대 호주로 이식된 포도나무 중 일부가 아직 살아 있어, 바로사 밸리에는 세계 최고령 150년 이상의 시라 나무들이 자라고 있습니다. 같은 품종임에도 북부 론과 호주 바로사는 완전히 다른 두 개의 위대한 와인 문화를 만들어냈습니다.',
     characteristics: '온화한 기후(북부 론)에서는 블랙베리·민트·후추의 세이버리한 스타일이, 더운 기후(호주 바로사)에서는 잼 과일·감초·아니스·정향의 풍성한 스타일이 납니다. 숙성될수록 가죽·트러플이 더해지며, 높은 탄닌과 산도로 15년 이상 장기 숙성이 가능한 힘 있는 레드 와인입니다.',
     flavorTags: ['블랙베리', '후추', '감초', '가죽', '스파이시'],
     items: ['양고기구이', '바베큐 립', '스테이크', '훈제 소시지', '다크 초콜릿'],
-    pairingNote: '시라의 스파이시한 후추·감초 풍미와 강한 탄닌은 양고기구이나 바베큐 립처럼 훈제·탄화된 육류와 만날 때 서로의 거친 개성이 하나로 합쳐지는 강렬한 마리아주를 만들어냅니다. 훈제 소시지의 향신료 풍미와도 잘 어울리며, 다크 초콜릿의 쌉쌀한 쓴맛이 긴 피니시를 완성합니다.',
+    pairingNote: '시라의 스파이시한 후추·감초 풍미와 강한 탄닌은 양고기구이나 바베큐 립처럼 훈제·탄화된 육류와 만날 때 서로의 거친 개성이 하나로 합쳐지는 강렬한 마리아주를 만들어냅니다. 훈제 소시지의 향신료 풍미와도 잘 어울리며, 다크 초콜릿의 쌉쌀한 쓴맛이 긴 피니시를 완성합니다. 호주 바로사 스타일의 풍성하고 잼 같은 과일 풍미는 스테이크의 묵직한 단백질 풍미와 함께 가장 긴 여운의 레드 와인 페어링 중 하나를 만들어냅니다.',
   },
   {
     key: '말벡',
@@ -622,11 +622,11 @@ const drinkDatabase = [
     fullName: 'Malbec',
     badge: '레드 와인 · 아르헨티나 멘도사',
     abv: '13~15%', flag: '🍾',
-    history: '프랑스 카오르 원산이지만 1956년 보르도를 강타한 대서리가 프랑스 재배지를 거의 전멸시켰습니다. 다행히 1850년대 아르헨티나로 이식된 포도나무가 살아남았고, 안데스 고지(해발 800~1500m)의 강한 자외선과 일교차가 프랑스에서보다 오히려 더 농축된 스타일을 만들어냈습니다.',
-    characteristics: '아르헨티나 멘도사(해발 800~1500m)산은 블랙베리·자두·바이올렛의 풍성한 과일 향에 안데스의 강한 자외선과 큰 일교차가 더해져 벨벳처럼 부드러운 탄닌과 높은 농축도를 만들어냅니다. 프랑스 카오르산은 더 강한 탄닌과 자두·담배의 묵직한 스타일로 같은 품종이지만 완전히 다른 경험을 선사합니다.',
+    history: '프랑스 카오르 원산이지만 1956년 보르도를 강타한 대서리가 프랑스 재배지를 거의 전멸시켰습니다. 다행히 1850년대 아르헨티나로 이식된 포도나무가 살아남았고, 안데스 고지(해발 800~1500m)의 강한 자외선과 큰 일교차가 프랑스 원산보다 오히려 더 농축된 스타일을 만들어냈습니다. 1990년대 국제 대회에서 수상하기 시작하면서 아르헨티나 말벡은 프랑스 카오르의 구원자이자 와인 신대륙의 아이콘이 됐습니다.',
+    characteristics: '아르헨티나 멘도사(해발 800~1500m)산은 블랙베리·자두·바이올렛의 풍성한 과일 향에 안데스의 강한 자외선과 큰 일교차가 더해져 벨벳처럼 부드러운 탄닌과 높은 농축도를 만들어냅니다. 서늘한 밤이 산도를 보존해 무겁지 않은 균형감을 만드는 것이 고지 말벡의 비결입니다. 프랑스 카오르산은 더 강한 탄닌과 자두·담배의 묵직한 스타일로, 같은 품종이 지역에 따라 완전히 다른 두 개의 위대한 와인을 만드는 사례입니다.',
     flavorTags: ['블랙베리', '자두', '바이올렛', '초콜릿', '부드러운 탄닌'],
     items: ['스테이크', '양고기구이', '바베큐 립', '다크 초콜릿', '블루치즈'],
-    pairingNote: '말벡의 풍성한 탄닌과 진한 자두·바이올렛 향은 스테이크나 양고기구이의 단백질과 결합해 탄닌의 떫음을 줄이고 풍미를 폭발시킵니다. 아르헨티나 아사도(나무 불 위 소고기 직화구이)와의 조합은 세계 최고의 지역 마리아주 중 하나로, 다크 초콜릿의 쌉쌀함이 긴 피니시를 우아하게 마무리합니다.',
+    pairingNote: '말벡의 풍성한 탄닌과 진한 자두·바이올렛 향은 스테이크나 양고기구이의 단백질과 결합해 탄닌의 떫음을 줄이고 풍미를 폭발시킵니다. 아르헨티나 아사도(나무 불 위 소고기 직화구이)와의 조합은 세계 최고의 지역 마리아주 중 하나이며, 블루치즈의 강한 짠맛·산미가 이 와인의 농축된 과일 풍미와 대비를 이루며 균형을 찾습니다. 다크 초콜릿의 쌉쌀함이 긴 피니시를 우아하게 마무리하며, 바베큐 립의 달콤쌉쌀한 소스가 와인의 자두 풍미를 한층 끌어올립니다.',
   },
   // ── 레드 와인 (이탈리아) ──────────────────────────────────────────────────
   {
@@ -640,7 +640,7 @@ const drinkDatabase = [
     characteristics: '어릴 때는 새콤한 체리·딸기·흙향·차잎 노트가, 숙성되면 타르·가죽·발사믹·다크 초콜릿이 납니다. 높은 산도와 미디엄 탄닌으로 혼자 마시면 거칠게 느껴지지만 토마토 소스 파스타와 함께하면 두 재료의 산도가 공명해 완벽한 화음을 만드는, 세계 최고의 푸드 와인입니다.',
     flavorTags: ['새콤한 체리', '토마토', '허브', '흙향', '높은 산도'],
     items: ['토마토 파스타', '피자', '허브 구이', '브루스케타', '파르미지아노'],
-    pairingNote: '산지오베제의 높은 산도는 토마토 소스의 산도와 같은 키로 공명해 둘 다를 더 맛있게 만드는 이탈리안 식탁의 핵심 원리입니다. 피자의 바삭한 반죽과 치즈가 탄닌을 부드럽게 하고, 바질·타임·오레가노 허브 시즈닝 요리가 와인의 흙향과 자연스럽게 어우러집니다.',
+    pairingNote: '산지오베제의 높은 산도는 토마토 소스의 산도와 같은 키로 공명해 둘 다를 더 맛있게 만드는 이탈리안 식탁의 핵심 원리입니다. 피자의 바삭한 반죽과 치즈가 탄닌을 부드럽게 하고, 바질·타임 허브 시즈닝 요리가 와인의 흙향과 어우러집니다. 파르미지아노의 결정질 짠맛·감칠맛이 와인의 복합미를 끌어올리며, 브루스케타의 토마토와 올리브오일이 와인의 산도와 서로를 신선하게 하는 지중해 페어링의 전형을 보여줍니다.',
   },
   {
     key: '네비올로',
@@ -649,11 +649,11 @@ const drinkDatabase = [
     fullName: 'Nebbiolo (Barolo)',
     badge: '레드 와인 · 이탈리아 피에몬테',
     abv: '13~15%', flag: '🍾',
-    history: '이름이 안개(nebbia)에서 유래했으며, 피에몬테 란게 언덕의 10월 서리 안개 속에서 수확됩니다. 전통 바롤로는 대형 슬라보니아 오크 통에서 7~10년 숙성 후 출시했고, 손자 세대를 위한 와인이라 불렸습니다. 지금도 최소 10년이 지나야 제 맛을 내며, 세계에서 가장 탄닌이 강한 레드 와인입니다.',
+    history: '이름이 안개(nebbia)에서 유래했으며, 피에몬테 란게 언덕의 10월 짙은 서리 안개 속에서 수확됩니다. 이탈리아 왕실 사보이 가문이 바롤로를 왕의 와인, 와인의 왕으로 즐겼고, 전통 바롤로는 대형 슬라보니아 오크 통에서 7~10년 숙성 후 출시해 손자 세대를 위한 와인으로 불렸습니다. 지금도 최소 10년이 지나야 제 맛을 내며, 세계에서 가장 탄닌이 강한 레드 와인으로 알려져 있습니다.',
     characteristics: '어릴 때는 장미·타르·체리가, 숙성되면 바이올렛·트러플·가죽·담배의 깊은 복합미가 납니다. 세계 최고 수준의 탄닌과 산도로 최소 10년 이상 숙성해야 제 맛이 나며, 프리미엄 바롤로는 30년 이상도 거뜬합니다. 숙성된 네비올로의 벽돌색 가장자리는 와인이 드디어 마실 준비가 됐다는 신호입니다.',
     flavorTags: ['장미', '타르', '트러플', '가죽', '강한 탄닌'],
     items: ['트러플 리조또', '스테이크', '포르치니 버섯', '양고기구이', '파르미지아노'],
-    pairingNote: '네비올로의 강한 탄닌은 트러플 리조또나 포르치니 버섯처럼 깊은 감칠맛을 가진 재료와 만나야 비로소 균형을 찾습니다. 스테이크나 양고기구이의 풍부한 단백질이 탄닌을 부드럽게 하고, 파르미지아노의 결정질 짠맛·감칠맛이 와인의 복합미를 최대로 끌어올립니다.',
+    pairingNote: '네비올로의 강한 탄닌은 트러플 리조또나 포르치니 버섯처럼 깊은 감칠맛을 가진 재료와 만나야 비로소 균형을 찾습니다. 스테이크나 양고기구이의 풍부한 단백질이 탄닌을 부드럽게 하고, 파르미지아노의 결정질 짠맛·감칠맛이 와인의 복합미를 최대로 끌어올립니다. 화이트 트러플을 곁들인 파스타나 버터 리조또가 바롤로의 섬세한 타르·장미 노트와 만날 때, 이탈리아 피에몬테 요리와 와인의 역사적 마리아주가 완성됩니다.',
   },
   // ── 레드 와인 (스페인) ────────────────────────────────────────────────────
   {
@@ -667,7 +667,7 @@ const drinkDatabase = [
     characteristics: '자두·딸기·담배·바닐라·가죽·허브의 균형잡힌 과일 향이 특징입니다. 아메리칸 오크 숙성(리오하 전통)에서는 코코넛·바닐라가, 프렌치 오크에서는 가죽·흙향·시가가 발전합니다. 크리안자·레세르바·그란 레세르바 등급으로 숙성 기간이 분류되며, 그란 레세르바는 병 출시 후에도 20년 이상 숙성이 가능합니다.',
     flavorTags: ['딸기', '자두', '담배', '바닐라', '가죽'],
     items: ['이베리코 하몽', '만체고 치즈', '양고기구이', '초리소', '올리브'],
-    pairingNote: '템프라니요의 흙향과 아메리칸 오크의 바닐라는 이베리코 하몽의 달콤하고 짭조름한 숙성 풍미와 스페인 최고의 지역 마리아주를 완성합니다. 만체고 치즈의 양젖 특유의 고소함이 와인의 탄닌을 부드럽게 하고, 초리소의 향신료·파프리카 풍미가 담배·허브 노트와 자연스럽게 공명합니다.',
+    pairingNote: '템프라니요의 흙향과 아메리칸 오크의 바닐라는 이베리코 하몽의 달콤하고 짭조름한 숙성 풍미와 스페인 최고의 지역 마리아주를 완성합니다. 만체고 치즈의 양젖 특유의 고소함이 와인의 탄닌을 부드럽게 하고, 초리소의 향신료·파프리카 풍미가 담배·허브 노트와 자연스럽게 공명합니다. 올리브의 짭조름한 기름기가 와인의 매끄러운 과일 풍미를 더욱 빛나게 하며, 전통 양고기구이와의 조합은 리오하 와이너리들이 수백 년간 완성해온 완벽한 식탁의 증거입니다.',
   },
 ];
 
@@ -1190,7 +1190,7 @@ const drinks_i18n = {
     '리슬링': {
       story: "Riesling's reputation collapsed in the 1970s and 80s when mass-market producers flooded the UK with cheap, excessively sweet versions under labels like Blue Nun. The grape spent 30 years recovering its prestige. Today it's recognised by Masters of Wine as the world's greatest white grape: the only variety that can range from bone-dry to lusciously sweet at the same quality level, the only white that reliably ages 50+ years, and the only wine that pairs successfully with almost every Asian cuisine.",
       characteristics: "The most aromatic white grape: peach, apricot, flower blossom, lime, and—only in aged Riesling—a unique petrol/kerosene note (from TDN compound) that's considered the pinnacle of complexity. Always high acidity; the sweetness level varies by label (Trocken=dry, Spätlese=medium, Auslese=sweet). The balance of sweetness and acidity prevents it from ever feeling heavy.",
-      pairingNote: "Riesling's high acidity and residual sugar tame chilli heat and salt better than any other wine—it's the only Western grape that works reliably with Thai, Vietnamese, and Chinese cuisine.",
+      pairingNote: "Riesling's high acidity and residual sweetness perform a trick no other wine can match: they simultaneously tame chilli heat and amplify sweet-sour spice in Thai, Vietnamese, and Chinese cuisine. Smoked mackerel's fat and salt are cut and balanced by the acid; fatty pork belly glazed with fruit finds its perfect foil. Even blue cheese, which destroys most wines, meets its match in Riesling's acidity.",
     },
     '모스카토': {
       story: "The Muscat grape family is the oldest cultivated in the world—archaeological evidence dates it to ancient Egypt. Moscato d'Asti from Italy's Piedmont region is its most delicate expression: lightly sparkling (frizzante), only 5-7% ABV, and intensely aromatic. It became a global phenomenon in the 2000s partly through hip-hop culture—Drake's 2011 lyric \"drinkin' Moscato\" introduced millions of non-wine-drinkers to Italian sparkling wine overnight.",
@@ -1200,7 +1200,7 @@ const drinks_i18n = {
     '피노 그리지오': {
       story: "Pinot Grigio and Pinot Gris are the same grape—just made in two completely different styles. In Italy's Trentino-Alto Adige, it's fermented cool, kept off the skins, and released young: pale, crisp, and light. In France's Alsace (as Pinot Gris), extended skin contact and often partial barrel ageing create an amber, full-bodied, spicy wine almost unrecognisable as the same grape. Italian Pinot Grigio became the world's best-selling still wine in the 2000s—reliable, light, and universally inoffensive.",
       characteristics: "Italian style: lemon, green apple, white peach, and mineral freshness. Light to medium body, moderate acidity, clean finish—the wine equivalent of sparkling water with benefits. Alsatian style: golden colour, smoked almond, ginger, white truffle, and a rich, almost oily texture. Same grape, completely different experience.",
-      pairingNote: "Pinot Grigio's clean acidity brightens seafood pasta, lifting the brine of clams and mussels. Its lightness means it won't overpower delicate raw shellfish or a simple green salad.",
+      pairingNote: "Pinot Grigio's crisp acidity lifts seafood pasta—brightening clams, cutting through butter—while keeping the focus firmly on the food. Raw shellfish, prawn cocktail, and simple green salads all benefit from the wine's mineral freshness. The richer Alsatian Pinot Gris extends the grape's range to smoked fish and roast poultry, where its fuller body and spice notes add genuine complexity.",
     },
     '게뷔르츠트라미너': {
       story: "Gewürztraminer's name means \"spiced Traminer\"—Traminer being the village of Tramin (Termeno) in South Tyrol where the grape originated. The Alsace region in France perfected it: the pink-skinned grape is left to hang until almost overripe, then pressed gently to extract intense aromatics without too much skin tannin. In the 1980s and 90s, it was considered too exotic for international markets; today it's celebrated as one of the most individual and recognisable white grapes in the world.",
@@ -1215,7 +1215,7 @@ const drinks_i18n = {
     '프로세코': {
       story: "Prosecco is made by the Charmat method—secondary fermentation in sealed tanks rather than individual bottles—which is faster, cheaper, and produces softer, fruitier bubbles than Champagne's traditional method. The method was invented in the late 19th century by Eugène Charmat and adopted enthusiastically in Veneto, where the Glera grape thrives. Prosecco's ascent to global dominance in the 2010s was driven partly by the Aperol Spritz phenomenon: the cocktail made with Prosecco, Aperol, and soda became the defining drink of a decade.",
       characteristics: "Lighter, lower in alcohol, and more straightforwardly fruity than Champagne—fresh peach, pear, and white blossom in a glass. The bubbles are larger and softer, giving it a gentle, approachable effervescence. Most Prosecco is made to be consumed young, within 2-3 years, when its freshness is at its peak.",
-      pairingNote: "Prosecco's fruit-forward freshness is ideal for Italian aperitivo culture: bruschetta, antipasto, prosciutto, and fresh fruit. The light bubbles won't overwhelm delicate flavours.",
+      pairingNote: "Prosecco's soft peach-and-pear fruit and gentle bubbles were made for Italian aperitivo: bruschetta, caprese, antipasto, fresh melon wrapped in prosciutto. The bubbles are large enough to refresh between bites without Champagne's intensity. Caprese salad—tomato, basil, mozzarella—shares the same Mediterranean lightness. Its role in the Aperol Spritz also proves Prosecco thrives in a cocktail context, where its fruit survives the dilution.",
     },
     '로제 와인': {
       story: "Provence has been making rosé since the ancient Greeks planted vines near present-day Marseille around 600 BC—making it the oldest wine-producing region in France. For most of the 20th century, Provence rosé was local, cheap, and largely ignored by serious wine critics. The transformation came in the 2000s when celebrity-owned estates (Brad Pitt and Angelina Jolie's Miraval, for instance) rebranded Provence rosé as a luxury lifestyle product, and Instagram turned its pale salmon colour into a social media phenomenon.",
@@ -1230,7 +1230,7 @@ const drinks_i18n = {
     '시라': {
       story: "Legend held for centuries that Syrah originated in ancient Persia—from Shiraz, the Persian city of poets—brought to France by a Crusader knight. DNA analysis in 1999 shattered the myth: Syrah is a natural cross between Dureza and Mondeuse Blanche grapes, both native to the northern Rhône Valley. Australia's Barossa Valley, planted with old Syrah vines in the 1840s, now harbours the oldest surviving Syrah vines on earth—some over 150 years old.",
       characteristics: "Northern Rhône (Hermitage, Côte-Rôtie): black olive, violet, smoke, and black pepper; medium-high tannin, savory rather than sweet. Australian Shiraz (Barossa, McLaren Vale): jammy blackberry and blueberry, dark chocolate, eucalyptus, and liquorice; full-bodied and generous. Same grape, opposite philosophies—Europe's restraint versus the New World's opulence.",
-      pairingNote: "Syrah's peppery, smoky character is a natural match for charred and smoked meats—the Maillard reaction browning of grilled lamb or barbecued ribs echoes the wine's own savoury character.",
+      pairingNote: "Syrah's peppery, smoky character finds its mirror in charred and smoked meats—the Maillard browning of grilled lamb or barbecued ribs echoes the wine's own savoury depth. Australian Shiraz, with its jammy richness, calls for equally bold food: slow-cooked short ribs, smoked sausage, dark chocolate. Smoked cheese and black olives provide the salt-and-contrast framing that lets the wine's fruit shine without competing.",
     },
     '말벡': {
       story: "Malbec almost disappeared from France: the grape suffered catastrophic losses in the 1956 frost that devastated Bordeaux, and Argentinian winemakers (who had imported cuttings in the 1850s) quietly became its custodians. When Argentine Malbec won international competitions in the 1990s, French growers were amazed to find their almost-forgotten grape thriving at altitude in the Andes. Mendoza's winemakers had, inadvertently, preserved something the French had nearly lost.",
@@ -1240,7 +1240,7 @@ const drinks_i18n = {
     '산지오베제': {
       story: "Sangiovese—\"blood of Jupiter\" in Latin—covers over 10% of all Italian vineyard land, making it Italy's most planted grape. Chianti Classico in Tuscany was nearly destroyed in the 20th century by a government-mandated formula that required adding white grapes, diluting the wine. In the 1970s, renegade producers began defying the rules, making pure Sangiovese or blending it with Cabernet Sauvignon without approval—the unofficial \"Super Tuscans\" that commanded higher prices than the official Chianti and forced a complete rewriting of Italian wine law.",
       characteristics: "High acidity and medium-high tannin: tart cherry, dried tomato, dried herbs, leather, and clay when young; complex dried fruit, tobacco, balsamic, and dark chocolate with age. Its high acidity is not a flaw but a feature—it's the reason Sangiovese works so well with tomato-based cuisine. \"The wine can't live without food\" is literally true: drink Sangiovese alone and the acidity seems harsh; pair it with pasta al pomodoro and it transforms.",
-      pairingNote: "Sangiovese and tomato is the world's most elegant food-wine acid resonance: the wine's tartness and the sauce's sourness are in the same key, creating harmony rather than dissonance.",
+      pairingNote: "Sangiovese and tomato is one of the world's most elegant food-wine acid resonances: the wine's tartness and the sauce's sourness are in the same key, creating harmony rather than competition. Pizza's charred crust softens the tannin; Parmigiano-Reggiano's crystalline intensity amplifies the wine's savoury depth. Bruschetta—tomato, olive oil, basil—is the simplest expression of this timeless Italian logic, and it never fails.",
     },
     '네비올로': {
       story: "Nebbiolo (from nebbia—\"fog\") is named for the autumn mists that settle over the Langhe hills when the late-ripening grape is finally harvested in October. Barolo was once called \"the wine of kings and the king of wines\" because it was cellared by the House of Savoy, Italy's royal family. The grape is so tannic when young that traditional Barolo was aged for 7-10 years in large Slavonian oak casks before release—a wine made for grandchildren, not customers.",
