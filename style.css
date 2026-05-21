@@ -397,11 +397,49 @@ select option {
   white-space: nowrap;
 }
 
-.di-tabs {
+.di-tabs-row {
   display: flex;
+  align-items: stretch;
   border-left: 1px solid rgba(255, 255, 255, 0.12);
   border-right: 1px solid rgba(255, 255, 255, 0.12);
   background: rgba(255, 255, 255, 0.03);
+}
+
+.di-tabs {
+  display: flex;
+  flex: 1;
+}
+
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 4px 8px;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.lang-btn {
+  padding: 3px 8px;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 0.72rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  letter-spacing: 0.03em;
+}
+
+.lang-btn:hover {
+  color: rgba(255, 255, 255, 0.8);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.lang-btn.active {
+  background: rgba(233, 69, 96, 0.25);
+  border-color: #e94560;
+  color: #e94560;
 }
 
 .di-tab {

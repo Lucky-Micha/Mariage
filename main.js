@@ -59,7 +59,7 @@ const drinkDatabase = [
     fullName: 'The Balvenie',
     badge: '스카치 싱글몰트 · 스페이사이드',
     abv: '40~47.8%', flag: '🏴󠁧󠁢󠁳󠁣󠁴󠁿',
-    history: '1892년 윌리엄 그랜트가 설립한 스페이사이드 증류소입니다. 스코틀랜드에서 자체 보리를 재배하고 전통 플로어 몰팅을 유지하는 몇 안 되는 증류소 중 하나로, 더블우드·포트우드 등 다양한 캐스크 숙성으로 유명합니다.',
+    history: '1892년 윌리엄 그랜트가 스페이사이드에 설립했습니다. 자체 보리 농장과 전통 플로어 몰팅을 130년 넘게 고집하며, 어느 날 밤 남은 캐스크를 우연히 교체하면서 이중 숙성(더블우드)을 발견했습니다. 그 실수가 현재 브랜드의 시그니처가 됐습니다.',
     characteristics: '꿀과 바닐라의 달콤한 향이 주를 이루며, 신선한 과일과 오크의 섬세한 균형이 돋보입니다. 더블우드는 버번과 셰리 캐스크에서 이중 숙성해 복합적인 풍미를 냅니다. 위스키 입문자에게도 권장되는 부드럽고 풍부한 스타일입니다.',
     flavorTags: ['꿀', '바닐라', '신선한 과일', '오크', '부드러움'],
     items: ['다크 초콜릿', '꿀 리코타 크로스티니', '블루치즈', '호두', '말린 무화과'],
@@ -72,7 +72,7 @@ const drinkDatabase = [
     fullName: 'The Macallan',
     badge: '스카치 싱글몰트 · 스페이사이드',
     abv: '40~43%', flag: '🏴󠁧󠁢󠁳󠁣󠁴󠁿',
-    history: '1824년 스코틀랜드 스페이사이드에 설립된 스카치 위스키의 왕입니다. 최고급 셰리 캐스크만을 선별해 숙성하는 것으로 유명하며, 위스키 경매 시장에서 최고가를 기록하는 컬렉터 브랜드이기도 합니다.',
+    history: '1824년 스페이사이드에 설립된 스카치의 왕입니다. 수십 년간 블렌디드 위스키 원액으로 비밀리에 사용되다가 싱글몰트로 독립했으며, 셰리 캐스크를 스페인 헤레스 현지에서 직접 제조·검수 후 스코틀랜드로 운반하는 집착적인 품질 관리가 신화의 배경입니다.',
     characteristics: '진한 셰리의 달콤함과 건포도·오렌지 필·생강의 따뜻한 스파이스가 어우러집니다. 입 안에서 초콜릿과 오크의 여운이 오래 남으며, 풀바디의 묵직하고 복합적인 풍미가 특징입니다.',
     flavorTags: ['셰리', '건포도', '오렌지 필', '초콜릿', '스파이스'],
     items: ['훈제연어', '체다 치즈', '말린 자두', '살구 타르트', '다크 초콜릿'],
@@ -85,7 +85,7 @@ const drinkDatabase = [
     fullName: 'Glenfiddich',
     badge: '스카치 싱글몰트 · 스페이사이드',
     abv: '40%', flag: '🏴󠁧󠁢󠁳󠁣󠁴󠁿',
-    history: '1887년 윌리엄 그랜트가 설립한, 세계에서 가장 많이 팔리는 싱글몰트 위스키입니다. 가족 경영을 고수하며 동일한 가문이 135년 넘게 운영하고 있습니다.',
+    history: '1887년 크리스마스에 윌리엄 그랜트와 일곱 자녀가 직접 돌을 쌓아 증류소를 지었습니다. 1957년 선반에서 눈에 띄도록 삼각형 병을 도입했고, 수사슴 로고는 그 이후 단 한 번도 바뀌지 않았습니다. 같은 가문의 5대손이 지금도 경영합니다.',
     characteristics: '싱그러운 배·사과·꽃향기가 앞에 나오고, 가벼운 오크와 은은한 바닐라가 따라옵니다. 가볍고 상쾌한 스타일로 입문자에게 가장 친화적인 싱글몰트입니다.',
     flavorTags: ['배', '사과', '꽃향기', '바닐라', '가벼운 오크'],
     items: ['카망베르 치즈', '연어 타르타르', '사과 크럼블', '구운 아몬드', '그린샐러드'],
@@ -98,7 +98,7 @@ const drinkDatabase = [
     fullName: 'Laphroaig',
     badge: '스카치 싱글몰트 · 아이라',
     abv: '40~48%', flag: '🏴󠁧󠁢󠁳󠁣󠁴󠁿',
-    history: '1815년 아이라 섬에 설립된 증류소로, 찰스 3세가 즐겨 마시는 위스키로 유명합니다. "Friends of Laphroaig" 멤버십으로 아이라 섬의 땅 한 평을 증정하는 독특한 마케팅으로도 알려져 있습니다.',
+    history: '1815년 아이라 섬에 설립됐습니다. 현지 이탄습지에서 직접 피트를 캐고 보리를 건조하던 생존 방식이 오늘날의 강렬한 특성이 됐습니다. 찰스 3세가 애음자로 왕실 납품 허가를 부여했으며, 멤버십 가입 시 아이라 섬 땅 한 평의 임차권을 주는 전통이 유명합니다.',
     characteristics: '강렬한 피트 연기, 해양의 짠맛, 아이오딘 향이 압도적입니다. 좋아하거나 싫어하거나 극명하게 나뉘는 개성 강한 위스키로, 뒤에서 달콤한 바닐라와 과일 향이 피어납니다.',
     flavorTags: ['피트 연기', '해양', '아이오딘', '짠맛', '바닐라'],
     items: ['생굴', '훈제 고등어', '블루치즈', '소금 크래커', '미소된장 수프'],
@@ -111,7 +111,7 @@ const drinkDatabase = [
     fullName: 'Talisker',
     badge: '스카치 싱글몰트 · 스카이섬',
     abv: '45.8%', flag: '🏴󠁧󠁢󠁳󠁣󠁴󠁿',
-    history: '1830년 스코틀랜드 스카이섬에 설립된 섬 위스키의 대표 브랜드입니다. 소설가 로버트 루이스 스티븐슨이 "진정한 섬의 맛"이라고 극찬한 것으로 유명합니다.',
+    history: '1830년 스카이섬 해안가에 설립됐습니다. 바닷바람이 들이치는 지형 탓에 여러 차례 폐쇄 위기를 넘겼지만, 독특한 해양성 풍미가 오히려 전 세계 마니아를 끌어들였습니다. 구식 웜텁 냉각기가 오일리하고 묵직한 질감의 비결입니다. 스티븐슨은 "진정한 섬의 맛"이라고 극찬했습니다.',
     characteristics: '강렬한 후추·향신료와 달콤한 피트 연기, 바다의 짠맛이 복합적으로 어우러집니다. 섬 위스키 특유의 야성적이고 거친 풍미 속에 건포도와 과일의 단맛이 균형을 잡습니다.',
     flavorTags: ['후추', '피트', '해양', '건포도', '향신료'],
     items: ['훈제 굴', '훈제연어', '피클', '블루치즈', '훈제 소시지'],
@@ -124,7 +124,7 @@ const drinkDatabase = [
     fullName: 'Aberlour',
     badge: '스카치 싱글몰트 · 스페이사이드',
     abv: '40~43%', flag: '🏴󠁧󠁢󠁳󠁣󠁴󠁿',
-    history: '1879년 설립된 스페이사이드 증류소로, 풍부한 셰리 캐스크 숙성으로 유명합니다. "a\'bunadh(아부나)"라는 캐스크 스트렝스 버전이 마니아들에게 특히 인기입니다.',
+    history: "1879년 켈트어로 '재잘거리는 샘의 입'을 뜻하는 성지 근처에 설립됐습니다. 1898년 화재로 전소됐다가 재건됐고, 마스터 디스틸러가 가장 좋은 캐스크만 추려 무가수·무냉각 여과로 병입한 a'bunadh(아부나)가 우연한 시도에서 시작된 컬트 제품이 됐습니다.",
     characteristics: '계피·정향의 따뜻한 스파이스, 체리·건자두의 달콤한 과일 풍미, 셰리의 깊은 풍미가 조화를 이룹니다. 맥캘란보다 가볍지만 개성이 뚜렷한 스페이사이드 스타일입니다.',
     flavorTags: ['계피', '체리', '건자두', '셰리', '스파이스'],
     items: ['치즈 플레이터', '살라미', '견과류 믹스', '말린 무화과', '다크 초콜릿'],
@@ -137,7 +137,7 @@ const drinkDatabase = [
     fullName: 'The Glenlivet',
     badge: '스카치 싱글몰트 · 스페이사이드',
     abv: '40%', flag: '🏴󠁧󠁢󠁳󠁣󠁴󠁿',
-    history: '1824년 스코틀랜드 최초로 합법적인 면허를 받은 증류소로, 스페이사이드 위스키의 표준을 만든 브랜드입니다. 부드럽고 접근하기 쉬운 스타일로 북미에서 가장 많이 팔리는 싱글몰트입니다.',
+    history: '1824년 조지 스미스는 하일랜즈에서 최초로 면허를 받은 증류업자가 됐습니다. 불법 밀주업자들의 협박 속에서도 면허를 고수했고, 그의 위스키가 유명해지자 27개 증류소가 "Glenlivet"을 이름에 붙였습니다. 법정 싸움 끝에 스미스만이 "The Glenlivet"을 단독 사용할 권리를 얻었습니다.',
     characteristics: '달콤한 열대과일과 꽃향기가 가볍게 피어나고, 복숭아·살구·바닐라의 섬세한 풍미가 이어집니다. 거친 맛이 없는 부드럽고 균형잡힌 스타일로 어떤 자리에서도 무난하게 즐길 수 있습니다.',
     flavorTags: ['살구', '복숭아', '꽃향기', '바닐라', '부드러움'],
     items: ['카프레제', '카망베르 치즈', '구운 아몬드', '훈제연어', '사과 크럼블'],
@@ -150,7 +150,7 @@ const drinkDatabase = [
     fullName: 'Johnnie Walker Blue Label',
     badge: '블렌디드 스카치 · 최상급',
     abv: '40%', flag: '🏴󠁧󠁢󠁳󠁣󠁴󠁿',
-    history: '1992년 출시된 조니워커 라인의 최고급 버전입니다. 1만 병 중 1병만 선별된 희귀 원액들을 블렌딩한 것으로, 각각의 원액은 더 이상 구하기 어려운 희귀 증류소에서 왔습니다.',
+    history: '1992년 출시된 조니워커의 최상급 라인입니다. 마스터 블렌더가 1만 캐스크 중 단 1개만 선별하며, 이미 폐쇄된 "유령 증류소"의 희귀 원액을 포함합니다. 병마다 고유 일련번호가 부여되고 개별 승인 절차를 거치는, 컬렉터들이 경매에서 쫓는 블렌디드 스카치입니다.',
     characteristics: '꿀·바닐라·말린 과일의 달콤함에 가벼운 스모키 풍미가 어우러집니다. 극도로 부드럽고 실키한 질감이 특징으로, 여운이 매우 길고 복합적입니다.',
     flavorTags: ['꿀', '바닐라', '말린 과일', '실키함', '긴 여운'],
     items: ['캐비어', '훈제연어', '생굴', '다크 초콜릿 트러플', '파르미지아노'],
@@ -163,7 +163,7 @@ const drinkDatabase = [
     fullName: 'Johnnie Walker Black Label',
     badge: '블렌디드 스카치 · 12년',
     abv: '40%', flag: '🏴󠁧󠁢󠁳󠁣󠁴󠁿',
-    history: '12년 이상 숙성된 원액만 블렌딩한 조니워커의 시그니처 라인입니다. 1820년 존 워커가 창립한 이후 전 세계 프리미엄 블렌디드 스카치 시장의 기준이 되었습니다.',
+    history: '1820년 존 워커가 식료품점에서 자신만의 블렌딩을 시작한 것이 출발점입니다. 아들 알렉산더가 12년 이상 원액만 사용하는 블랙 라벨 공식을 완성했고, 병의 기울어진 라벨은 같은 면적에 더 많은 텍스트를 넣기 위한 실용적 아이디어였습니다—그것이 지금 가장 유명한 위스키 포장 아이콘이 됐습니다.',
     characteristics: '달콤한 바닐라·과일과 섬세한 스모키 풍미, 미디엄 바디의 균형잡힌 맛이 특징입니다. 가볍지도 무겁지도 않은 완성도 높은 일상 위스키입니다.',
     flavorTags: ['스모키', '바닐라', '달콤한 과일', '미디엄 바디', '균형'],
     items: ['스테이크', '체다 치즈', '피클', '훈제 소시지', '다크 초콜릿'],
@@ -176,7 +176,7 @@ const drinkDatabase = [
     fullName: 'Chivas Regal 12',
     badge: '블렌디드 스카치 · 12년',
     abv: '40%', flag: '🏴󠁧󠁢󠁳󠁣󠁴󠁿',
-    history: '1801년 설립된 시바스 브라더스에서 만드는 블렌디드 스카치입니다. 스코틀랜드 왕실 납품업체 출신으로, 19세기부터 귀족들이 즐겨 마신 정통 명가의 위스키입니다.',
+    history: '제임스와 존 시바스는 1801년 애버딘의 식료품상이었습니다. 왕실에 납품하며 왕실 납품 허가를 취득했고, 미국 시장을 겨냥해 최초로 만들어진 럭셔리 블렌디드 스카치로서 전 세계에 "스카치 위스키"의 이미지를 심었습니다.',
     characteristics: '꿀·바닐라·과일의 달콤함과 크리미한 질감이 매력적입니다. 부드럽고 접근하기 쉬운 스타일로 위스키 입문자에게 훌륭한 선택이며, 온더락이나 하이볼로도 잘 어울립니다.',
     flavorTags: ['꿀', '바닐라', '복숭아', '크리미', '부드러움'],
     items: ['카망베르 치즈', '구운 아몬드', '사과 크럼블', '크래커', '견과류'],
@@ -189,7 +189,7 @@ const drinkDatabase = [
     fullName: "Ballantine's 17",
     badge: '블렌디드 스카치 · 17년',
     abv: '40%', flag: '🏴󠁧󠁢󠁳󠁣󠁴󠁿',
-    history: '1827년 조지 발렌타인이 에든버러에서 창립했습니다. 50종 이상의 싱글몰트와 그레인 위스키를 블렌딩하며, 아시아권에서 특히 인기 있는 프리미엄 스카치입니다.',
+    history: '1827년 조지 발렌타인이 에든버러 식료품점에서 시작했습니다. 빅토리아 여왕에게 왕실 납품 허가를 받았고, 40종 이상의 몰트와 그레인을 블렌딩하는 17년산은 1930년대에 출시돼 수십 년째 아시아 프리미엄 스카치 시장 1위를 지키고 있습니다.',
     characteristics: '꽃향기와 은은한 과일 향이 먼저 다가오고, 바닐라·오크의 부드러운 풍미가 이어집니다. 균형잡힌 중후한 맛으로 식사 전후 어디서나 즐길 수 있는 올라운더입니다.',
     flavorTags: ['꽃향기', '과일', '바닐라', '오크', '균형'],
     items: ['다크 초콜릿', '살라미', '견과류', '치즈 플레이터', '살구 타르트'],
@@ -202,7 +202,7 @@ const drinkDatabase = [
     fullName: "Jack Daniel's Old No.7",
     badge: '테네시 위스키 · 미국',
     abv: '40%', flag: '🇺🇸',
-    history: '1866년 재스퍼 다니엘이 미국 테네시주 린치버그에서 창립했습니다. 숯 필터링 과정인 "링컨 카운티 프로세스"를 거쳐 버번과 구별되는 테네시 위스키만의 부드러운 풍미를 만들어냅니다.',
+    history: '잭 다니엘은 흑인 증류 장인 네이선 그린에게 기술을 배웠습니다. 1866년 등록된 미국 최고(最古) 증류소로, 10피트 높이의 사탕단풍 숯으로 원액을 걸러내는 "링컨 카운티 프로세스"는 잭의 발명입니다. 이 공정이 지금도 동일하게 진행돼 세계 최다 판매 아메리칸 위스키 지위를 유지합니다.',
     characteristics: '캐러멜·바닐라·달콤한 오크의 친숙한 향에 은은한 숯 연기가 더해집니다. 부드럽고 달콤한 끝맛으로 콜라와 혼합하거나 온더락으로 즐기기 좋습니다.',
     flavorTags: ['캐러멜', '바닐라', '오크', '숯향', '달콤함'],
     items: ['바베큐 폭립', '맥앤치즈', '캐러멜 팝콘', '체다버거', '피칸 파이'],
@@ -215,7 +215,7 @@ const drinkDatabase = [
     fullName: 'Buffalo Trace',
     badge: '켄터키 버번 · 미국',
     abv: '45%', flag: '🇺🇸',
-    history: '1787년부터 이어지는 켄터키 증류 역사를 가진 미국 최장수 증류소 중 하나입니다. 이글 레어, 블랜튼 등 수많은 프리미엄 버번을 생산하는 버번 성지입니다.',
+    history: '1787년부터 켄터키강 버팔로 이동 경로에 자리잡은 증류소입니다. 금주법 시대에는 "의약용" 허가로 유일하게 합법 생산을 유지했습니다. 세계 최초 싱글배럴 버번 블랜튼스를 탄생시킨 곳으로, 버팔로 트레이스 자체는 1999년에야 대중에게 판매를 시작했습니다.',
     characteristics: '바닐라·캐러멜·민트·레몬 제스트가 균형 있게 어우러집니다. 고전적인 버번 스타일로 적당한 탄닌과 긴 여운이 특징이며, 가격 대비 품질이 뛰어난 버번의 교과서입니다.',
     flavorTags: ['바닐라', '캐러멜', '민트', '레몬', '탄닌'],
     items: ['스테이크', '피칸 파이', '훈제 체다치즈', '피클', '바베큐 립'],
@@ -228,7 +228,7 @@ const drinkDatabase = [
     fullName: "Maker's Mark",
     badge: '켄터키 버번 · 밀 위스키',
     abv: '45%', flag: '🇺🇸',
-    history: '1953년 빌 사뮤엘스 시니어가 창립했습니다. 호밀 대신 밀을 사용해 부드럽고 달콤한 버번 스타일을 개척했으며, 손으로 찍은 빨간 밀랍 봉인이 상징입니다.',
+    history: '빌 사뮤엘스는 창업 전에 170년된 가문의 호밀 위스키 레시피를 직접 불태웠습니다. 모든 곡물 조합으로 식빵을 구워 맛을 비교한 끝에 밀을 선택했고, 아내 마지가 왁스 봉인 디자인을 직접 고안했습니다. 그 빨간 밀랍 봉인은 단 한 번도 재현된 적 없는 고유 공식입니다.',
     characteristics: '달콤한 밀 버번 특유의 부드럽고 크리미한 질감에 바닐라·꽃향기·가벼운 과일이 어우러집니다. 호밀 특유의 스파이시함이 없어 달콤하고 둥근 풍미가 두드러집니다.',
     flavorTags: ['밀의 단맛', '바닐라', '꽃향기', '크리미', '부드러움'],
     items: ['구운 복숭아', '브리 치즈 구이', '피칸', '체다 치즈', '프루트 타르트'],
@@ -241,7 +241,7 @@ const drinkDatabase = [
     fullName: 'Yamazaki 12',
     badge: '재패니즈 싱글몰트 · 산토리',
     abv: '43%', flag: '🇯🇵',
-    history: '1923년 산토리가 설립한 일본 최초의 위스키 증류소입니다. 스코틀랜드 전통을 일본 장인 정신으로 재해석해 독자적인 스타일을 구축했으며, 2003년 세계 최고 싱글몰트 수상 이후 일본 위스키 붐을 이끌었습니다.',
+    history: '1923년 도리 신지로가 교토 남쪽 야마자키 계곡에 일본 최초 위스키 증류소를 세웠습니다. 스코틀랜드 연수를 마친 다케쓰루 마사타카는 습도 높은 계곡이 위스키를 망칠 것이라 반대했지만 틀렸습니다—습윤한 기후가 숙성을 빠르게 가속해 전혀 새로운 동양적 스타일이 탄생했습니다.',
     characteristics: '복숭아·파인애플의 달콤한 과일 향에 미즈나라 오크 특유의 백단향과 은은한 생강 스파이스가 어우러집니다. 섬세하고 복합적인 풍미로 스카치와 전혀 다른 동양적 우아함이 있습니다.',
     flavorTags: ['복숭아', '파인애플', '미즈나라', '생강', '섬세함'],
     items: ['연어 니기리', '가리비 구이', '화이트 초콜릿 트러플', '우메보시', '고르곤졸라'],
@@ -254,7 +254,7 @@ const drinkDatabase = [
     fullName: 'Hibiki 17',
     badge: '재패니즈 블렌디드 · 산토리',
     abv: '43%', flag: '🇯🇵',
-    history: '1989년 출시된 산토리 최고의 블렌디드 위스키입니다. 24개 면으로 된 병은 일본의 24절기를 상징하며, 섬세한 블렌딩 기술의 결정체로 꼽힙니다.',
+    history: '1989년 출시된 산토리의 최고급 블렌디드 위스키입니다. 24면체 병은 일본의 24절기를 상징하며, 하루 중 빛이 달라질 때마다 다른 면이 빛납니다. 수석 블렌더 후쿠요 신지는 야마자키·하쿠슈·치타 원액의 비율을 매년 미세하게 조정해 재고가 노화해도 일관된 풍미를 유지합니다.',
     characteristics: '로즈·리치·귤껍질의 우아한 꽃향기와 과일 풍미가 핵심입니다. 화이트 오크의 섬세한 여운과 함께 일본 위스키 최고의 균형미와 정교함을 보여줍니다.',
     flavorTags: ['로즈', '리치', '귤껍질', '화이트 오크', '우아함'],
     items: ['버터구이 가리비', '유자 소르베', '훈제연어', '카망베르 치즈', '구운 아몬드'],
@@ -267,7 +267,7 @@ const drinkDatabase = [
     fullName: '진로 이즈백',
     badge: '소주 · 하이트진로',
     abv: '16.5%', flag: '🇰🇷',
-    history: '1924년 창립된 하이트진로의 대표 소주 브랜드입니다. 세계에서 가장 많이 팔리는 증류주 브랜드로 기네스 기록을 보유하고 있습니다. 2019년 뉴트로 감성을 살린 두꺼비 캐릭터로 리뉴얼해 큰 인기를 얻었습니다.',
+    history: '1924년 평양에서 창업한 진로는 한국전쟁 당시 38선을 넘어 남쪽에서 재창업했습니다. 초록 유리병과 두꺼비 캐릭터는 수십 년간 한국 주류 문화의 상징이 됐습니다. 2019년 복고 감성의 파란 병으로 리뉴얼하자 편의점에서 1인당 2병 구매 제한이 걸릴 만큼 MZ세대에게 폭발적 반응을 얻었습니다.',
     characteristics: '깔끔하고 중성적인 맛에 미세한 단맛이 느껴집니다. 자극적이지 않은 부드러운 끝맛으로 어떤 안주와도 잘 어울리는 국민 소주입니다.',
     flavorTags: ['깔끔함', '부드러움', '중성', '미세한 단맛', '청량감'],
     items: ['삼겹살', '두부김치', '계란말이', '오이소박이', '파전'],
@@ -280,7 +280,7 @@ const drinkDatabase = [
     fullName: '참이슬 후레쉬',
     badge: '소주 · 하이트진로',
     abv: '16.9%', flag: '🇰🇷',
-    history: '1998년 출시된 하이트진로의 베스트셀러 소주입니다. 대나무 활성탄 4회 필터링 공법으로 불순물을 제거해 깨끗하고 부드러운 맛이 특징입니다.',
+    history: '1998년 출시된 하이트진로의 베스트셀러 소주입니다. 대나무 활성탄으로 4회 필터링해 불순물을 제거하는 공법을 도입해 기존 소주의 거친 뒷맛을 없앴습니다. 20년 이상 전 세계 판매량 1위 증류주 타이틀을 지킨, 사실상 소주의 국제 표준입니다.',
     characteristics: '대나무 활성탄 필터링으로 만들어진 깨끗하고 청량한 맛입니다. 쓴맛이 적고 끝맛이 깔끔해 한국 소주 시장의 표준으로 자리 잡았습니다.',
     flavorTags: ['청량함', '깔끔함', '쓴맛 적음', '활성탄 여과', '부드러움'],
     items: ['삼겹살', '제육볶음', '파전', '닭발', '계란말이'],
@@ -293,7 +293,7 @@ const drinkDatabase = [
     fullName: '처음처럼',
     badge: '소주 · 롯데칠성',
     abv: '16%', flag: '🇰🇷',
-    history: '2006년 롯데주류에서 출시한 소주입니다. 알칼리 환원수를 사용해 만들어 기존 소주보다 부드럽고 달콤한 맛으로 큰 인기를 얻었습니다.',
+    history: '2006년 롯데칠성이 선보인 알칼리 환원수 소주입니다. 전해조를 통해 pH를 높인 물을 사용해 소주의 쓴맛 원인인 유기산을 중화하는 원리입니다. 진로의 오랜 독주 체제에 처음으로 도전한 소주로, 부드럽고 달콤한 맛 덕에 소주 입문자와 여성 고객층을 새롭게 개척했습니다.',
     characteristics: '알칼리 환원수로 만든 부드럽고 살짝 달콤한 맛이 특징입니다. 쓴맛이 거의 없어 소주 입문자와 여성들에게 특히 인기 있습니다.',
     flavorTags: ['부드러움', '달콤함', '쓴맛 없음', '알칼리 환원수', '순함'],
     items: ['삼겹살', '해물파전', '제육볶음', '두부김치', '어묵탕'],
@@ -306,7 +306,7 @@ const drinkDatabase = [
     fullName: '새로',
     badge: '제로슈거 소주 · 하이트진로',
     abv: '16.9%', flag: '🇰🇷',
-    history: '2022년 하이트진로에서 MZ세대를 타겟으로 출시한 제로슈거 소주입니다. 설탕 없이 깔끔한 단맛을 구현해 출시 직후 품귀 현상을 빚을 만큼 큰 인기를 끌었습니다.',
+    history: '2022년 9월 하이트진로가 MZ세대의 건강 관심에 맞춰 출시한 제로슈거 소주입니다. 에리스리톨과 스테비아를 조합해 설탕 없이도 달콤한 맛을 구현했고, 출시 첫 달 편의점마다 1인 2병 한정 판매를 시행할 만큼 폭발적인 품귀 현상이 이어졌습니다.',
     characteristics: '제로슈거임에도 깔끔한 단맛이 느껴지는 신개념 소주입니다. 칼로리에 민감한 소비자들에게 인기 있으며 깔끔하고 가벼운 끝맛이 특징입니다.',
     flavorTags: ['제로슈거', '깔끔함', '가벼움', '청량감', '드라이'],
     items: ['회', '조개구이', '생굴', '두부조림', '파전'],
@@ -319,7 +319,7 @@ const drinkDatabase = [
     fullName: 'Heineken',
     badge: '필스너 라거 · 네덜란드',
     abv: '5%', flag: '🇳🇱',
-    history: '1873년 헤라르트 하이네켄이 암스테르담에서 창립했습니다. 독특한 A-효모를 사용해 특유의 청량한 쓴맛을 내며, 초록 병과 빨간 별 로고로 세계적으로 친숙한 프리미엄 라거입니다.',
+    history: '1864년 암스테르담의 22세 청년 헤라르트 하이네켄이 낡은 양조장을 인수했습니다. 1886년 파스퇴르 연구소 출신 화학자를 고용해 라거 전용 A-효모를 분리해냈고, 이 효모 하나가 전 세계 모든 하이네켄 공장에서 동일한 맛을 보장하는 핵심 비밀입니다.',
     characteristics: '청량하고 균형잡힌 홉의 쓴맛과 가벼운 몰트 단맛이 조화롭습니다. 깔끔하고 시원한 마무리로 어떤 음식과도 잘 어울리는 만능 페어링 맥주입니다.',
     flavorTags: ['청량함', '홉 쓴맛', '가벼운 몰트', '균형', '깔끔함'],
     items: ['피자', '나초', '감자튀김', '치즈버거', '에다마메'],
@@ -332,7 +332,7 @@ const drinkDatabase = [
     fullName: 'Guinness Draught',
     badge: '아이리시 스타우트 · 아일랜드',
     abv: '4.2%', flag: '🇮🇪',
-    history: '1759년 아서 기네스가 더블린에서 창립한 스타우트의 대명사입니다. 250년이 넘는 역사를 가진 세계에서 가장 유명한 흑맥주로, 질소 가스를 이용한 크리미한 거품이 특징입니다.',
+    history: '1759년 아서 기네스는 더블린의 빈 양조장을 9,000년 임차 계약으로 인수했습니다. 맥아를 과도하게 볶는 실수에서 탄생한 검은빛이 오늘날의 정체성이 됐고, 1959년에는 CO₂에 질소를 추가해 크리미한 캐스케이드 거품을 구현했습니다. 119.5초 기다리는 "투파트 푸어" 의식은 과학이자 문화입니다.',
     characteristics: '진한 로스팅 맥아의 커피·초콜릿 풍미와 크리미한 거품이 인상적입니다. 도수에 비해 묵직한 바디감이 있지만 쓴맛은 절제되어 부드럽게 마실 수 있습니다.',
     flavorTags: ['로스팅', '커피', '초콜릿', '크리미', '묵직함'],
     items: ['아이리시 스튜', '생굴', '훈제 체다치즈', '브라운 브레드', '뱅어즈앤매쉬'],
@@ -345,7 +345,7 @@ const drinkDatabase = [
     fullName: 'Asahi Super Dry',
     badge: '드라이 라거 · 일본',
     abv: '5%', flag: '🇯🇵',
-    history: '1987년 출시되어 일본 맥주 시장을 뒤흔든 "슈퍼 드라이" 스타일의 원조입니다. 당분을 완전히 발효시켜 극도로 드라이하고 청량한 맛을 구현한 혁신적인 맥주입니다.',
+    history: '1987년 아사히가 출시한 슈퍼 드라이는 일본 맥주사를 하룻밤에 바꿨습니다. 당분을 거의 완전 발효시켜 전례 없는 드라이함(카라구치)을 구현했고, 2년 만에 50년간 시장을 지배하던 기린을 꺾었습니다. "드라이 맥주"라는 개념 자체를 전 세계 양조업계에 전파한 혁신 제품입니다.',
     characteristics: '극도로 드라이하고 날카로운 청량감이 가장 큰 특징입니다. 맛과 향이 가볍고 깔끔해 음식의 맛을 방해하지 않으며, 기름진 튀김 요리를 깔끔하게 정리해줍니다.',
     flavorTags: ['드라이', '청량함', '날카로움', '깔끔함', '가벼움'],
     items: ['야키토리', '가라아게', '에다마메', '교자', '연어 니기리'],
@@ -358,7 +358,7 @@ const drinkDatabase = [
     fullName: 'CASS Fresh',
     badge: '라거 · 한국',
     abv: '4.5%', flag: '🇰🇷',
-    history: '1994년 오비맥주에서 출시한 대한민국 점유율 1위 맥주입니다. 부드럽고 청량한 맛으로 치킨, 삼겹살 등 한국 음식과 특히 잘 어울리는 국민 맥주입니다.',
+    history: '1994년 오비맥주가 성장하는 한국 소비자 시장을 겨냥해 안호이저-부시와 합작으로 출시했습니다. 치킨과 맥주를 묶은 "치맥" 문화와 함께 성장해 대한민국 점유율 1위를 수년간 유지했고, 치맥 산업은 연간 수조 원 규모의 독립적 식문화가 됐습니다.',
     characteristics: '가볍고 청량한 맛과 부드러운 거품이 특징입니다. 강한 개성 없이 깔끔하고 시원한 맛으로 한국 음식 전반과 편안하게 어울립니다.',
     flavorTags: ['청량함', '가벼움', '부드러움', '깔끔함', '시원함'],
     items: ['치킨', '피자', '감자튀김', '어니언링', '핫도그'],
@@ -371,7 +371,7 @@ const drinkDatabase = [
     fullName: 'Terra',
     badge: '라거 · 한국 하이트진로',
     abv: '4.6%', flag: '🇰🇷',
-    history: '2019년 하이트진로에서 출시한 신흥 강자입니다. 호주산 청보리와 리얼탄산을 사용해 기존 국산 맥주와 차별화된 청량감으로 빠르게 시장 점유율을 높였습니다.',
+    history: '2019년 하이트진로가 카스에 빼앗긴 시장을 되찾기 위해 출시했습니다. 호주 몰닝턴 반도의 보리와 "리얼탄산" 공정을 브랜드 핵심으로 내세웠고, 하이네켄을 연상시키는 초록 병 디자인이 주목받았습니다. 출시 1년 만에 국산 라거 시장 40%를 점유한 유례없는 성장 속도를 기록했습니다.',
     characteristics: '청보리 특유의 신선하고 깔끔한 맛과 강한 탄산감이 특징입니다. 기존 국산 맥주보다 풍미가 살아 있으면서도 가벼운 마무리가 인상적입니다.',
     flavorTags: ['청보리', '강한 탄산', '신선함', '깔끔함', '풍미'],
     items: ['치킨', '삼겹살', '족발', '감자튀김', '소시지구이'],
@@ -384,7 +384,7 @@ const drinkDatabase = [
     fullName: '지평 막걸리',
     badge: '쌀 막걸리 · 경기 양평',
     abv: '6%', flag: '🇰🇷',
-    history: '1925년 경기도 양평 지평양조장에서 시작된 100년 전통의 막걸리입니다. 한때 사라질 뻔했으나 전통 방식을 고수하며 부활, 현재는 서울 주요 식당에서 가장 많이 팔리는 프리미엄 막걸리가 되었습니다.',
+    history: '1925년 경기 양평에서 시작한 100년 전통 양조장입니다. 1990년대엔 폐업 직전까지 몰렸으나 전통 제법을 지키며 버텼고, 2013년경 서울 식당가에서 셰프와 음식 평론가들이 인공감미료 없는 막걸리로 재발견하면서 입소문이 퍼졌습니다. 1L 병이 미식 식당의 상징이 됐습니다.',
     characteristics: '단맛과 신맛의 조화, 부드러운 탄산감, 진한 쌀의 풍미가 특징입니다. 인공 감미료를 사용하지 않는 자연스러운 단맛이 다른 막걸리와 구별됩니다.',
     flavorTags: ['쌀 풍미', '자연스러운 단맛', '신맛', '부드러운 탄산', '구수함'],
     items: ['해물파전', '감자전', '두부김치', '김치전', '빈대떡'],
@@ -397,7 +397,7 @@ const drinkDatabase = [
     fullName: 'Chardonnay',
     badge: '화이트 와인 · 부르고뉴 원산',
     abv: '12~14%', flag: '🍾',
-    history: '프랑스 부르고뉴가 원산지인 세계에서 가장 많이 재배되는 화이트 와인 품종입니다. 오크 숙성 여부에 따라 버터리한 스타일부터 미네랄하고 날카로운 스타일(샤블리)까지 다양하며, 캘리포니아·호주·뉴질랜드 등 전 세계에서 개성 있는 스타일로 생산됩니다.',
+    history: '부르고뉴 원산의 화이트 품종 중 가장 많이 재배되는 품종입니다. 강한 개성이 없어 테루아와 양조 방식을 그대로 반영하는 "백지 캔버스"입니다. 샤블리의 석회암 토양에서는 미네랄리티, 나파 밸리의 햇볕에서는 열대과일, 부르고뉴 코트 드 본에서는 버터 풍미로 변신합니다.',
     characteristics: '서늘한 산지(샤블리)에서는 청사과·레몬·미네랄의 날카로운 풍미가, 따뜻한 산지(캘리포니아·호주)에서는 망고·바나나·열대과일의 풍성한 향이 납니다. 말로락틱 발효(MLF)를 거치면 버터·헤이즐넛이, 오크 숙성을 거치면 바닐라·토스트·스모크의 풍미가 더해집니다.',
     flavorTags: ['사과', '레몬', '버터', '바닐라', '열대과일'],
     items: ['로스트 치킨', '버터구이 새우', '훈제연어', '브리 치즈 구이', '버섯 크림 수프'],
@@ -410,7 +410,7 @@ const drinkDatabase = [
     fullName: 'Pinot Noir',
     badge: '레드 와인 · 부르고뉴 원산',
     abv: '12~14%', flag: '🍾',
-    history: '프랑스 부르고뉴가 원산지인 가장 재배하기 까다로운 품종입니다. 제대로 만들어졌을 때 타의 추종을 불허하는 복합미를 보여주며, 부르고뉴 최고가 와인들이 모두 이 품종으로 만들어집니다.',
+    history: '부르고뉴 원산의 레드 와인 중 재배가 가장 까다로운 품종입니다. 껍질이 얇아 서리·병충해·변이에 취약하지만, 완벽한 조건이 맞으면 어떤 포도도 넘보지 못할 복합미를 냅니다. 로마네 콩티 한 병의 가격이 1,000만 원을 넘는 이유는 마케팅이 아니라 진짜 희소성입니다.',
     characteristics: '어릴 때는 체리·라즈베리·딸기의 선명한 붉은 과일 향이, 숙성되면 버섯·젖은 낙엽·육류적 뉘앙스가 더해집니다. 레드 와인 중 탄닌이 가장 가볍고 산도는 중간 수준으로, 섬세한 식재료와 함께할 때 진가를 발휘합니다.',
     flavorTags: ['체리', '라즈베리', '버섯', '흙향', '낮은 탄닌'],
     items: ['오리가슴살', '연어구이', '버섯요리', '카망베르 치즈', '연어 타르타르'],
@@ -423,7 +423,7 @@ const drinkDatabase = [
     fullName: 'Cabernet Sauvignon',
     badge: '레드 와인 · 보르도 원산',
     abv: '13~15%', flag: '🍾',
-    history: '프랑스 보르도가 원산지인 세계에서 가장 많이 재배되는 레드 와인 품종입니다. 카베르네 프랑과 소비뇽 블랑의 자연 교배로 탄생했으며, 장기 숙성력이 뛰어난 풀바디 와인을 만들어냅니다.',
+    history: '보르도에서 카베르네 프랑과 소비뇽 블랑이 우연히 교배되어 탄생했습니다. 1976년 파리 블라인드 테이스팅에서 캘리포니아 카베르네가 보르도 최고급 와인을 이기는 충격적인 사건("파리의 심판")이 일어났고, 그 이후 이 품종은 전 세계 와이너리의 필수 품종이 됐습니다.',
     characteristics: '서늘한 지역(보르도)에서는 블랙커런트·피망, 따뜻한 지역(나파)에서는 블랙체리·올리브 풍미가 납니다. 숙성되면 유칼립투스·민트·삼나무·담배·시가박스의 복합적인 뉘앙스가 발전합니다. 강한 탄닌은 육류의 단백질과 결합해 풍미를 폭발시키며, 장기 숙성 능력이 탁월합니다.',
     flavorTags: ['블랙커런트', '삼나무', '민트', '강한 탄닌', '풀바디'],
     items: ['스테이크', '양고기구이', '다크 초콜릿', '포르치니 버섯', '체다 치즈'],
@@ -437,7 +437,7 @@ const drinkDatabase = [
     fullName: 'Sauvignon Blanc',
     badge: '화이트 와인 · 프랑스 루아르 / 뉴질랜드 말버러',
     abv: '11~13%', flag: '🍾',
-    history: '프랑스 루아르 밸리와 보르도가 원산지이며, 현재는 뉴질랜드 말버러가 세계 최고의 산지로 자리잡았습니다. 상큼하고 허브향이 강렬한 화이트 와인으로, 뉴질랜드가 1980년대 이후 현대적 스타일을 완성해 전 세계에 유행시켰습니다.',
+    history: '루아르 밸리 원산이지만 뉴질랜드 말버러가 현재 세계 최고 산지입니다. 1979년 말버러 첫 상업 양조가 이루어진 후, 클라우디 베이의 구스베리·풀향이 10년 만에 세계 소믈리에 필수 목록에 올랐습니다. 뉴질랜드 와인을 세계 무대에 올린 품종입니다.',
     characteristics: '서늘한 지역에서는 풀·피망·쐐기풀의 날카로운 식물성 향과 자몽·라임이, 따뜻한 지역에서는 패션프루트·망고의 열대과일 향이 납니다. 높은 산도와 드라이한 스타일로, 오크 숙성 없이 신선하게 출시됩니다. 스시·해산물과 잘 어울리는 몇 안 되는 화이트 와인으로 알려져 있습니다.',
     flavorTags: ['자몽', '구스베리', '허브', '패션프루트', '미네랄'],
     items: ['생굴', '염소 치즈', '회', '새우칵테일', '그린샐러드'],
@@ -450,7 +450,7 @@ const drinkDatabase = [
     fullName: 'Riesling',
     badge: '화이트 와인 · 독일 모젤 / 프랑스 알자스',
     abv: '7~13%', flag: '🍾',
-    history: '독일 모젤·라인 지역이 원산지인 귀족적인 화이트 와인 품종입니다. 달콤한 슈패트레제·아우스레제부터 완전히 드라이한 트로켄 스타일까지 다양하며, 장기 숙성 시 특유의 석유향(페트롤 노트)이 나타나는 독특한 매력으로 세계 최고의 화이트 와인 중 하나로 꼽힙니다.',
+    history: '독일 모젤이 원산지인 화이트 품종입니다. 1970~80년대 저가 스위트 제품이 시장에 넘치면서 이미지가 추락했지만, 소믈리에들은 세계 최고 화이트로 평가합니다. 드라이부터 귀부(TBA)까지 같은 품질 수준에서 다양한 당도가 가능한 유일한 화이트 품종이며, 50년 이상 숙성도 가능합니다.',
     characteristics: '어릴 때는 꽃향·복숭아·살구·사과·자몽이, 숙성되면 꿀·연기·석유(페트롤) 향이 납니다. 세계에서 산도가 가장 높은 화이트 와인 중 하나로, 달콤한 스타일도 산도 덕분에 전혀 무겁지 않습니다. 태국·중국 요리 등 강한 향신료와 함께할 수 있는 몇 안 되는 와인입니다.',
     flavorTags: ['복숭아', '살구', '꿀', '미네랄', '페트롤(숙성)'],
     items: ['훈제 고등어', '목살구이', '생선구이', '블루치즈', '사과 크럼블'],
@@ -463,7 +463,7 @@ const drinkDatabase = [
     fullName: "Moscato d'Asti",
     badge: '스위트 스파클링 · 이탈리아 피에몬테',
     abv: '5~7%', flag: '🍾',
-    history: "이탈리아 피에몬테 아스티 지역의 모스카토 비앙코 품종으로 만드는 세계에서 가장 사랑스러운 스위트 스파클링 와인입니다. 무스카 품종은 수천 년 역사의 가장 오래된 포도 품종 중 하나로, 고대 그리스·로마 시대부터 재배되었습니다.",
+    history: '피에몬테 아스티의 모스카토 비앙코로 만드는 스위트 스파클링 와인입니다. 무스카 품종은 고대 이집트까지 거슬러 올라가는 가장 오래된 포도 중 하나입니다. 2011년 드레이크의 가사에 "모스카토"가 등장하면서 전 세계 힙합 세대에게 이탈리아 스파클링 와인을 소개한 문화적 사건이 됐습니다.',
     characteristics: '복숭아·살구·오렌지 꽃·머스크의 향긋하고 달콤한 아로마가 넘칩니다. 낮은 알코올과 섬세한 버블, 풍부한 당도가 특징이며, 가볍고 상쾌한 여운 덕분에 와인 입문자에게도 최고의 선택입니다.',
     flavorTags: ['복숭아', '오렌지 꽃', '꿀', '살구', '섬세한 버블'],
     items: ['프루트 타르트', '사과 크럼블', '구운 아몬드', '카망베르 치즈', '견과류'],
@@ -476,7 +476,7 @@ const drinkDatabase = [
     fullName: 'Pinot Grigio',
     badge: '화이트 와인 · 이탈리아 북부 / 프랑스 알자스',
     abv: '11~13%', flag: '🍾',
-    history: '이탈리아 트렌티노-알토 아디제와 프리울리 베네치아 줄리아 지역이 대표 산지입니다. 프랑스 알자스에서는 피노 그리(Pinot Gris)라는 이름으로 더 풍성한 스타일로 생산됩니다. 전 세계에서 가장 많이 팔리는 화이트 와인 중 하나로, 이탈리안 레스토랑의 대표 와인입니다.',
+    history: '이탈리아와 프랑스 알자스에서 완전히 다른 두 스타일로 표현되는 품종입니다. 같은 포도지만 이탈리아에서는 "피노 그리지오"로 가볍고 산뜻하게, 알자스에서는 "피노 그리"로 황금빛 풀바디로 만들어집니다. 이탈리아 스타일은 2000년대 전 세계에서 가장 많이 팔리는 스틸 화이트 와인이 됐습니다.',
     characteristics: '레몬·청사과·흰 복숭아·미네랄의 가볍고 청아한 아로마가 특징입니다. 라이트~미디엄 바디에 산뜻한 산도와 깔끔한 피니시로, 어떤 음식과도 부담없이 어울리는 친근한 스타일입니다.',
     flavorTags: ['레몬', '청사과', '흰 복숭아', '미네랄', '산뜻함'],
     items: ['봉골레 파스타', '카프레제', '새우칵테일', '훈제연어', '그린샐러드'],
@@ -489,7 +489,7 @@ const drinkDatabase = [
     fullName: 'Gewürztraminer',
     badge: '화이트 와인 · 프랑스 알자스',
     abv: '12~14%', flag: '🍾',
-    history: '프랑스 알자스와 독일이 원산지인 매우 향긋한 화이트 와인 품종입니다. "향신료(Gewürz) + 트라미너 마을"의 합성어로, 독특하고 화려한 아로마가 한 번 맡으면 절대 잊을 수 없는 강렬한 인상을 남깁니다. 알자스 와인의 빅5 품종 중 하나로, 방당주 타르디브(늦수확) 스타일은 디저트 와인의 정점으로 꼽힙니다.',
+    history: '이름 자체가 "향신료(Gewürz) + 트라미노 마을"의 합성어입니다. 남티롤의 트라미노 마을에서 유래해 알자스로 건너간 품종으로, 1980~90년대에는 "너무 이국적"이라는 이유로 외면받았습니다. 지금은 가장 즉각적이고 강렬한 아로마 덕에 소믈리에들이 블라인드 테이스팅에서 가장 먼저 맞히는 품종이 됐습니다.',
     characteristics: '리치·장미꽃·생강·복숭아·향신료의 매우 강렬하고 이국적인 아로마가 가장 큰 특징입니다. 오프-드라이~스위트 스타일이 많고 풀바디에 낮은 산도, 긴 스파이시한 여운이 특징입니다.',
     flavorTags: ['리치', '장미꽃', '생강', '향신료', '이국적'],
     items: ['오리가슴살', '푸아그라', '카망베르 치즈', '블루치즈', '사과 크럼블'],
@@ -503,7 +503,7 @@ const drinkDatabase = [
     fullName: 'Champagne',
     badge: '스파클링 와인 · 프랑스 샹파뉴',
     abv: '11~13%', flag: '🥂',
-    history: '프랑스 샹파뉴 지역에서만 만들어지는 세계 최고의 스파클링 와인입니다. 17세기 동 페리뇽 수도사가 발포성 와인을 완성했다는 전설이 있으며, 이후 축제·의식·승리의 상징이 되었습니다. 모에 샹동·뵈브 클리코·크뤼그·루이 로드레르 등 유명 하우스들이 각자의 스타일을 고집합니다.',
+    history: '동 페리뇽 수도사는 샴페인을 발명한 것이 아니라 기포를 없애려 평생 싸웠습니다—병이 폭발했으니까요. 1772년 뵈브 클리코의 르뮈아주(gyropalette) 발명으로 흐린 와인 문제가 해결됐고 현대 샴페인 산업이 시작됐습니다. 지금도 샹파뉴 319개 코뮌만이 이 이름을 사용할 수 있습니다.',
     characteristics: '사과·레몬·토스트·효모·브리오슈의 복합적인 향이 특징입니다. 섬세한 지속 버블과 높은 산도, 긴 여운이 매력으로, 논빈티지(NV)부터 프레스티지 퀴베(동 페리뇽·크리스탈)까지 다양한 스타일이 존재합니다.',
     flavorTags: ['사과', '레몬', '토스트', '브리오슈', '섬세한 버블'],
     items: ['생굴', '캐비어', '훈제연어', '카나페', '새우칵테일'],
@@ -516,7 +516,7 @@ const drinkDatabase = [
     fullName: 'Prosecco',
     badge: '스파클링 와인 · 이탈리아 베네토',
     abv: '10~12%', flag: '🥂',
-    history: '이탈리아 베네토·프리울리 지역에서 글레라 품종으로 만드는 스파클링 와인입니다. 샴페인보다 가볍고 과일 풍미가 풍부하며, 베네치아 스프리츠의 베이스로 사용됩니다. 이탈리아 아페리티보(식전주) 문화를 상징하는 와인으로, 벨리니 칵테일의 주재료이기도 합니다.',
+    history: '베네토의 글레라 품종으로 만드는 이탈리아 스파클링 와인입니다. 2차 발효를 병 속이 아닌 탱크에서 진행하는 샤르마 방식으로 샴페인보다 빠르고 저렴하게 만들어집니다. 2010년대 아페롤 스프리츠의 폭발적 유행이 프로세코를 전 세계 칵테일 바에 등장시킨 결정적 계기가 됐습니다.',
     characteristics: '복숭아·배·사과·흰 꽃의 가볍고 산뜻한 아로마가 특징입니다. 샴페인보다 버블이 크고 과일 향이 더 직접적이며, 드라이(Brut)부터 달콤한(Extra Dry) 스타일까지 다양합니다.',
     flavorTags: ['복숭아', '배', '사과', '흰 꽃', '가벼운 버블'],
     items: ['카프레제', '과일 플레이터', '브루스케타', '안티파스토', '살라미'],
@@ -529,7 +529,7 @@ const drinkDatabase = [
     fullName: 'Rosé (Provence)',
     badge: '로제 와인 · 프랑스 프로방스',
     abv: '11~13%', flag: '🍾',
-    history: '세계에서 가장 유명한 로제 와인은 프랑스 프로방스에서 생산됩니다. 연한 살몬핑크 색상이 특징인 프로방스 로제는 그르나슈·시라·무르베드르 블렌딩으로 만들어지며, 지중해 라이프스타일과 여름을 상징하는 와인이 되었습니다. 당젤루스 등 보르도 유명 샤토들도 프로방스 로제를 생산합니다.',
+    history: '프로방스는 기원전 600년 그리스인이 마르세유 근방에 포도를 심은 프랑스 최고(最古) 와인 산지입니다. 20세기까지 저가 지역 와인이었으나, 2000년대 유명인 소유 샤토들이 프리미엄 이미지를 구축했고 인스타그램이 연한 살몬핑크 색을 전 세계 여름 미학으로 만들었습니다.',
     characteristics: '딸기·수박·복숭아·장미꽃·허브의 신선하고 섬세한 아로마가 특징입니다. 드라이하고 가벼운 바디에 상쾌한 산도로, 화이트 와인의 신선함과 레드 와인의 과일 풍미를 동시에 즐길 수 있습니다.',
     flavorTags: ['딸기', '수박', '복숭아', '장미꽃', '프레시'],
     items: ['그린샐러드', '훈제연어', '새우칵테일', '카프레제', '올리브'],
@@ -543,7 +543,7 @@ const drinkDatabase = [
     fullName: 'Merlot',
     badge: '레드 와인 · 프랑스 보르도 우안',
     abv: '13~15%', flag: '🍾',
-    history: '프랑스 보르도 우안(포므롤·생테밀리옹)을 대표하는 품종으로, 세계에서 가장 많이 재배되는 레드 와인 품종 중 하나입니다. 포므롤의 페트뤼스와 르팽은 메를로 단일 또는 주요 블렌딩으로 만들어지는 세계 최고가 와인들입니다.',
+    history: '보르도 우안 포므롤을 대표하는 품종입니다. 2004년 영화 "사이드웨이스"에서 주인공이 "메를로는 절대 안 마셔!"라고 외치는 장면이 나온 뒤 전 세계 메를로 판매량이 하룻밤에 2% 감소했습니다. 아이러니하게도 그가 영화 내내 예찬한 와인(페트뤼스)이 거의 순수 메를로였습니다.',
     characteristics: '서늘한 지역에서는 딸기·자두·적베리·삼나무·담배가, 따뜻한 지역에서는 블랙베리·자두·초콜릿·케이크 풍미가 납니다. 오크 숙성 시 카라멜·코코아·바닐라·모카가 더해집니다. 카베르네 소비뇽보다 탄닌이 부드럽고 일찍 숙성되며, 벨벳처럼 매끄러운 질감이 매력입니다.',
     flavorTags: ['자두', '블랙체리', '초콜릿', '바닐라', '벨벳 탄닌'],
     items: ['스테이크', '연어구이', '버섯요리', '가리비 구이', '포르치니 버섯'],
@@ -556,7 +556,7 @@ const drinkDatabase = [
     fullName: 'Syrah / Shiraz',
     badge: '레드 와인 · 프랑스 북부 론 / 호주 바로사',
     abv: '13~15%', flag: '🍾',
-    history: '프랑스 북부 론 밸리가 원산지이며, 호주에서는 쉬라즈라는 이름으로 독자적인 스타일을 완성했습니다. 에르미타주와 코트-로티는 시라 단일 와인의 정점으로 꼽히며, 호주 바로사 밸리에는 세계에서 가장 오래된(150년 이상) 시라 포도나무가 남아 있습니다.',
+    history: '수백 년간 페르시아 시라즈 도시가 원산지라는 낭만적 전설이 있었지만, 1999년 DNA 분석이 프랑스 북부 론 토착 품종임을 밝혔습니다. 1840년대 호주에 이식된 포도나무 중 일부가 아직 살아 있어, 바로사 밸리에는 세계에서 가장 오래된 150년 이상의 시라 나무들이 있습니다.',
     characteristics: '온화한 기후(북부 론·왈라왈라)에서는 블랙베리·민트·후추에 미디엄-하이 탄닌이, 더운 기후(바로사·맥라렌 베일)에서는 잼 과일·감초·아니스·정향의 풍성한 과일 향이 납니다. 숙성될수록 가죽·젖은 낙엽·트러플이 더해집니다. 높은 탄닌과 산도로 15년 이상 장기 숙성이 가능합니다.',
     flavorTags: ['블랙베리', '후추', '감초', '가죽', '스파이시'],
     items: ['양고기구이', '바베큐 립', '스테이크', '훈제 소시지', '다크 초콜릿'],
@@ -569,7 +569,7 @@ const drinkDatabase = [
     fullName: 'Malbec',
     badge: '레드 와인 · 아르헨티나 멘도사',
     abv: '13~15%', flag: '🍾',
-    history: '원래 프랑스 카오르가 원산지이지만, 현재는 아르헨티나 멘도사가 세계 최고의 말벡 산지로 자리잡았습니다. 19세기 중반 아르헨티나로 이식된 후 안데스산맥 고지대(해발 800~1500m)의 환경에서 독자적으로 발전해 풍성하고 부드러운 레드 와인으로 진화했습니다.',
+    history: '프랑스 카오르 원산이지만 1956년 보르도를 강타한 대서리가 프랑스 재배지를 거의 전멸시켰습니다. 다행히 1850년대 아르헨티나로 이식된 포도나무가 살아남았고, 안데스 고지(해발 800~1500m)의 강한 자외선과 일교차가 프랑스에서보다 오히려 더 농축된 스타일을 만들어냈습니다.',
     characteristics: '아르헨티나(멘도사)산은 블랙베리·자두·바이올렛의 풍성한 과일 향에 벨벳 질감이 특징이며, 프랑스 카오르산은 강한 탄닌과 자두·건포도·마늘·담배의 묵직한 스타일입니다. 고지대 포도원일수록 농축도와 구조감이 뛰어납니다.',
     flavorTags: ['블랙베리', '자두', '바이올렛', '초콜릿', '부드러운 탄닌'],
     items: ['스테이크', '양고기구이', '바베큐 립', '다크 초콜릿', '블루치즈'],
@@ -583,7 +583,7 @@ const drinkDatabase = [
     fullName: 'Sangiovese (Chianti)',
     badge: '레드 와인 · 이탈리아 토스카나',
     abv: '12~14%', flag: '🍾',
-    history: '이탈리아 토스카나를 대표하는 품종으로, 키안티·브루넬로 디 몬탈치노·비노 노빌레 디 몬테풀치아노 등 토스카나 최고의 와인들이 이 품종으로 만들어집니다. "조비스(유피테르)의 피"라는 뜻을 지닌 이탈리아 와인의 영혼과 같은 존재입니다.',
+    history: '"유피테르의 피"라는 뜻의 이탈리아 토스카나 대표 품종입니다. 20세기 정부 규정이 화이트 포도 혼합을 의무화해 키안티 품질이 추락하자, 1970년대 반항적인 생산자들이 규정을 어기며 순수 산지오베제 와인을 만들어 더 높은 가격을 받는 "슈퍼 투스칸" 현상을 촉발했고 이탈리아 와인법을 재작성하게 했습니다.',
     characteristics: '어릴 때는 새콤한 체리·딸기·흙향·차잎 노트가, 숙성되면 타르·가죽·오크 풍미가 납니다. 높은 산도와 미디엄 탄닌, 라이트~미디엄 바디로 "음식 없이는 제 맛이 안 난다"는 말이 있을 정도로 대표적인 푸드 와인입니다. 토마토의 산도와 산지오베제의 산도가 공명하는 것이 이탈리안 식탁의 핵심 원리입니다.',
     flavorTags: ['새콤한 체리', '토마토', '허브', '흙향', '높은 산도'],
     items: ['토마토 파스타', '피자', '허브 구이', '브루스케타', '파르미지아노'],
@@ -596,7 +596,7 @@ const drinkDatabase = [
     fullName: 'Nebbiolo (Barolo)',
     badge: '레드 와인 · 이탈리아 피에몬테',
     abv: '13~15%', flag: '🍾',
-    history: '"이탈리아 와인의 왕" 바롤로와 "이탈리아 와인의 여왕" 바르바레스코가 모두 이 품종으로 만들어집니다. 안개(nebbia)에서 이름이 유래했으며, 피에몬테의 란게 언덕에서만 최고의 품질이 나옵니다. 10년 이상 숙성 후에야 진가를 발휘하는 장기 숙성 와인의 대명사입니다.',
+    history: '이름이 안개(nebbia)에서 유래했으며, 피에몬테 란게 언덕의 10월 서리 안개 속에서 수확됩니다. 전통 바롤로는 대형 슬라보니아 오크 통에서 7~10년 숙성 후 출시했고, 손자 세대를 위한 와인이라 불렸습니다. 지금도 최소 10년이 지나야 제 맛을 내며, 세계에서 가장 탄닌이 강한 레드 와인입니다.',
     characteristics: '어릴 때는 장미·타르·체리·라즈베리가, 숙성되면 바이올렛·야생 허브·체리·트러플·담배·가죽이 납니다. 세계 최고 수준의 탄닌과 산도로 최소 10년, 프리미엄 바롤로는 30년 이상 숙성됩니다. 숙성된 네비올로의 벽돌색 가장자리(brick-orange rim)는 숙성의 상징입니다.',
     flavorTags: ['장미', '타르', '트러플', '가죽', '강한 탄닌'],
     items: ['트러플 리조또', '스테이크', '포르치니 버섯', '양고기구이', '파르미지아노'],
@@ -610,7 +610,7 @@ const drinkDatabase = [
     fullName: 'Tempranillo (Rioja)',
     badge: '레드 와인 · 스페인 리오하',
     abv: '12~14%', flag: '🍾',
-    history: '스페인을 대표하는 레드 와인 품종으로, 리오하·리베라 델 두에로 등에서 스페인 최고의 레드 와인이 생산됩니다. "이른"을 뜻하는 템프라노에서 유래한 이름처럼 일찍 익는 품종이며, 오크 숙성에 따라 크리안자·레세르바·그란 레세르바로 등급이 나뉩니다.',
+    history: '"이른"을 뜻하는 템프라노에서 유래했으며, 다른 레드 품종보다 한 달 일찍 익습니다. 순례자들이 산티아고 가는 카미노 길을 따라 수도원에 가지치기를 남겨 스페인 전역에 퍼졌습니다. 아메리칸 오크 숙성에 따라 크리안자·레세르바·그란 레세르바로 등급을 나누는 리오하 분류 체계는 이 품종을 위해 만들어졌습니다.',
     characteristics: '루비 레드 색상에 자두·딸기·담배·바닐라·가죽·허브의 균형잡힌 과일 향이 특징입니다. 아메리칸 오크 숙성(리오하 전통)에서는 코코넛·바닐라, 프렌치 오크에서는 가죽·흙향·시가가 발전합니다. 산도와 당분이 낮아 블렌딩 파트너로도 활용되며, 크리안자-레세르바-그란 레세르바 등급으로 숙성 기간이 분류됩니다.',
     flavorTags: ['딸기', '자두', '담배', '바닐라', '가죽'],
     items: ['이베리코 하몽', '만체고 치즈', '양고기구이', '초리소', '올리브'],
@@ -740,6 +740,250 @@ function makeFoodCard(name) {
   return card;
 }
 
+// ── i18n ─────────────────────────────────────────────────────────────────
+let currentLang = 'ko';
+
+const drinks_i18n = {
+  en: {
+    '발베니': {
+      story: 'Founded in 1892 by William Grant in Speyside, The Balvenie is one of the last distilleries in Scotland to maintain its own barley farm and traditional floor maltings. The signature DoubleWood undergoes two distinct cask finishes—American bourbon then Oloroso sherry—a technique Grant pioneered after noticing how leftover barrels changed whisky overnight.',
+      characteristics: "Honey and vanilla lead, followed by fresh orchard fruit and a delicate spice. DoubleWood's dual maturation adds a rich dried-fruit layer. The result is approachable yet complex—a soft, creamy texture that makes it one of the best entry points into single malt whisky.",
+      pairingNote: "Balvenie's honeyed sweetness mirrors dark chocolate's bitter cocoa, while its creaminess cushions salty blue cheese. Walnuts and dried figs echo the vanilla and dried-fruit notes of the cask.",
+    },
+    '맥캘란': {
+      story: 'Established in 1824 on the banks of the River Spey, The Macallan earned a Royal Warrant and became the cornerstone of blended Scotch for over a century—so prized that master blenders kept it secret. Today it defines sherry-cask maturation, sourcing every cask directly from Jerez cooperages and inspecting each barrel by hand before shipping to Scotland.',
+      characteristics: 'Intense dried-fruit richness—raisins, oranges, figs—layered with warming ginger and Christmas spice. A long finish of dark chocolate and polished oak. Full-bodied and opulent, the Macallan rewards patience with a complexity that unfolds slowly in the glass.',
+      pairingNote: 'The Macallan\'s sherry and dried-fruit character is amplified by smoked salmon\'s fat and salt, and by aged cheddar\'s crystalline texture. Apricot pastry mirrors the stone-fruit notes in the cask.',
+    },
+    '글렌피딕': {
+      story: 'On Christmas Day 1887, William Grant and his seven children built Glenfiddich distillery by hand—literally laying the stones themselves. The iconic triangular bottle was introduced in 1957 to stand out on shelves, and the stag logo has been unchanged ever since. Today the same family, in its fifth generation, makes the world\'s best-selling single malt.',
+      characteristics: 'Glenfiddich\'s hallmark is its fresh pear-and-apple character, achieved by short fermentation in copper washbacks. Light floral notes and gentle vanilla from ex-bourbon casks make it the most approachable single malt on the market—crisp and clean with almost no heavy oak.',
+      pairingNote: "Glenfiddich's light fruitiness pairs beautifully with fresh fish and creamy cheeses, where it acts as a palate-cleanser rather than competing. Apple crumble mirrors the distillery's signature orchard character.",
+    },
+    '라프로익': {
+      story: 'Founded in 1815 on Islay\'s southern shore, Laphroaig cut its own peat from local bogs and dried barley over that smoke—a necessity that became its signature. HRH King Charles III has been a fan for decades, granting it a Royal Warrant. Their "Friends of Laphroaig" membership rewards loyalty with a square foot of Scottish peat bog—yours to visit.',
+      characteristics: "Laphroaig is the most polarising whisky in Scotland: an enormous wall of iodine, seaweed, and bonfire smoke that either hooks you for life or sends you running. Behind that smoke lurks surprising sweetness—vanilla, honey, a hint of tropical fruit—that only reveals itself once the smoke has had its say.",
+      pairingNote: 'The iodine and sea-salt in Laphroaig act as natural seasonings for raw oysters, turning simple shellfish into something dramatic. Smoked mackerel and strong blue cheese are bold enough to hold their own against the peat.',
+    },
+    '탈리스커': {
+      story: 'Built in 1830 on the Isle of Skye, Talisker faced closure or relocation several times but survived thanks to its uncompromising coastal character. Robert Louis Stevenson called it "the King o\' drinks" in verse. Its worm-tub condensers—older than most living people—are credited with giving the spirit its distinctive oily, full-bodied texture.',
+      characteristics: 'A fierce burst of black pepper and salt spray on the palate—like standing at the bow of a ship in a North Atlantic gale. Sweet maritime peat, dried fruit, and a warming spice finish that Stevenson described as the taste of the sea itself. Medium-bodied but intensely expressive.',
+      pairingNote: "Talisker's pepper and brine echo and amplify smoked shellfish and cured meats. Pickled vegetables cut through the richness; blue cheese's funk matches the whisky's maritime intensity.",
+    },
+    '아벨라워': {
+      story: "Founded in 1879 near a sacred Celtic spring—\"aberlour\" means \"mouth of the chattering burn\" in Gaelic—the distillery was rebuilt after a catastrophic fire in 1898. Its a'bunadh (\"of the origin\" in Gaelic) expression, released at cask strength with no chill-filtration, became a cult favourite by accident: the master distiller simply bottled from the best casks he had.",
+      characteristics: 'Warm baking spice—cinnamon, clove, nutmeg—with lush sherry-soaked cherries and plum. Lighter than Macallan but with a clearer spice signature. The finish lingers with dark chocolate and dried fruit, making it the ideal winter dram served neat or with a single drop of water.',
+      pairingNote: "Aberlour's sherry-spice profile stands up beautifully to salty charcuterie and aged cheese. Dried figs and dark chocolate mirror the cask's influence; mixed nuts add texture without competing.",
+    },
+    '글렌리벳': {
+      story: "In 1824, George Smith became the first distiller in the Highlands to take out a license under the new Excise Act—a brave and dangerous move that drew death threats from illicit distillers who feared legitimate competition. His whisky quickly became so famous that 27 others added \"Glenlivet\" to their names, forcing a legal battle that gave Smith sole right to \"The Glenlivet.\"",
+      characteristics: 'Delicate tropical fruit—pineapple, mango, passion fruit—with fresh floral aromatics and gentle vanilla from long American oak maturation. The smoothest and most approachable of the classic Speyside malts, making it the top-selling single malt in North America for decades.',
+      pairingNote: "Glenlivet's light, floral fruitiness acts as a palate freshener alongside Camembert and smoked salmon, lifting their richness without overpowering. Apple crumble is a natural match for the distillery's orchard fruit character.",
+    },
+    '조니워커 블루': {
+      story: 'Blue Label, launched in 1992, represents the pinnacle of Johnnie Walker\'s 200-year blending tradition. Master blenders select only 1 in every 10,000 casks—including rare fillings from \"ghost distilleries\" that no longer exist. The bottle carries a serial number and each batch is individually approved, making it one of the few blended Scotches that collectors actively seek.',
+      characteristics: 'Extraordinarily smooth and silky—the hallmark of ultra-old grain whiskies that have shed their rough edges through decades in wood. Honey, dried fruit, gentle smoke, and a whisper of sea air weave into a finish that lasts many minutes. No single flavour dominates; the art is in the seamless harmony.',
+      pairingNote: "Blue Label's supreme refinement demands ingredients of equal quality. Caviar and oysters meet its oceanic undertones; dark chocolate truffles echo its dried-fruit depth. Parmesan's crystalline salinity is the perfect foil.",
+    },
+    '조니워커 블랙': {
+      story: 'John Walker\'s son Alexander perfected the Black Label formula in the 1860s—blending whiskies aged at least 12 years to ensure consistent quality. Sold globally since the 1900s, Black Label became the definition of premium blended Scotch. The distinctive slanted label, designed so more text could fit on the bottle, became one of the world\'s most recognised packaging trademarks.',
+      characteristics: 'A masterclass in balance: sweet vanilla and stone fruit up front, a thread of signature smoke through the middle, and a clean, slightly warming finish. Medium-bodied with a texture that works equally well neat, on the rocks, or in a highball. The reference point against which other blended Scotches are judged.',
+      pairingNote: "Black Label's smoky-sweet balance is the ideal partner for grilled meats, where the char mirrors the smoke, and for mature cheddar, where the fat softens the whisky's drying finish. Pickles cut through and reset the palate.",
+    },
+    '시바스리갈': {
+      story: 'James and John Chivas were grocery and wine merchants in Aberdeen who supplied the Royal household in the 1840s. Their whisky blend became so beloved at court that it earned a Royal Warrant—the seal of approval that still appears on every bottle. Chivas 12 was the first luxury blended Scotch targeted at the American market, helping define what \"Scotch whisky\" meant to the world.',
+      characteristics: 'Honey, vanilla, and ripe orchard fruit on the nose; creamy and smooth on the palate with a gentle sweetness that never becomes cloying. A touch of heather honey and almonds on the finish. The classic easy-drinking blended Scotch, ideal for highballs or on the rocks for newcomers.',
+      pairingNote: "Chivas's soft sweetness and creamy texture make it ideal with Camembert—both share a rounded, milky richness. Roasted almonds and light fruit tarts complement the whisky's honey and orchard-fruit profile.",
+    },
+    '발렌타인': {
+      story: "George Ballantine opened a grocery shop in Edinburgh in 1827 and quietly began blending whisky for his best customers. By the time Queen Victoria granted him a Royal Warrant in 1895, Ballantine's was already famous across Europe. The 17 Year Old, introduced in the 1930s, blends over 40 single malts and grains—a complexity that has made it the number-one Scotch in Asia for decades.",
+      characteristics: 'Elegant floral aromatics—heather, honey, and a hint of toffee—lead into ripe fruit and smooth vanilla. A perfectly balanced mid-palate with oak structure that never feels heavy. The long, slightly spicy finish reveals the age and care behind the blend. An all-rounder that suits every occasion.',
+      pairingNote: "Ballantine's floral elegance complements charcuterie's salt and fat, and pairs naturally with dried fruit and aged cheese. Apricot tart mirrors the whisky's ripe stone-fruit sweetness.",
+    },
+    '잭다니엘': {
+      story: "Jasper \"Jack\" Daniel learned distilling from a preacher and enslaved man named Nathan \"Nearest\" Green—a story suppressed for over a century. He registered his distillery in Lynchburg, Tennessee, in 1866, making it the oldest registered in the US. The signature Lincoln County Process—filtering new spirit through ten feet of sugar-maple charcoal—was Jack's own invention, and it's still done the same way today.",
+      characteristics: "The charcoal mellowing removes harsh congeners, leaving a uniquely smooth, sweet spirit with caramel, vanilla, and a gentle smokiness. Lighter in body than Kentucky bourbon, with a characteristic slightly sweet finish that makes it the world's best-selling American whiskey and the backbone of countless cocktails.",
+      pairingNote: "Jack Daniel's caramel-vanilla sweetness was practically designed to pair with American BBQ—the smokiness echoes and the sweetness cuts through fat. Cheddar and pecan pie echo the whisky's caramel and nut character.",
+    },
+    '버팔로트레이스': {
+      story: "The site of Buffalo Trace distillery has produced bourbon continuously since 1787—surviving Prohibition by obtaining a permit to make \"medicinal\" whiskey. The name honours the ancient buffalo trails that crossed the Kentucky River at that point. Its flagship Buffalo Trace expression was only named and bottled for public sale in 1999; before that, the distillery was better known for producing Blanton's—the world's first commercially bottled single-barrel bourbon.",
+      characteristics: 'A textbook Kentucky bourbon: vanilla and caramel from new charred oak, mint and citrus brightness, and a firm but friendly tannin on the finish. Well-rounded at 45% ABV—strong enough to stand up in cocktails but smooth enough to sip neat. Consistently voted best value-for-money bourbon in the world.',
+      pairingNote: 'Buffalo Trace\'s classic bourbon profile sings alongside grilled steak—caramel meets char—and smoked cheddar. The vanilla notes make pecan pie a natural dessert pairing.',
+    },
+    '메이커스마크': {
+      story: 'Bill Samuels Sr. famously burned his family\'s 170-year-old rye whiskey recipe before creating Maker\'s Mark in 1953—literally setting the past on fire. He replaced rye with red winter wheat for softness and baked a loaf of bread with every possible grain combination before deciding. His wife Margie designed the iconic hand-dipped red wax seal; the exact wax formula has never been replicated.',
+      characteristics: 'The wheat substitution gives Maker\'s a distinctly soft, round sweetness absent in rye-based bourbons. Vanilla, light caramel, fresh grain, and a hint of floral honey. No harsh edge anywhere—just a smooth, creamy richness that the industry now calls "wheated bourbon," a category Maker\'s invented.',
+      pairingNote: "Maker's Mark's gentle sweetness is flattered by Brie's creamy richness and grilled peaches' caramelised sugar. Pecans echo the whisky's soft nut notes; mild cheddar stays out of the way and lets the bourbon shine.",
+    },
+    '야마자키': {
+      story: 'In 1923, Shinjiro Torii built Japan\'s first malt whisky distillery in Yamazaki—a valley south of Kyoto renowned for its pure spring water, used by tea masters for centuries. Masataka Taketsuru, who had trained in Scotland, opposed the humid valley location, predicting it would ruin the spirit. He was wrong: the high humidity accelerated maturation in a way no Scottish climate could, creating an entirely new style of whisky.',
+      characteristics: 'Silky and delicate—ripe peach, pineapple, and Japanese plum upfront, then a unique sandalwood-and-incense note from rare Japanese mizunara oak. Subtle ginger spice on the finish. The 2003 \"Best Single Malt\" award at the World Whisky Awards sent shockwaves through Scotland and permanently reshaped the global whisky map.',
+      pairingNote: "Yamazaki's stone fruit and mizunara sandalwood harmonise with Japanese cuisine's umami-forward flavours. White chocolate truffles mirror the soft sweetness; umeboshi's salt-plum intensity creates an unexpectedly compelling contrast.",
+    },
+    '히비키': {
+      story: 'Hibiki (\"resonance\" or \"echo\") was created in 1989 as Suntory\'s ultimate showcase of Japanese blending art. The 24-faceted bottle—each face representing one of Japan\'s 24 seasonal micro-divisions (nijūshi sekki)—was designed to reflect the changing light differently throughout the day. Master blender Shinji Fukuyo balances whiskies from Yamazaki, Hakushu, and Chita distilleries, changing the recipe slightly each year to maintain consistency as stocks age.',
+      characteristics: 'The most elegant blended whisky in the world by many accounts: lychee, rose petals, and tangerine peel in a breathtakingly aromatic entry. White oak adds a refined vanilla structure; a faint hint of Hakushu peat provides depth without smoke. The finish is extraordinarily long and floral, fading like the last note of a piece of music.',
+      pairingNote: "Hibiki's floral delicacy calls for equally refined pairings: butter-seared scallops, yuzu sorbet, and mild Camembert all echo the whisky's soft fruit and cream without competing with its nuance.",
+    },
+    '진로': {
+      story: 'Jin Ro (\"true dew\" in Chinese characters) was founded in Pyongyang in 1924, crossing the 38th parallel during the Korean War to restart production in the South. The green glass bottle and toad mascot (두꺼비) became so deeply embedded in Korean culture that even the communist North kept a version. In 2019, Hite-Jinro reintroduced the vintage blue bottle and retro toad design—a nostalgia hit with the MZ generation that created nationwide shortages overnight.',
+      characteristics: 'The purest expression of Korean soju: clean, neutral, with the faintest kiss of sweetness. Neither the harshness of 25-degree soju nor the artificial sweetness of modern variants. Distilled from rice and sweet potato, then carbon-filtered to remove all impurities. The most food-friendly spirit in the world—it accompanies everything without getting in the way.',
+      pairingNote: "Jinro's clean profile acts as a palate reset between bites of fatty samgyeopsal and spicy kimchi banchan. The slight sweetness softens spice; the neutral character means the food is always the star.",
+    },
+    '참이슬': {
+      story: 'Chamisul (\"true dew\") launched in 1998 and revolutionised Korean soju by introducing bamboo charcoal filtration—four rounds through activated carbon derived from bamboo. The innovation removed the harsh aftertaste that plagued earlier 25-degree sojus, and Chamisul Fresh quickly became the best-selling liquor brand in the world by volume—a title it has held for over two decades.',
+      characteristics: 'The benchmark Korean soju: clean, refreshing, with minimal bitterness and a satisfying chill on the palate. Bamboo charcoal filtration creates a purity that allows subtle grain sweetness to show. At 16.9%, it sits in the sweet spot—strong enough to feel like a spirit, light enough to drink through a meal.',
+      pairingNote: "Chamisul's crisp clarity is designed to wash away the bold flavours of Korean cooking—it resets the palate after spicy dak-bal and cuts the fat after each piece of samgyeopsal.",
+    },
+    '처음처럼': {
+      story: 'Lotte Chilsung launched Cheoeumlcheoreom (\"like the first time\") in 2006 with a novel twist: alkaline reduced water, processed through an electrolysis cell to raise the pH. The softer water produced a noticeably rounder, sweeter soju—and Lotte marketed it aggressively with pop-culture campaigns. It became the first Korean soju to seriously challenge Jinro\'s dominance and introduced millions of people to the idea that soju could taste different.',
+      characteristics: 'Softer and noticeably sweeter than competitors, with almost no bitter finish. The alkaline water gives it a smooth, almost velvety texture. At 16%, it sits at the lower end of soju strength—ideal for long sessions or for drinkers who find the flavour of traditional soju too sharp.',
+      pairingNote: "Cheoeumlcheoreom's softness works particularly well with delicate seafood and tofu dishes that stronger sojus would overwhelm. Haemul pajeon and sundubu jjigae let the food's flavours shine while the soju provides a refreshing counter.",
+    },
+    '새로': {
+      story: 'SAERO (\"new\" in Korean) launched in September 2022 as Hite-Jinro\'s answer to health-conscious Gen-Z consumers. The zero-sugar formula uses a combination of erythritol and stevia to replicate sweetness without calories. Demand so far exceeded supply in its first month that convenience stores rationed it to two bottles per customer—creating a social-media frenzy and turning a marketing launch into a cultural moment.',
+      characteristics: 'Noticeably clean and dry for a modern soju—the sweetness is there but doesn\'t linger. At 16.9%, the same ABV as classic Chamisul, but with a crisper, more austere finish. The absence of residual sugar means the spirit character comes through more clearly, giving it a slightly more \"grown-up\" feel than other smooth sojus.',
+      pairingNote: 'SAERO\'s dry, clean profile is the best match for delicate raw seafood—sashimi, clams, fresh oysters—where residual sugar from other sojus would clash. Dubu-jorim\'s mild spice and tofu\'s soft texture make an ideal pairing.',
+    },
+    '하이네켄': {
+      story: 'Gerard Adriaan Heineken bought a struggling Amsterdam brewery in 1864 at the age of 22. His breakthrough came in 1886 when he hired a chemist from Louis Pasteur\'s Paris laboratory to isolate a yeast strain specifically for lager brewing. That yeast—Heineken A-yeast—is still used in every Heineken brewery worldwide, giving every bottle the same clean, slightly fruity character regardless of where it was made.',
+      characteristics: 'A model of European pilsner balance: bright hop bitterness, light malt sweetness, and a clean dry finish. The signature A-yeast adds a faint fruity ester that distinguishes it from cheaper lagers. Served ice-cold, the carbonation is crisp and refreshing without being harsh—the globally understood definition of \"premium beer.\"',
+      pairingNote: 'Heineken\'s balanced bitterness cuts through fatty food like a knife—pizza grease, nacho cheese, burger fat all met by the cleansing hop finish. Edamame\'s vegetal nuttiness is a light pairing that respects the beer\'s own flavour.',
+    },
+    '기네스': {
+      story: 'Arthur Guinness signed a 9,000-year lease on a disused Dublin brewery in 1759—an act of extraordinary confidence. The famous stout evolved from \"porter\" through a mistake: an over-roasted batch of malt that created the coffee-black colour. In 1959, Guinness introduced nitrogen gas (in addition to CO₂) into its draught system, creating the iconic cascading bubble effect and thick creamy head that defines the modern pint.',
+      characteristics: 'Despite its dark colour, Guinness is surprisingly sessionable at just 4.2% ABV. Roasted barley delivers coffee and bitter chocolate; the nitrogen system creates a silky, almost velvet mouthfeel. Served at exactly 6°C, the famous two-part pour—filling to 75%, waiting 119.5 seconds, then topping up—is as much ritual as technique.',
+      pairingNote: "Guinness and oysters is Ireland's oldest food pairing—the stout's roasted bitterness acts as a seasoning for the briny mollusc in a way no other drink can. Smoked cheddar and Irish stew mirror the beer's own depth and warmth.",
+    },
+    '아사히': {
+      story: 'Asahi Super Dry launched in 1987 and fundamentally changed Japanese beer culture overnight. Before it, Japanese lagers were malty and sweet; Super Dry\'s complete fermentation—consuming almost all residual sugar—produced an unprecedented dryness that Japanese drinkers called \"karakuchi.\" Within two years it was Japan\'s best-selling beer, ending Kirin\'s 50-year dominance. It spawned an entire global \"dry beer\" trend that competitors spent years trying to replicate.',
+      characteristics: 'The extreme dryness is the point: no sweetness, no maltiness—just sharp, clean carbonation and a brief hop bitterness that vanishes almost immediately, leaving your palate completely neutral. This makes Super Dry uniquely food-friendly because it never competes with the flavours of the dish.',
+      pairingNote: "Asahi Super Dry's clean neutrality is tailor-made for Japanese cuisine—yakitori, karaage, gyoza—where the food's subtlety needs a companion that refreshes without interfering.",
+    },
+    '카스': {
+      story: 'CASS launched in 1994 when OB Brewery partnered with Anheuser-Busch to create a domestic lager for a newly prosperous Korean consumer market. Its clean profile and affordable price quickly made it the best-selling beer in South Korea, overthrowing the previous incumbent in record time. CASS is now synonymous with \"chimaek\" (chicken and beer)—a Korean dining institution that generates billions in revenue annually.',
+      characteristics: 'Light-bodied and crisp with a clean, refreshing finish. Low bitterness and minimal malt character mean CASS stays out of the way of food—it\'s a thirst-quencher first, a flavour experience second. Subtle grain sweetness and tight carbonation make it extremely easy to drink through a long Korean barbecue session.',
+      pairingNote: "CASS's clean, light body is the classic chimaek partner—it washes away fried chicken's coating and cuts through the spicy sauce of yangnyeom chicken without adding any flavour that could clash.",
+    },
+    '테라': {
+      story: 'Terra launched in April 2019 as Hite-Jinro\'s major push to reclaim the domestic market from CASS. The branding centred on \"pure\" ingredients: barley grown in the clean fields of Australia\'s Mornington Peninsula and a proprietary \"real carbonation\" process. The green bottle—a deliberate nod to Heineken—and aggressive marketing campaigns pushed Terra to 40% of the Korean lager market within a year, a market-share gain unprecedented in Korean beer history.',
+      characteristics: 'Perceptibly fuller and more flavourful than most Korean lagers—the Australian barley delivers a clean grain note, and the higher carbonation gives it a lively, almost spritzy feel. Slightly more bitter than CASS, but still firmly in the easy-drinking lager camp. The fresh cereal character sets it apart.',
+      pairingNote: "Terra's stronger carbonation and grain character hold up better alongside samgyeopsal and jokbal than lighter lagers—the bubbles actively cut through the meat fat.",
+    },
+    '지평 막걸리': {
+      story: "Jipyeong Brewery began in Yangpyeong, Gyeonggi Province in 1925. By the 1990s it had nearly closed, surviving on minimal local sales. Rediscovery came through Seoul's restaurant scene around 2013: chefs and food writers noticed that Jipyeong used no artificial sweeteners or preservatives—rare in commercial makgeolli. Word-of-mouth made it the must-have makgeolli in top Korean restaurants, and the 1L bottle became a status symbol.",
+      characteristics: 'The absence of artificial sweetener lets the rice\'s own starch and the lactic fermentation create a natural sweet-sour balance that feels alive on the palate. Fine, persistent bubbles from active yeast, a creamy mouthfeel, and a clean, slightly tart finish. The benchmark against which all premium makgeolli is now measured.',
+      pairingNote: "Jipyeong's natural acidity and rice character are the perfect foil for savoury, oily jeon pancakes—the lactic tang cuts the oil and cleanses the palate for the next bite. Dubu-kimchi's bold flavours are balanced by the makgeolli's restrained sweetness.",
+    },
+    '샤도네이': {
+      story: "Chardonnay is the world's most successful white grape—not because it has the most distinctive flavour, but because it has almost none: it\'s a blank canvas that takes on the personality of wherever it grows and however it\'s made. In Chablis, the expression is steely and mineral; in Burgundy's Côte de Beaune, it becomes golden and buttery; in California's Napa Valley, it turns lush and tropical. Winemakers love it; purists debate endlessly whether that transparency is genius or mediocrity.",
+      characteristics: "Style depends entirely on winemaking choices. Unoaked (Chablis): green apple, lemon, chalk, almost sparkling in acidity. Oaked (Burgundy, California): butter, hazelnut, vanilla, toast, tropical fruit. Malolactic fermentation converts sharp malic acid to creamy lactic acid, adding richness. The world's most versatile white wine—it can accompany almost any dish.",
+      pairingNote: "Oaked Chardonnay's butter and vanilla mirror cream sauces and roast chicken skin. Unoaked (Chablis) is the classic pairing for oysters and raw shellfish—its mineral acidity amplifies the sea flavour.",
+    },
+    '피노누아': {
+      story: "Pinot Noir is winemaking's greatest challenge: the grape's thin skin is vulnerable to rot, frost, and sunburn; its tight clusters trap moisture; and it mutates unpredictably. Yet when everything aligns—the right slope, the right microclimate, the right harvest day—no other red grape produces anything approaching its complexity. Burgundy grands crus like Romanée-Conti sell for $10,000 a bottle not because of marketing but because perfect Pinot Noir is genuinely irreplaceable.",
+      characteristics: "At its best: translucent ruby, wild strawberry, cherry, roses, and forest floor when young; evolving to dried rose, truffle, game meat, and autumn leaves with age. The thinnest tannins of any major red grape, making it the most food-versatile red wine—it can even pair with oily fish. High acidity is the key to its longevity.",
+      pairingNote: "Pinot Noir's light tannins and bright acidity make it uniquely suited to salmon and duck—proteins with enough fat to soften the wine, and enough flavour to deserve it. Mushrooms echo the grape's earthy, forest-floor quality.",
+    },
+    '카베르네 소비뇽': {
+      story: 'Cabernet Sauvignon was born by accident in 17th-century Bordeaux: a chance cross-pollination between Cabernet Franc and Sauvignon Blanc. Its thick skin and high tannin made it initially difficult to drink young, but its extraordinary ageing potential—50+ years for top Bordeaux—made it the world\'s prestige red grape. The \"Judgement of Paris\" tasting in 1976, where California Cabernets defeated top Bordeaux in a blind tasting, permanently democratised the grape and triggered the modern California wine industry.',
+      characteristics: 'The archetypal full-bodied red: blackcurrant, dark cherry, and green bell pepper when young; cedar, tobacco, cigar box, and graphite with age. The highest tannin of any major red grape—those tannins bind to protein, which is why Cabernet and steak is the world\'s most celebrated food pairing. Ages for decades; the best bottles are still improving at 30 years.',
+      pairingNote: "Cabernet Sauvignon's high tannins chemically bond with the protein and fat of red meat, softening the wine and enriching the meat simultaneously. The interaction is not just pleasant—it's scientifically transformative.",
+    },
+    '소비뇽 블랑': {
+      story: "New Zealand's Marlborough region, at the top of the South Island, produced its first commercial Sauvignon Blanc in 1979—at a time when no one knew the country made wine. Within a decade, Cloudy Bay's explosive gooseberry-and-grass character had made Marlborough the most talked-about wine region on earth and put New Zealand wine on every sommelier's list. The style was so distinct from French Sauvignon Blanc that it created an entirely new flavour vocabulary for white wine.",
+      characteristics: "A spectrum of green: at the cool end, cut grass, green pepper, and gooseberry; at the warm end, passion fruit, guava, and mango. Always dry, always high in acidity, never oaked. The wine world's most reliable refresher—what you reach for when you want something that tastes alive.",
+      pairingNote: "Sauvignon Blanc's piercing acidity cuts through the richness of goat's cheese better than almost any other wine—they were practically made for each other. Fresh oysters and sashimi are the maritime equivalent of that classic pairing.",
+    },
+    '리슬링': {
+      story: "Riesling's reputation collapsed in the 1970s and 80s when mass-market producers flooded the UK with cheap, excessively sweet versions under labels like Blue Nun. The grape spent 30 years recovering its prestige. Today it's recognised by Masters of Wine as the world's greatest white grape: the only variety that can range from bone-dry to lusciously sweet at the same quality level, the only white that reliably ages 50+ years, and the only wine that pairs successfully with almost every Asian cuisine.",
+      characteristics: "The most aromatic white grape: peach, apricot, flower blossom, lime, and—only in aged Riesling—a unique petrol/kerosene note (from TDN compound) that's considered the pinnacle of complexity. Always high acidity; the sweetness level varies by label (Trocken=dry, Spätlese=medium, Auslese=sweet). The balance of sweetness and acidity prevents it from ever feeling heavy.",
+      pairingNote: "Riesling's high acidity and residual sugar tame chilli heat and salt better than any other wine—it's the only Western grape that works reliably with Thai, Vietnamese, and Chinese cuisine.",
+    },
+    '모스카토': {
+      story: "The Muscat grape family is the oldest cultivated in the world—archaeological evidence dates it to ancient Egypt. Moscato d'Asti from Italy's Piedmont region is its most delicate expression: lightly sparkling (frizzante), only 5-7% ABV, and intensely aromatic. It became a global phenomenon in the 2000s partly through hip-hop culture—Drake's 2011 lyric \"drinkin' Moscato\" introduced millions of non-wine-drinkers to Italian sparkling wine overnight.",
+      characteristics: "The wine equivalent of a bouquet of summer flowers: peach blossom, apricot, orange zest, and honey, all wrapped in the faintest possible fizz. The low alcohol makes it refreshing rather than indulgent. At its best, Moscato d'Asti is one of the most purely pleasurable drinking experiences in the world—uncomplicated, generous, and beautiful.",
+      pairingNote: "Moscato d'Asti's gentle sweetness and bubbles are the perfect bridge between a savoury meal and dessert. Light fruit tarts don't compete; soft cheese like Camembert provides a creamy contrast without fighting the wine.",
+    },
+    '피노 그리지오': {
+      story: "Pinot Grigio and Pinot Gris are the same grape—just made in two completely different styles. In Italy's Trentino-Alto Adige, it's fermented cool, kept off the skins, and released young: pale, crisp, and light. In France's Alsace (as Pinot Gris), extended skin contact and often partial barrel ageing create an amber, full-bodied, spicy wine almost unrecognisable as the same grape. Italian Pinot Grigio became the world's best-selling still wine in the 2000s—reliable, light, and universally inoffensive.",
+      characteristics: "Italian style: lemon, green apple, white peach, and mineral freshness. Light to medium body, moderate acidity, clean finish—the wine equivalent of sparkling water with benefits. Alsatian style: golden colour, smoked almond, ginger, white truffle, and a rich, almost oily texture. Same grape, completely different experience.",
+      pairingNote: "Pinot Grigio's clean acidity brightens seafood pasta, lifting the brine of clams and mussels. Its lightness means it won't overpower delicate raw shellfish or a simple green salad.",
+    },
+    '게뷔르츠트라미너': {
+      story: "Gewürztraminer's name means \"spiced Traminer\"—Traminer being the village of Tramin (Termeno) in South Tyrol where the grape originated. The Alsace region in France perfected it: the pink-skinned grape is left to hang until almost overripe, then pressed gently to extract intense aromatics without too much skin tannin. In the 1980s and 90s, it was considered too exotic for international markets; today it's celebrated as one of the most individual and recognisable white grapes in the world.",
+      characteristics: "Unmistakable: lychee, Turkish rose, ginger, and exotic spice hit you before the glass even reaches your lips. The perfume is so powerful it can fill a room. Off-dry to sweet styles predominate; full body, low acidity, and a long, spicy finish. The wine world's most polarising white—some find the florals heavenly, others overwhelming.",
+      pairingNote: "Gewürztraminer's exotic aromatics find their perfect counterpart in foie gras—the wine's intensity matches the richness, and the sweetness balances the liver's bitterness. Strong blue cheese provides the contrast it needs.",
+    },
+    '샴페인': {
+      story: "Dom Pérignon did not invent Champagne—he actually spent much of his career trying to prevent the wine from becoming sparkling, as the bubbles would shatter the bottles. The méthode champenoise evolved from accidents and was perfected over two centuries. In 1772, Veuve Clicquot's riddling table (remuage)—a system of angled racks used to consolidate sediment—solved the problem of cloudy wine and created the modern Champagne industry. Today, the Champagne region protects its name fiercely: only 319 specific communes can legally produce it.",
+      characteristics: "The world's most complex sparkling wine: brioche and toast from extended lees ageing, precise green apple and lemon from Chardonnay, red berry and depth from Pinot Noir, structure from Pinot Meunier. The finest Champagnes—vintage and prestige cuvées—age for 20-40 years, developing extraordinary complexity. The bubbles are not decorative; they carry aromatics to the nose more efficiently than still wine.",
+      pairingNote: "Champagne's high acidity and fine bubbles act as the ultimate palate cleanser for the ocean's most luxurious produce. Caviar's salt and fat are amplified and cut simultaneously; oysters become transcendent.",
+    },
+    '프로세코': {
+      story: "Prosecco is made by the Charmat method—secondary fermentation in sealed tanks rather than individual bottles—which is faster, cheaper, and produces softer, fruitier bubbles than Champagne's traditional method. The method was invented in the late 19th century by Eugène Charmat and adopted enthusiastically in Veneto, where the Glera grape thrives. Prosecco's ascent to global dominance in the 2010s was driven partly by the Aperol Spritz phenomenon: the cocktail made with Prosecco, Aperol, and soda became the defining drink of a decade.",
+      characteristics: "Lighter, lower in alcohol, and more straightforwardly fruity than Champagne—fresh peach, pear, and white blossom in a glass. The bubbles are larger and softer, giving it a gentle, approachable effervescence. Most Prosecco is made to be consumed young, within 2-3 years, when its freshness is at its peak.",
+      pairingNote: "Prosecco's fruit-forward freshness is ideal for Italian aperitivo culture: bruschetta, antipasto, prosciutto, and fresh fruit. The light bubbles won't overwhelm delicate flavours.",
+    },
+    '로제 와인': {
+      story: "Provence has been making rosé since the ancient Greeks planted vines near present-day Marseille around 600 BC—making it the oldest wine-producing region in France. For most of the 20th century, Provence rosé was local, cheap, and largely ignored by serious wine critics. The transformation came in the 2000s when celebrity-owned estates (Brad Pitt and Angelina Jolie's Miraval, for instance) rebranded Provence rosé as a luxury lifestyle product, and Instagram turned its pale salmon colour into a social media phenomenon.",
+      characteristics: "The lightest, most delicate rosé style in the world: barely pink, with whisper-soft strawberry, watermelon, and dried herbs on the nose. Bone dry, with a mineral freshness that makes it endlessly refreshing. The colour—achieved by leaving grape skins in contact with the juice for just 12-24 hours—is the palest legal definition of rosé wine.",
+      pairingNote: "Provence rosé's delicacy and freshness shine alongside Mediterranean food: grilled fish, salade niçoise, and ratatouille. The herbal notes echo Provençal herbs; the freshness revives any summer table.",
+    },
+    '메를로': {
+      story: "Merlot was the world's most fashionable red wine until the 2004 film Sideways made Miles Raymond's dismissal—\"I am NOT drinking any Merlot!\"—a cultural moment that caused Merlot sales to drop 2% overnight while Pinot Noir sales soared. The irony was that the Château Pétrus he worshipped throughout the film—the world's most expensive red wine—is almost entirely Merlot. Sales recovered, but the grape's reputation for sophistication has never quite recovered.",
+      characteristics: "Softer and more approachable than Cabernet Sauvignon: plum, black cherry, chocolate, and mocha, with a velvety, supple texture that makes it drinkable much younger. Low tannin at cool-climate sites (Right Bank Bordeaux); richer, more jammy at warm sites (California, Napa). The world's most drinkable serious red wine.",
+      pairingNote: "Merlot's soft tannins and plum character work with a wider range of proteins than most reds—it bridges the gap between lean fish (salmon, sea bass) and red meat, making it the sommelier's choice when a table orders both.",
+    },
+    '시라': {
+      story: "Legend held for centuries that Syrah originated in ancient Persia—from Shiraz, the Persian city of poets—brought to France by a Crusader knight. DNA analysis in 1999 shattered the myth: Syrah is a natural cross between Dureza and Mondeuse Blanche grapes, both native to the northern Rhône Valley. Australia's Barossa Valley, planted with old Syrah vines in the 1840s, now harbours the oldest surviving Syrah vines on earth—some over 150 years old.",
+      characteristics: "Northern Rhône (Hermitage, Côte-Rôtie): black olive, violet, smoke, and black pepper; medium-high tannin, savory rather than sweet. Australian Shiraz (Barossa, McLaren Vale): jammy blackberry and blueberry, dark chocolate, eucalyptus, and liquorice; full-bodied and generous. Same grape, opposite philosophies—Europe's restraint versus the New World's opulence.",
+      pairingNote: "Syrah's peppery, smoky character is a natural match for charred and smoked meats—the Maillard reaction browning of grilled lamb or barbecued ribs echoes the wine's own savoury character.",
+    },
+    '말벡': {
+      story: "Malbec almost disappeared from France: the grape suffered catastrophic losses in the 1956 frost that devastated Bordeaux, and Argentinian winemakers (who had imported cuttings in the 1850s) quietly became its custodians. When Argentine Malbec won international competitions in the 1990s, French growers were amazed to find their almost-forgotten grape thriving at altitude in the Andes. Mendoza's winemakers had, inadvertently, preserved something the French had nearly lost.",
+      characteristics: "Argentina's high-altitude Malbec (Luján de Cuyo, Valle de Uco) is uniquely concentrated: intense violet and blackberry aromas, velvety tannins, and a richness that feels plush rather than heavy. The Andes altitude creates cool nights that preserve acidity, preventing the wine from feeling flat or alcoholic despite its depth.",
+      pairingNote: "Malbec and Argentine asado (beef grilled over wood fire) is one of the world's great regional food-and-wine pairings—the wine's tannins bind to the beef protein while the fruity richness complements the char.",
+    },
+    '산지오베제': {
+      story: "Sangiovese—\"blood of Jupiter\" in Latin—covers over 10% of all Italian vineyard land, making it Italy's most planted grape. Chianti Classico in Tuscany was nearly destroyed in the 20th century by a government-mandated formula that required adding white grapes, diluting the wine. In the 1970s, renegade producers began defying the rules, making pure Sangiovese or blending it with Cabernet Sauvignon without approval—the unofficial \"Super Tuscans\" that commanded higher prices than the official Chianti and forced a complete rewriting of Italian wine law.",
+      characteristics: "High acidity and medium-high tannin: tart cherry, dried tomato, dried herbs, leather, and clay when young; complex dried fruit, tobacco, balsamic, and dark chocolate with age. Its high acidity is not a flaw but a feature—it's the reason Sangiovese works so well with tomato-based cuisine. \"The wine can't live without food\" is literally true: drink Sangiovese alone and the acidity seems harsh; pair it with pasta al pomodoro and it transforms.",
+      pairingNote: "Sangiovese and tomato is the world's most elegant food-wine acid resonance: the wine's tartness and the sauce's sourness are in the same key, creating harmony rather than dissonance.",
+    },
+    '네비올로': {
+      story: "Nebbiolo (from nebbia—\"fog\") is named for the autumn mists that settle over the Langhe hills when the late-ripening grape is finally harvested in October. Barolo was once called \"the wine of kings and the king of wines\" because it was cellared by the House of Savoy, Italy's royal family. The grape is so tannic when young that traditional Barolo was aged for 7-10 years in large Slavonian oak casks before release—a wine made for grandchildren, not customers.",
+      characteristics: "The most powerful tannin and the highest acidity of any major red grape—a combination that makes young Nebbiolo almost painful to drink but allows it to age for 30-50 years. At maturity: tar, dried rose, truffle, leather, and a profound savoury complexity. The brick-orange rim that develops with age is the most reliable visual indicator of Nebbiolo's evolution.",
+      pairingNote: "Barolo's massive tannin and acidity require the richest, most umami-laden foods to soften them: white truffle pasta, aged Parmigiano-Reggiano, and braised beef short rib. Anything lighter will be overwhelmed.",
+    },
+    '템프라니요': {
+      story: "Tempranillo—\"little early one\" in Spanish—ripens a full month before Garnacha on the same vine, a quirk that lets it be harvested in September while other reds wait until October. The grape was carried by pilgrims along the Camino de Santiago, planting cuttings at monasteries along the route—which is why Tempranillo is found in clusters at old pilgrimage sites from La Rioja to the Portuguese Alentejo. Rioja's unique aging classification (Crianza, Reserva, Gran Reserva) was invented specifically because Tempranillo's structure allows—and rewards—extended barrel time.",
+      characteristics: "Strawberry, cherry, and dried plum dominate when young; vanilla, coconut, and tobacco develop from American oak ageing (the traditional Rioja style). Lower acidity than most Spanish grapes; moderate tannin; excellent value at every price point. Gran Reserva Rioja, aged 5+ years before release, can age for another 20 in bottle.",
+      pairingNote: "Tempranillo's earthy fruit and Rioja's vanilla oak were designed to accompany Iberian food: Manchego cheese, Ibérico ham, roasted lamb. The wine's Spanish DNA makes it most itself alongside Spanish ingredients.",
+    },
+  },
+};
+
+function getDrinkText(drink) {
+  if (currentLang === 'en') {
+    const t = drinks_i18n.en[drink.key];
+    if (t) return { story: t.story, characteristics: t.characteristics, pairingNote: t.pairingNote };
+  }
+  return { story: drink.history, characteristics: drink.characteristics, pairingNote: drink.pairingNote };
+}
+
+function setLang(lang) {
+  currentLang = lang;
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.textContent.toLowerCase() === lang);
+  });
+  const info = document.getElementById('drink-info');
+  if (info.classList.contains('visible')) {
+    const input = document.getElementById('drink-input').value.trim();
+    const drink = findDrink(input);
+    if (drink) showDrinkInfo(drink);
+  }
+}
+
 // ── findDrink ─────────────────────────────────────────────────────────────
 function findDrink(input) {
   const q = input.trim().toLowerCase();
@@ -771,19 +1015,20 @@ function classifyDrink(input) {
 let currentTab = 'history';
 
 function showDrinkInfo(drink) {
+  const txt = getDrinkText(drink);
   document.getElementById('di-flag').textContent     = drink.flag;
   document.getElementById('di-fullname').textContent = drink.fullName;
   document.getElementById('di-badge').textContent    = drink.badge;
   document.getElementById('di-abv').textContent      = 'ABV ' + drink.abv;
-  document.getElementById('di-history').textContent  = drink.history;
-  document.getElementById('di-chars').textContent    = drink.characteristics;
+  document.getElementById('di-history').textContent  = txt.story;
+  document.getElementById('di-chars').textContent    = txt.characteristics;
 
   const tags = document.getElementById('di-flavor-tags');
   tags.innerHTML = drink.flavorTags.map(t => `<span class="flavor-tag">${t}</span>`).join('');
 
   const list = document.getElementById('di-pairing-list');
   list.innerHTML = drink.items.map(i => `<span class="pairing-item">${i}</span>`).join('');
-  document.getElementById('di-pairing-note').textContent = drink.pairingNote;
+  document.getElementById('di-pairing-note').textContent = txt.pairingNote;
 
   switchTab('history');
   document.getElementById('drink-info').classList.add('visible');
