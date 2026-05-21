@@ -216,11 +216,11 @@ const drinkDatabase = [
     fullName: 'Johnnie Walker Black Label',
     badge: '블렌디드 스카치 · 12년',
     abv: '40%', flag: '🏴󠁧󠁢󠁳󠁣󠁴󠁿',
-    history: '1820년 존 워커가 식료품점에서 자신만의 블렌딩을 시작한 것이 출발점입니다. 아들 알렉산더가 12년 이상 원액만 사용하는 블랙 라벨 공식을 완성했고, 병의 기울어진 라벨은 같은 면적에 더 많은 텍스트를 넣기 위한 실용적 아이디어였습니다—그것이 지금 가장 유명한 위스키 포장 아이콘이 됐습니다.',
-    characteristics: '앞부분에서 달콤한 바닐라와 잘 익은 사과·배 향이 부드럽게 펼쳐지고, 중간에서 블렌디드의 시그니처인 섬세한 스모키 선이 균형을 잡습니다. 미디엄 바디의 균형잡힌 풍미는 온더락·하이볼·니트 어떤 방식으로도 장점을 잃지 않으며, 12년 이상 숙성 원액만 사용한 완성도 높은 일상의 위스키입니다.',
+    history: '1820년 스코틀랜드 킬마녹의 식료품상 존 워커가 독자적인 블렌딩을 시작했습니다. 아들 알렉산더 1세는 1867년 12년 이상 숙성 원액만 사용하는 블랙 라벨 공식을 완성했고, 이 기준은 150년이 넘도록 변함없이 지켜지고 있습니다. 수십 개 증류소의 원액을 일관된 맛으로 조율하는 마스터 블렌더의 기술이 블랙 라벨을 세계 블렌디드 스카치의 기준으로 만들었으며, 비스듬한 24도 라벨은 더 많은 텍스트를 담으려던 실용적 발상이었지만 오늘날 가장 유명한 위스키 패키징 아이콘이 됐습니다.',
+    characteristics: '처음 향을 열면 달콤한 바닐라, 잘 익은 사과와 배, 헤더 꿀의 아로마가 부드럽게 퍼집니다. 중반에는 블렌디드 스카치의 특징인 은은한 피트 스모크가 단맛과 균형을 이루고, 오크 숙성에서 나온 가벼운 스파이스가 복합미를 더합니다. 미디엄 바디의 매끄러운 질감은 니트·온더락·하이볼 어떤 방식으로 마셔도 개성을 잃지 않아, 세계에서 가장 많이 팔리는 프리미엄 위스키가 된 이유를 실감하게 합니다.',
     flavorTags: ['스모키', '바닐라', '달콤한 과일', '미디엄 바디', '균형'],
     items: ['스테이크', '체다 치즈', '피클', '훈제 소시지', '다크 초콜릿'],
-    pairingNote: '블랙라벨의 스모키·달콤한 균형은 그릴에 구워 탄 스테이크 표면과 공명하며, 체다 치즈의 묵직한 지방이 스모키 풍미를 부드럽게 감쌉니다. 훈제 소시지의 짭조름한 기름기가 단맛과 절묘한 대비를 만들고, 피클의 산미가 구개를 리셋해 다음 모금의 풍미를 새롭게 열어줍니다.',
+    pairingNote: '블랙라벨의 스모키-달콤한 이중주는 그릴에 구운 스테이크의 탄 표면 풍미와 직접 공명합니다. 체다 치즈의 묵직한 지방분은 스모키 피니시를 부드럽게 감싸주고, 훈제 소시지는 같은 연기의 결을 증폭해 페어링의 통일감을 만듭니다. 다크 초콜릿의 쌉싸름한 단맛은 건과일 같은 위스키의 깊은 뒷맛과 교차하며, 피클의 산미가 모금 사이 구개를 리셋해 다음 한 모금을 더 선명하게 열어줍니다.',
   },
   {
     key: '시바스리갈',
@@ -1078,9 +1078,9 @@ const drinks_i18n = {
       pairingNote: "Blue Label's supreme refinement demands ingredients of equal quality. Caviar and oysters meet its oceanic undertones; dark chocolate truffles echo its dried-fruit depth. Parmesan's crystalline salinity is the perfect foil.",
     },
     '조니워커 블랙': {
-      story: 'John Walker\'s son Alexander perfected the Black Label formula in the 1860s—blending whiskies aged at least 12 years to ensure consistent quality. Sold globally since the 1900s, Black Label became the definition of premium blended Scotch. The distinctive slanted label, designed so more text could fit on the bottle, became one of the world\'s most recognised packaging trademarks.',
-      characteristics: 'A masterclass in balance: sweet vanilla and stone fruit up front, a thread of signature smoke through the middle, and a clean, slightly warming finish. Medium-bodied with a texture that works equally well neat, on the rocks, or in a highball. The reference point against which other blended Scotches are judged.',
-      pairingNote: "Black Label's smoky-sweet balance is the ideal partner for grilled meats, where the char mirrors the smoke, and for mature cheddar, where the fat softens the whisky's drying finish. Pickles cut through and reset the palate.",
+      story: "John Walker—a Kilmarnock grocer who taught himself to blend—founded the family business in 1820. His son Alexander I perfected the Black Label formula in 1867, decreeing that every whisky in the blend must be aged at least 12 years, a standard upheld without exception for over 150 years. The art of drawing malt and grain whiskies from dozens of distilleries and uniting them into one consistent character made Black Label the global benchmark for blended Scotch. The iconic 24-degree slanted label began as a purely practical solution—more text on the same bottle face—but became one of the most instantly recognised packaging designs in spirits history.",
+      characteristics: "The nose opens with sweet vanilla, ripe apple and pear, and a thread of heather honey—classic, inviting, and immediately approachable. On the palate the blend's signature emerges: a light but unmistakable vein of peat smoke weaves through soft stone fruit and toffee, lending a depth that few blended Scotches match. Medium-bodied with a smooth, gently warming finish that carries a whisper of oak spice. Whether enjoyed neat, on the rocks, or built into a highball, Black Label never loses its composure—the benchmark against which all blended Scotch is measured.",
+      pairingNote: "Black Label's smoky-sweet duality finds its mirror in the charred crust of grilled steak, where woodsmoke echoes woodsmoke. Mature cheddar's dense, salty fat softens the whisky's drying finish and amplifies its vanilla core. Smoked sausage doubles down on the peat-smoke thread, creating a unified arc of savoury depth. Dark chocolate—bittersweet and fruity—meets the whisky's dried-fruit finish head-on, while pickles deliver a sharp acid note that cuts cleanly through, resetting the palate and making the next sip feel as fresh as the first.",
     },
     '시바스리갈': {
       story: 'James and John Chivas were grocery and wine merchants in Aberdeen who supplied the Royal household in the 1840s. Their whisky blend became so beloved at court that it earned a Royal Warrant—the seal of approval that still appears on every bottle. Chivas 12 was the first luxury blended Scotch targeted at the American market, helping define what \"Scotch whisky\" meant to the world.',
