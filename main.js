@@ -1299,6 +1299,22 @@ function setLang(lang) {
       if (cat) hint.textContent = lang === 'en' ? (categoryLabelEn[cat] + ' detected') : (categoryLabel[cat] + '로 인식했어요');
     }
   }
+  const resultBox = document.getElementById('result');
+  if (lastRecommend && resultBox && !resultBox.classList.contains('hidden')) {
+    const { drink, category, weather, items } = lastRecommend;
+    const ctx = (lang === 'en' ? weatherCtx_en : weatherCtx)[category][weather];
+    const title = lang === 'en'
+      ? (drink ? weatherMoodEn[weather](drink.fullName) : `Best pairings for ${categoryLabelEn[category]}`)
+      : (drink ? weatherMood[weather](drink.fullName) : `${categoryLabel[category]}에 어울리는 안주`);
+    const tip = drink ? getDrinkText(drink).pairingNote : ctx.tip;
+    document.getElementById('result-emoji').textContent = ctx.emoji;
+    document.getElementById('result-title').textContent = title;
+    document.getElementById('result-desc').textContent  = ctx.desc;
+    document.getElementById('result-tip').textContent   = '💡 ' + tip;
+    const itemsEl = document.getElementById('result-items');
+    itemsEl.innerHTML = '';
+    items.forEach(n => itemsEl.appendChild(makeFoodCard(n)));
+  }
 }
 
 // ── findDrink ─────────────────────────────────────────────────────────────
@@ -1455,6 +1471,8 @@ const weatherMoodEn = {
   snowy: n => `${n} on a Quiet Snowy Night`,
 };
 
+let lastRecommend = null;
+
 function recommend() {
   const drinkInput = document.getElementById('drink-input').value.trim();
   const weather    = document.getElementById('weather-select').value;
@@ -1496,6 +1514,8 @@ function recommend() {
   document.getElementById('result-title').textContent = title;
   document.getElementById('result-desc').textContent  = ctx.desc;
   document.getElementById('result-tip').textContent   = '💡 ' + tip;
+
+  lastRecommend = { drink, category, weather, items };
 
   const itemsEl = document.getElementById('result-items');
   itemsEl.innerHTML = '';
