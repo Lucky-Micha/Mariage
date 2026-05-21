@@ -618,6 +618,55 @@ const drinkDatabase = [
   },
 ];
 
+// Food photos from Pexels (https://www.pexels.com)
+// Pexels License: Free for commercial and personal use. Attribution not required.
+// Full license: https://www.pexels.com/license/
+const foodPhotoIds = {
+  // 한식
+  '오이소박이': 15059716, '파전': 15622969,    '문어숙회': 16944381,
+  '삼겹살':     8954245,  '목살구이': 8914998,  '닭발': 32149258,
+  '보쌈':       1109024,  '족발': 27556975,     '순대국': 11089809,
+  '감자탕':     6063231,  '해장국': 29479439,   '순대국밥': 6426069,
+  '김치전':     15622969, '도토리묵': 6919802,  '굴전': 15622969,
+  '대구탕':     6063231,  '육개장': 11089809,   '오이무침': 15059716,
+  '미나리전':   15622969, '열무김치': 797646,   '빈대떡': 15622969,
+  '해물파전':   15622969, '도토리묵무침': 6919802, '감자전': 15622969,
+  '수육':       1109024,  '편육': 1109024,      '닭볶음탕': 35532826,
+  '배추전':     15622969, '굴보쌈': 20627995,   '생선구이': 8352785,
+  '두부조림':   6646097,
+  // 공통 서양
+  '치킨':         9872916,  '감자튀김': 15656541, '나초': 7033831,
+  '소시지':       37128347, '치즈버거': 11220676, '콘도그': 24738516,
+  '피자':         6068717,  '어니언링': 37358770, '치즈 플레이터': 28603409,
+  '스테이크':     18824031, '버섯볶음': 5848426,  '버섯요리': 6605639,
+  '프레첼':       4651969,  '치즈스틱': 31206989, '트러플 팝콘': 7676079,
+  '카프레제':     5639959,  '바질 카프레제': 5639959, '그린샐러드': 36285423,
+  '새우칵테일':   28525132, '쉬림프 칵테일': 28525132, '바게트': 28164994,
+  '빵과 버터':    3789032,  '올리브': 29204840,   '블랙 올리브': 29204446,
+  '올리브 핑거푸드': 29204840,
+  '리조또':       18078967, '양고기구이': 37080275, '소꼬리찜': 27556975,
+  '치즈퐁뒤':     12664803, '홍합찜': 26586517,   '오리 콩피': 14459160,
+  '라클렛':       28833190, '크루통 수프': 34583386,
+  '견과류':       35846638, '견과류 믹스': 5472169,
+  '훈제 치즈':    28603409, '트러플 치즈': 28603409,
+  '훈제연어':     3296274,  '다크 초콜릿': 4113345,
+  '블루치즈':     11065342, '호두': 34415758,
+  '삶은 달걀':    2402495,  '훈제 소시지': 37128347,
+  '생굴':         12955611, '캐러멜 팝콘': 7676079,
+  '과일 플레이터': 33776460, '아보카도 딥': 5737452,
+  '카나페':       21328233, '미니 브루스케타': 2532006, '브루스케타': 2532006,
+  '미니 타코':    34831922, '브리 치즈 구이': 37610758,
+  '미트볼':       36958915, '피자 슬라이스': 6068717,
+  '치즈 딥 & 칩스': 7033831, '쿠키': 10489152,
+  '초콜릿 퐁뒤':  32287219, '마시멜로': 7858574,
+};
+
+function foodImgUrl(name) {
+  const id = foodPhotoIds[name];
+  if (!id) return null;
+  return `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&w=400&h=533&fit=crop`;
+}
+
 const foodFallbackEmoji = {
   '삼겹살':'🥩','목살구이':'🥩','닭발':'🍗','두부김치':'🥬','계란말이':'🥚',
   '보쌈':'🥩','족발':'🦵','순대국':'🍲','제육볶음':'🌶️','김치찌개':'🍲',
@@ -660,11 +709,34 @@ const foodFallbackEmoji = {
 
 function makeFoodCard(name) {
   const emoji = foodFallbackEmoji[name] || '🍽️';
+  const url = foodImgUrl(name);
   const card = document.createElement('div');
   card.className = 'food-card';
-  card.innerHTML = `
-    <div class="food-card-emoji">${emoji}</div>
-    <div class="food-card-label">${name}</div>`;
+  if (url) {
+    card.innerHTML = `
+      <div class="food-card-img-wrap">
+        <div class="food-card-skeleton"></div>
+        <div class="food-card-fallback">${emoji}</div>
+        <img src="${url}" alt="${name}" class="loading"/>
+      </div>
+      <div class="food-card-label">${name}</div>`;
+    const img = card.querySelector('img');
+    const skeleton = card.querySelector('.food-card-skeleton');
+    const fallback = card.querySelector('.food-card-fallback');
+    img.addEventListener('load', () => {
+      img.classList.remove('loading');
+      skeleton.style.display = 'none';
+    });
+    img.addEventListener('error', () => {
+      img.style.display = 'none';
+      skeleton.style.display = 'none';
+      fallback.style.display = 'flex';
+    });
+  } else {
+    card.innerHTML = `
+      <div class="food-card-emoji">${emoji}</div>
+      <div class="food-card-label">${name}</div>`;
+  }
   return card;
 }
 
