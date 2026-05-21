@@ -50,6 +50,59 @@ const weatherCtx = {
   },
 };
 
+
+// ── English weather context ───────────────────────────────────────────────
+const weatherCtx_en = {
+  soju: {
+    hot:   { emoji:'🧊', desc:"Hot day calls for ice-cold soju! Salty, refreshing bites are the perfect match.", tip:"Serve soju at 4–6°C for the cleanest, crispest sip." },
+    warm:  { emoji:'🥩', desc:"A warm evening with soju and grilled meat — a combination that never fails.", tip:"Add perilla leaves and doenjang for a full ssam experience." },
+    cool:  { emoji:'🍖', desc:"Cool weather calls for soju and something hearty to warm you up.", tip:"A touch of saeujeot on bossam takes the pairing to the next level." },
+    cold:  { emoji:'🍲', desc:"Biting cold? Warm broth alongside soju will thaw you right out.", tip:"Alternate a shot of soju with a spoonful of hot stew — pure comfort." },
+    rainy: { emoji:'🌧️', desc:"Rain on the roof, pajeon on the pan — the ultimate rainy-day ritual.", tip:"The sizzle of jeon batter is said to sound just like falling rain." },
+    snowy: { emoji:'❄️', desc:"Snow outside, warm bites inside — soju is the perfect company.", tip:"A warm broth snack by the window on a snowy night is pure atmosphere." },
+  },
+  beer: {
+    hot:   { emoji:'🍺', desc:"Nothing beats ice-cold beer with crispy snacks on a scorching day!", tip:"Pour into a chilled glass for the coldest, most refreshing sip." },
+    warm:  { emoji:'🌭', desc:"Warm evening, open air, a cold can of beer, and some BBQ — perfection.", tip:"Keep your beer in an ice bucket when drinking outdoors." },
+    cool:  { emoji:'🍟', desc:"A cool day, a can of beer, and something crispy — simple pleasures.", tip:"Beer and pizza are eternal companions — never fails." },
+    cold:  { emoji:'🧀', desc:"Cold out? Stay cozy indoors with a hearty snack and a pint.", tip:"Dark beers like stouts and porters suit cold weather perfectly." },
+    rainy: { emoji:'🍕', desc:"Rainy day = delivery food and a home beer session. No debate.", tip:"Rain outside means delivery food and beer inside — treat yourself." },
+    snowy: { emoji:'🍻', desc:"Watch the snow fall from a warm spot with a glass of beer in hand.", tip:"A craft beer pairs perfectly with the cozy mood of a snowy evening." },
+  },
+  makgeolli: {
+    hot:   { emoji:'🥒', desc:"A bowl of cold makgeolli on a sweltering day is pure refreshment.", tip:"Shake the bottle before pouring to revive the natural carbonation." },
+    warm:  { emoji:'🥞', desc:"Cherry blossoms or autumn leaves — makgeolli belongs outdoors.", tip:"Makgeolli is rich in lactobacillus and gentle on the stomach." },
+    cool:  { emoji:'🥞', desc:"A cool breeze and a crispy jeon with makgeolli — a timeless pairing.", tip:"Adding makgeolli to jeon batter makes the pancake extra crispy." },
+    cold:  { emoji:'🥟', desc:"On a cold day, try warm makgeolli alongside hot, comforting snacks.", tip:"Makgeolli can be gently warmed and served hot — surprisingly good." },
+    rainy: { emoji:'🌧️', desc:"Rain + makgeolli + pajeon = the holy trinity of Korean rainy-day drinking.", tip:"The mild acidity of makgeolli cuts through the oiliness of fried pancakes beautifully." },
+    snowy: { emoji:'⛄', desc:"Watch the snow pile up with a bowl of makgeolli — utterly Korean.", tip:"Drinking makgeolli under the eaves during snowfall is pure romance." },
+  },
+  wine: {
+    hot:   { emoji:'🍷', desc:"Hot days call for a chilled white wine and something light and fresh.", tip:"Serve white wine at 8–12°C straight from the fridge." },
+    warm:  { emoji:'🧀', desc:"An outdoor picnic, a glass of wine, and a lovely spread — spring or autumn perfection.", tip:"Aged cheese with red; fresh cheese with white — a reliable guide." },
+    cool:  { emoji:'🍇', desc:"Cool evenings are made for full-bodied reds and slow, satisfying food.", tip:"Serve red wine at 16–18°C to bring out its full aromatic complexity." },
+    cold:  { emoji:'🥩', desc:"A winter evening calls for rich food, warmth, and a generous pour of wine.", tip:"In winter, try mulled wine (vin chaud) — a warm, spiced delight." },
+    rainy: { emoji:'🫕', desc:"A rainy evening, candlelight, wine, and good food — romance defined.", tip:"On a rainy day, reach for a slightly heavier red wine to match the mood." },
+    snowy: { emoji:'🏔️', desc:"Snow outside, wine inside — pure indulgence.", tip:"On snowy nights, mulled wine is a wonderful choice — warm and aromatic." },
+  },
+  whiskey: {
+    hot:   { emoji:'🥃', desc:"On a hot day, whisky on the rocks with something light and savory.", tip:"A large ice sphere melts slowly, diluting your whisky at a perfect pace." },
+    warm:  { emoji:'🥩', desc:"Watch the sunset with a dram of whisky and a satisfying snack.", tip:"Roll the whisky around your palate to catch every layer of flavor." },
+    cool:  { emoji:'🍫', desc:"A cool evening is the ideal time to slowly savor the depth of whisky.", tip:"A few drops of water unlock hidden aromas in a single malt — try it." },
+    cold:  { emoji:'🔥', desc:"Bitter cold calls for whisky — the finest internal warming system.", tip:"A hot toddy (whisky, honey, lemon, hot water) is the classic cold-weather dram." },
+    rainy: { emoji:'⚡', desc:"Rain and whisky: a moody, atmospheric pairing that demands nothing else.", tip:"The peaty, smoky character of Islay whisky is especially evocative on rainy nights." },
+    snowy: { emoji:'🌨️', desc:"As the snow falls quietly, a dram of whisky makes the silence perfect.", tip:"The sweet vanilla and caramel notes of bourbon are particularly fitting in winter." },
+  },
+  cocktail: {
+    hot:   { emoji:'🍹', desc:"Tropical vibes, a refreshing cocktail, and bright, zesty snacks!", tip:"Fresh tropical fruit and mint elevate any cocktail into summer mode." },
+    warm:  { emoji:'🌺', desc:"A warm terrace, a gorgeous cocktail, and the feeling that all is right.", tip:"A flower garnish in your cocktail amplifies the spring atmosphere." },
+    cool:  { emoji:'🍸', desc:"A cool night at a cocktail bar with classic drinks and fine bites.", tip:"On cool evenings, lean toward classic cocktails: Negroni, Manhattan." },
+    cold:  { emoji:'🍊', desc:"Cold nights call for warm cocktails and cozy, hearty snacks.", tip:"Try a hot Irish coffee or a spiced hot toddy to warm up." },
+    rainy: { emoji:'🌈', desc:"Stay in, mix your own cocktails, and enjoy a lazy rainy-day session.", tip:"A Moscow Mule with ginger beer is easy to make at home — give it a go." },
+    snowy: { emoji:'✨', desc:"A sparkling cocktail to match the magic of a snowy night.", tip:"Try an eggnog or spiced cider to capture that winter holiday feeling." },
+  },
+};
+
 // ── Drink Database ────────────────────────────────────────────────────────
 const drinkDatabase = [
   {
@@ -740,6 +793,82 @@ function makeFoodCard(name) {
   return card;
 }
 
+// ── UI string translations ───────────────────────────────────────────────
+const ui_i18n = {
+  ko: {
+    'nav-about':           '서비스 소개',
+    'nav-privacy':         '개인정보처리방침',
+    'footer-home':         '홈',
+    'footer-about':        '서비스 소개',
+    'footer-privacy':      '개인정보처리방침',
+    'h1':                  '오늘의 안주 추천',
+    'subtitle':            '술과 날씨를 선택하면 딱 맞는 안주를 알려드려요',
+    'label-drink-html':    '술 이름 <span class="label-hint">브랜드명도 OK (예: 발베니, 조니워커 블루)</span>',
+    'label-weather':       '날씨',
+    'weather-empty':       '선택하세요',
+    'weather-hot':         '더운 날 (30도 이상)',
+    'weather-warm':        '따뜻한 날 (20~29도)',
+    'weather-cool':        '선선한 날 (10~19도)',
+    'weather-cold':        '추운 날 (10도 이하)',
+    'weather-rainy':       '비 오는 날',
+    'weather-snowy':       '눈 오는 날',
+    'btn-recommend':       '안주 추천받기',
+    'tab-history':         '스토리',
+    'tab-chars':           '특성',
+    'tab-pairing':         '어울리는 메뉴',
+    'info-h2':             '왜 술과 날씨에 따라 안주가 달라질까요?',
+    'info-p':              '같은 술이라도 더운 여름날과 추운 겨울날에 끌리는 안주는 전혀 다릅니다. 더운 날에는 가볍고 시원한 안주가 입맛을 살려주고, 추운 날에는 뜨끈하고 기름진 안주가 몸을 데워줍니다. Mariage는 이런 날씨와 술의 특성을 분석해 최적의 안주를 추천합니다.',
+    'card-soju-h3':        '🍶 소주 페어링',
+    'card-soju-p':         '소주의 깔끔한 목 넘김은 기름진 고기나 자극적인 안주와 잘 어울립니다. 삼겹살, 닭발, 파전은 소주의 클래식 파트너입니다.',
+    'card-beer-h3':        '🍺 맥주 페어링',
+    'card-beer-p':         '맥주의 청량감과 탄산은 치킨, 피자, 감자튀김 같은 기름진 음식의 느끼함을 씻어줍니다. 더운 날엔 특히 최고의 조합입니다.',
+    'card-wine-h3':        '🍷 와인 페어링',
+    'card-wine-p':         '레드 와인의 타닌은 단백질이 풍부한 육류와 결합해 떫은맛을 줄여줍니다. 화이트 와인의 산미는 해산물과 치즈를 더욱 빛나게 합니다.',
+    'card-whiskey-h3':     '🥃 위스키 페어링',
+    'card-whiskey-p':      '위스키의 복합적인 향은 훈제 음식, 견과류, 다크 초콜릿과 공명합니다. 아이리시 위스키는 치즈와, 버번은 달콤한 음식과 잘 맞습니다.',
+    'disclaimer-html':     '⚠️ 본 서비스는 <strong>만 19세 이상</strong>을 대상으로 합니다. 음주는 건강에 해롭습니다. 임신 중 음주는 태아에게 위험합니다. 음주 후 운전은 금지되어 있습니다.',
+    'footer-copy-html':    '© 2025 Mariage. 이미지 제공: <a href="https://www.pexels.com" target="_blank" rel="noopener">Pexels</a>',
+    'input-ph':            '마실 술을 입력하세요',
+    'alert-weather':       '날씨를 선택해주세요!',
+  },
+  en: {
+    'nav-about':           'About',
+    'nav-privacy':         'Privacy Policy',
+    'footer-home':         'Home',
+    'footer-about':        'About',
+    'footer-privacy':      'Privacy Policy',
+    'h1':                  "Today's Pairing",
+    'subtitle':            "Choose your drink and weather — we'll find the perfect pairing",
+    'label-drink-html':    'Drink Name <span class="label-hint">Brand names OK (e.g., Balvenie, Johnnie Walker Blue)</span>',
+    'label-weather':       'Weather',
+    'weather-empty':       'Select weather',
+    'weather-hot':         'Hot day (30°C+)',
+    'weather-warm':        'Warm day (20–29°C)',
+    'weather-cool':        'Cool day (10–19°C)',
+    'weather-cold':        'Cold day (below 10°C)',
+    'weather-rainy':       'Rainy day',
+    'weather-snowy':       'Snowy day',
+    'btn-recommend':       'Get Recommendations',
+    'tab-history':         'Story',
+    'tab-chars':           'Characteristics',
+    'tab-pairing':         'Pairings',
+    'info-h2':             'Why Does Pairing Change with Weather?',
+    'info-p':              "Even with the same drink, the ideal snack differs between hot summer and cold winter. Hot days call for light, refreshing bites; cold days need something warm and hearty. Mariage analyzes your drink and the weather to recommend the perfect pairing.",
+    'card-soju-h3':        '🍶 Soju Pairing',
+    'card-soju-p':         "Soju's clean, crisp finish pairs beautifully with fatty meats and bold flavors. Samgyeopsal, spicy chicken feet, and pajeon are classic partners.",
+    'card-beer-h3':        '🍺 Beer Pairing',
+    'card-beer-p':         "Beer's carbonation and refreshing fizz cut through the richness of fried chicken, pizza, and fries. Especially perfect on a hot day.",
+    'card-wine-h3':        '🍷 Wine Pairing',
+    'card-wine-p':         "Red wine tannins bind with proteins in meat, softening astringency. White wine's acidity makes seafood and cheese shine brighter.",
+    'card-whiskey-h3':     '🥃 Whisky Pairing',
+    'card-whiskey-p':      "Whisky's complex aromas resonate with smoked foods, nuts, and dark chocolate. Irish whisky shines with cheese; bourbon pairs with sweet bites.",
+    'disclaimer-html':     '⚠️ This service is intended for those <strong>aged 19 and over</strong>. Alcohol is harmful to health. Do not drink during pregnancy. Never drink and drive.',
+    'footer-copy-html':    '© 2025 Mariage. Photos by <a href="https://www.pexels.com" target="_blank" rel="noopener">Pexels</a>',
+    'input-ph':            'Enter your drink',
+    'alert-weather':       'Please select the weather!',
+  },
+};
+
 // ── i18n ─────────────────────────────────────────────────────────────────
 let currentLang = 'ko';
 
@@ -976,11 +1105,36 @@ function setLang(lang) {
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.classList.toggle('active', btn.textContent.toLowerCase() === lang);
   });
+  const t = ui_i18n[lang];
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (t[key] !== undefined) el.textContent = t[key];
+  });
+  document.querySelectorAll('[data-i18n-html]').forEach(el => {
+    const key = el.getAttribute('data-i18n-html');
+    if (t[key] !== undefined) el.innerHTML = t[key];
+  });
+  const inp = document.getElementById('drink-input');
+  if (inp) inp.placeholder = t['input-ph'];
+  document.title = lang === 'en'
+    ? "Mariage - Today's Pairing"
+    : 'Mariage - 오늘의 안주 추천 | 술과 날씨에 맞는 안주';
   const info = document.getElementById('drink-info');
-  if (info.classList.contains('visible')) {
+  if (info && info.classList.contains('visible')) {
     const input = document.getElementById('drink-input').value.trim();
     const drink = findDrink(input);
     if (drink) showDrinkInfo(drink);
+  }
+  const hint = document.getElementById('drink-category-hint');
+  if (hint && !hint.classList.contains('hidden')) {
+    const val = document.getElementById('drink-input').value.trim();
+    const d2 = findDrink(val);
+    if (d2) {
+      hint.textContent = d2.fullName + ' · ' + (lang === 'en' && drinkBadgeEn[d2.key] ? drinkBadgeEn[d2.key] : d2.badge);
+    } else {
+      const cat = classifyDrink(val);
+      if (cat) hint.textContent = lang === 'en' ? (categoryLabelEn[cat] + ' detected') : (categoryLabel[cat] + '로 인식했어요');
+    }
   }
 }
 
@@ -1001,6 +1155,54 @@ const drinkKeywords = {
   cocktail:  ['칵테일','모히또','마가리타','코스모폴리탄','네그로니','올드패션드','맨하탄','다이키리','진토닉','보드카','럼','테킬라','압생트','아페롤','캄파리'],
 };
 const categoryLabel = { soju:'소주 계열', beer:'맥주 계열', makgeolli:'막걸리 계열', wine:'와인 계열', whiskey:'위스키 계열', cocktail:'칵테일 계열' };
+const categoryLabelEn = { soju:'Soju', beer:'Beer', makgeolli:'Makgeolli', wine:'Wine', whiskey:'Whisky', cocktail:'Cocktail' };
+
+const drinkBadgeEn = {
+  '발베니':           'Single Malt Scotch · Speyside',
+  '맥캘란':           'Single Malt Scotch · Speyside',
+  '글렌피딕':         'Single Malt Scotch · Speyside',
+  '라프로익':         'Single Malt Scotch · Islay',
+  '탈리스커':         'Single Malt Scotch · Isle of Skye',
+  '아벨라워':         'Single Malt Scotch · Speyside',
+  '글렌리벳':         'Single Malt Scotch · Speyside',
+  '조니워커 블루':    'Blended Scotch · Luxury',
+  '조니워커 블랙':    'Blended Scotch · 12 Year',
+  '시바스리갈':       'Blended Scotch · 12 Year',
+  '발렌타인':         'Blended Scotch · 17 Year',
+  '잭다니엘':         'Tennessee Whiskey · USA',
+  '버팔로트레이스':   'Kentucky Bourbon · USA',
+  '메이커스마크':     'Kentucky Bourbon · Wheated',
+  '야마자키':         'Japanese Single Malt · Suntory',
+  '히비키':           'Japanese Blended · Suntory',
+  '진로':             'Soju · HiteJinro',
+  '참이슬':           'Soju · HiteJinro',
+  '처음처럼':         'Soju · Lotte Chilsung',
+  '새로':             'Zero-Sugar Soju · HiteJinro',
+  '하이네켄':         'Pilsner Lager · Netherlands',
+  '기네스':           'Irish Stout · Ireland',
+  '아사히':           'Dry Lager · Japan',
+  '카스':             'Lager · Korea',
+  '테라':             'Lager · Korea (HiteJinro)',
+  '지평 막걸리':      'Rice Makgeolli · Gyeonggi, Korea',
+  '샤도네이':         'White Wine · Burgundy Origin',
+  '피노누아':         'Red Wine · Burgundy Origin',
+  '카베르네 소비뇽':  'Red Wine · Bordeaux Origin',
+  '소비뇽 블랑':      'White Wine · Loire / Marlborough',
+  '리슬링':           'White Wine · Mosel / Alsace',
+  '모스카토':         'Sweet Sparkling · Piedmont, Italy',
+  '피노 그리지오':    'White Wine · N. Italy / Alsace',
+  '게뷔르츠트라미너': 'White Wine · Alsace, France',
+  '샴페인':           'Sparkling Wine · Champagne, France',
+  '프로세코':         'Sparkling Wine · Veneto, Italy',
+  '로제 와인':        'Rosé Wine · Provence, France',
+  '메를로':           'Red Wine · Bordeaux Right Bank',
+  '시라':             'Red Wine · N. Rhône / Barossa',
+  '말벡':             'Red Wine · Mendoza, Argentina',
+  '산지오베제':       'Red Wine · Tuscany, Italy',
+  '네비올로':         'Red Wine · Piedmont, Italy',
+  '템프라니요':       'Red Wine · Rioja, Spain',
+};
+
 
 function classifyDrink(input) {
   const q = input.trim().toLowerCase();
@@ -1018,7 +1220,7 @@ function showDrinkInfo(drink) {
   const txt = getDrinkText(drink);
   document.getElementById('di-flag').textContent     = drink.flag;
   document.getElementById('di-fullname').textContent = drink.fullName;
-  document.getElementById('di-badge').textContent    = drink.badge;
+  document.getElementById('di-badge').textContent    = (currentLang === 'en' && drinkBadgeEn[drink.key]) ? drinkBadgeEn[drink.key] : drink.badge;
   document.getElementById('di-abv').textContent      = 'ABV ' + drink.abv;
   document.getElementById('di-history').textContent  = txt.story;
   document.getElementById('di-chars').textContent    = txt.characteristics;
@@ -1056,14 +1258,14 @@ document.getElementById('drink-input').addEventListener('input', function () {
   const drink = findDrink(val);
 
   if (drink) {
-    hint.textContent = drink.fullName + ' · ' + drink.badge;
+    hint.textContent = drink.fullName + ' · ' + (currentLang === 'en' && drinkBadgeEn[drink.key] ? drinkBadgeEn[drink.key] : drink.badge);
     hint.classList.remove('hidden');
     showDrinkInfo(drink);
   } else {
     hideDrinkInfo();
     const cat = classifyDrink(val);
     if (val && cat) {
-      hint.textContent = categoryLabel[cat] + '로 인식했어요';
+      hint.textContent = currentLang === 'en' ? (categoryLabelEn[cat] + ' detected') : (categoryLabel[cat] + '로 인식했어요');
       hint.classList.remove('hidden');
     } else {
       hint.classList.add('hidden');
@@ -1081,6 +1283,15 @@ const weatherMood = {
   snowy: n => `${n}과(와) 눈 내리는 조용한 밤`,
 };
 
+const weatherMoodEn = {
+  hot:   n => `${n} on a Summer Night`,
+  warm:  n => `${n} on a Warm Evening`,
+  cool:  n => `${n} on a Cool Autumn Evening`,
+  cold:  n => `${n} on a Winter Night`,
+  rainy: n => `${n} and the Sound of Rain`,
+  snowy: n => `${n} on a Quiet Snowy Night`,
+};
+
 function recommend() {
   const drinkInput = document.getElementById('drink-input').value.trim();
   const weather    = document.getElementById('weather-select').value;
@@ -1088,19 +1299,21 @@ function recommend() {
   msg.classList.add('hidden');
 
   if (!drinkInput) { document.getElementById('drink-input').focus(); return; }
-  if (!weather) { alert('날씨를 선택해주세요!'); return; }
+  if (!weather) { alert(ui_i18n[currentLang]['alert-weather']); return; }
 
   const drink    = findDrink(drinkInput);
   const category = drink ? drink.category : classifyDrink(drinkInput);
 
   if (!category) {
-    msg.textContent = `"${drinkInput}"은(는) 아직 인식하지 못했어요. 술 이름을 더 구체적으로 입력해보세요.`;
+    msg.textContent = currentLang === 'en'
+      ? `"${drinkInput}" is not recognized yet. Try entering a more specific drink name.`
+      : `"${drinkInput}"은(는) 아직 인식하지 못했어요. 술 이름을 더 구체적으로 입력해보세요.`;
     msg.classList.remove('hidden');
     document.getElementById('result').classList.add('hidden');
     return;
   }
 
-  const ctx   = weatherCtx[category][weather];
+  const ctx   = (currentLang === 'en' ? weatherCtx_en : weatherCtx)[category][weather];
   const fallbackItems = {
     soju:      { hot:['오이소박이','파전','문어숙회'], warm:['삼겹살','목살구이','닭발'], cool:['보쌈','족발','순대국'], cold:['감자탕','해장국','순대국밥'], rainy:['김치전','파전','도토리묵'], snowy:['굴전','대구탕','육개장'] },
     beer:      { hot:['치킨','감자튀김','나초'], warm:['소시지','치즈버거','콘도그'], cool:['피자','치킨','어니언링'], cold:['치즈 플레이터','스테이크','버섯볶음'], rainy:['치킨','피자','감자튀김'], snowy:['프레첼','치즈스틱','트러플 팝콘'] },
@@ -1111,8 +1324,10 @@ function recommend() {
   };
   const items = fallbackItems[category][weather];
 
-  const title = drink ? weatherMood[weather](drink.fullName) : `${categoryLabel[category]}에 어울리는 안주`;
-  const tip   = drink ? drink.pairingNote : ctx.tip;
+  const title = currentLang === 'en'
+    ? (drink ? weatherMoodEn[weather](drink.fullName) : `Best pairings for ${categoryLabelEn[category]}`)
+    : (drink ? weatherMood[weather](drink.fullName) : `${categoryLabel[category]}에 어울리는 안주`);
+  const tip   = drink ? getDrinkText(drink).pairingNote : ctx.tip;
 
   document.getElementById('result-emoji').textContent = ctx.emoji;
   document.getElementById('result-title').textContent = title;
