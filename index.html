@@ -72,6 +72,29 @@
         <p id="drink-category-hint" class="category-hint hidden"></p>
       </div>
 
+      <div id="drink-info" class="drink-info">
+        <div class="di-header">
+          <span id="di-flag" class="di-flag"></span>
+          <div class="di-meta">
+            <div id="di-fullname" class="di-fullname"></div>
+            <span id="di-badge" class="di-badge"></span>
+          </div>
+          <span id="di-abv" class="di-abv"></span>
+        </div>
+        <div class="di-tabs">
+          <button class="di-tab active" data-tab="history" onclick="switchTab('history')">역사</button>
+          <button class="di-tab" data-tab="chars" onclick="switchTab('chars')">특성</button>
+          <button class="di-tab" data-tab="pairing" onclick="switchTab('pairing')">어울리는 메뉴</button>
+        </div>
+        <div id="di-history" class="di-pane"></div>
+        <div id="di-chars" class="di-pane hidden"></div>
+        <div id="di-pairing" class="di-pane hidden">
+          <div id="di-flavor-tags" class="di-flavor-tags"></div>
+          <p id="di-pairing-note" class="di-pairing-note"></p>
+          <div id="di-pairing-list" class="di-pairing-list"></div>
+        </div>
+      </div>
+
       <div class="input-group">
         <label for="weather-select">날씨</label>
         <div class="select-wrapper">
