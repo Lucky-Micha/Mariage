@@ -872,9 +872,9 @@ function hashStr(str) {
 }
 
 function foodImgUrl(name) {
-  const prompt = foodPrompts[name] || `${name}, Korean food, appetizing food photography, close-up, professional`;
+  const prompt = foodPrompts[name] || `${name}, appetizing food photography, close-up, professional`;
   const seed = hashStr(name);
-  return `https://image.pollinations.ai/prompt/${encodeURIComponent(prompt)}?width=400&height=533&seed=${seed}&model=flux&nologo=true`;
+  return `https://image.pollinations.ai/prompt/${encodeURIComponent(prompt)}?width=400&height=533&seed=${seed}&model=turbo`;
 }
 
 function makeFoodCard(name) {
@@ -885,14 +885,27 @@ function makeFoodCard(name) {
     <div class="food-card-img-wrap">
       <div class="food-card-skeleton"></div>
       <div class="food-card-fallback">${emoji}</div>
-      <img src="${foodImgUrl(name)}" alt="${name}" class="loading" loading="lazy"/>
+      <img src="${foodImgUrl(name)}" alt="${name}" class="loading"/>
     </div>
     <div class="food-card-label">${name}</div>`;
   const img = card.querySelector('img');
   const skeleton = card.querySelector('.food-card-skeleton');
   const fallback = card.querySelector('.food-card-fallback');
-  img.addEventListener('load', () => { img.classList.remove('loading'); skeleton.style.display = 'none'; });
-  img.addEventListener('error', () => { img.style.display = 'none'; skeleton.style.display = 'none'; fallback.style.display = 'flex'; });
+  let retried = false;
+  img.addEventListener('load', () => {
+    img.classList.remove('loading');
+    skeleton.style.display = 'none';
+  });
+  img.addEventListener('error', () => {
+    if (!retried) {
+      retried = true;
+      setTimeout(() => { img.src = foodImgUrl(name) + '&r=1'; }, 2000);
+    } else {
+      img.style.display = 'none';
+      skeleton.style.display = 'none';
+      fallback.style.display = 'flex';
+    }
+  });
   return card;
 }
 
