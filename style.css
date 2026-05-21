@@ -480,3 +480,281 @@ select option {
   font-size: 0.82rem;
   font-weight: 600;
 }
+
+/* ── Site navigation ─────────────────────────────────────────────────────── */
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nav-logo {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #e94560;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* ── Info section (main page) ────────────────────────────────────────────── */
+.info-section {
+  margin-top: 56px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.info-section h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.info-section > p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.92rem;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.info-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 18px 20px;
+}
+
+.info-card h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.info-card p {
+  font-size: 0.84rem;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.65;
+}
+
+/* ── Age disclaimer ──────────────────────────────────────────────────────── */
+.age-disclaimer {
+  margin-top: 32px;
+  padding: 14px 18px;
+  background: rgba(233, 69, 96, 0.08);
+  border: 1px solid rgba(233, 69, 96, 0.2);
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.age-disclaimer strong {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* ── Footer ──────────────────────────────────────────────────────────────── */
+.site-footer {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+  font-size: 0.82rem;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.footer-copy {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+
+.footer-copy a {
+  color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+}
+
+/* ── Static page content (about, privacy) ───────────────────────────────── */
+.page-content {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.page-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.page-date {
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 0.82rem;
+  margin-bottom: 36px;
+}
+
+.page-lead {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 36px;
+}
+
+.policy-section,
+.about-section {
+  margin-bottom: 36px;
+}
+
+.policy-section h2,
+.about-section h2 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.policy-section p,
+.about-section p {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.9rem;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+.policy-section ul,
+.about-section ul {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.9rem;
+  line-height: 1.8;
+  padding-left: 20px;
+}
+
+.policy-section a,
+.about-section a {
+  color: #e94560;
+  text-decoration: none;
+}
+
+.policy-section a:hover,
+.about-section a:hover {
+  text-decoration: underline;
+}
+
+/* About page specific */
+.drink-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.drink-item {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 16px 18px;
+}
+
+.drink-icon {
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.drink-item h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.drink-item p {
+  margin-bottom: 0 !important;
+}
+
+.how-list {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.9rem;
+  line-height: 1.8;
+  padding-left: 20px;
+}
+
+.how-list li {
+  margin-bottom: 14px;
+}
+
+.how-list strong {
+  color: #ffffff;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.pairing-principles {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.9rem;
+  line-height: 1.8;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.pairing-principles strong {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 680px) {
+  .info-grid,
+  .drink-grid {
+    grid-template-columns: 1fr;
+  }
+  .site-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
