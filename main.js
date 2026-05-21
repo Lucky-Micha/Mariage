@@ -705,12 +705,7 @@ function recommend() {
     whiskey:   { hot:['올리브','견과류','훈제 치즈','살라미','다크 초콜릿'], warm:['스테이크','훈제연어','소시지','체다 치즈','크래커'], cool:['다크 초콜릿','블루치즈','호두','피클','하몽'], cold:['핫토디','삶은 달걀','훈제 소시지','구운 감자','치즈스프'], rainy:['생굴','훈제연어','블랙 올리브','파테','무화과잼'], snowy:['캐러멜 팝콘','트러플 치즈','견과류 믹스','훈제 굴','꿀'] },
     cocktail:  { hot:['과일 플레이터','쉬림프 칵테일','아보카도 딥','나초','에다마메'], warm:['카나페','미니 브루스케타','바질 카프레제','피타 칩','후무스'], cool:['올리브 핑거푸드','치즈 플레이터','미니 타코','스프링롤','에다마메'], cold:['핫 바질 스프','브리 치즈 구이','미트볼','브레드 볼 수프','핫도그'], rainy:['피자 슬라이스','치즈 딥 & 칩스','쿠키','팝콘','초콜릿'], snowy:['초콜릿 퐁뒤','마시멜로','크림 치즈 딥','프레첼','생강쿠키'] },
   };
-  const items = drink ? (() => {
-    const core = drink.items.slice(0, 3);
-    const weatherPool = fallbackItems[drink.category][weather];
-    const extras = weatherPool.filter(i => !core.includes(i)).slice(0, 2);
-    return [...core, ...extras];
-  })() : fallbackItems[category][weather];
+  const items = fallbackItems[category][weather];
 
   const title = drink ? weatherMood[weather](drink.fullName) : `${categoryLabel[category]}에 어울리는 안주`;
   const tip   = drink ? drink.pairingNote : ctx.tip;
