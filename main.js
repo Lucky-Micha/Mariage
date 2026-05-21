@@ -760,7 +760,170 @@ const foodFallbackEmoji = {
   '허브 구이':'🌿','생선구이':'🐟',
 };
 
+
+const foodNameEn = {
+  '가라아게':           'Karaage',
+  '가리비 구이':        'Grilled Scallops',
+  '감자전':             'Potato Pancake',
+  '감자탕':             'Pork Bone Soup',
+  '감자튀김':           'French Fries',
+  '견과류':             'Mixed Nuts',
+  '견과류 믹스':        'Nut Mix',
+  '계란말이':           'Rolled Omelette',
+  '고르곤졸라':         'Gorgonzola',
+  '과일 플레이터':      'Fruit Platter',
+  '교자':               'Gyoza',
+  '구운 복숭아':        'Grilled Peach',
+  '구운 아몬드':        'Roasted Almonds',
+  '굴보쌈':             'Oyster Bossam',
+  '굴전':               'Oyster Pancake',
+  '그린샐러드':         'Green Salad',
+  '김치전':             'Kimchi Pancake',
+  '꿀 리코타 크로스티니': 'Honey Ricotta Crostini',
+  '나초':               'Nachos',
+  '다크 초콜릿':        'Dark Chocolate',
+  '다크 초콜릿 트러플': 'Dark Chocolate Truffle',
+  '닭발':               'Spicy Chicken Feet',
+  '닭볶음탕':           'Spicy Braised Chicken',
+  '대구탕':             'Codfish Soup',
+  '도토리묵':           'Acorn Jelly',
+  '도토리묵무침':       'Acorn Jelly Salad',
+  '두부김치':           'Tofu with Kimchi',
+  '두부조림':           'Braised Tofu',
+  '라클렛':             'Raclette',
+  '로스트 치킨':        'Roast Chicken',
+  '리조또':             'Risotto',
+  '마시멜로':           'Marshmallows',
+  '만체고 치즈':        'Manchego',
+  '말린 무화과':        'Dried Figs',
+  '말린 자두':          'Dried Prunes',
+  '맥앤치즈':           'Mac & Cheese',
+  '목살구이':           'Grilled Pork Neck',
+  '문어숙회':           'Poached Octopus',
+  '미나리전':           'Water Parsley Pancake',
+  '미니 브루스케타':    'Mini Bruschetta',
+  '미니 타코':          'Mini Tacos',
+  '미소된장 수프':      'Miso Soup',
+  '미트볼':             'Meatballs',
+  '바게트':             'Baguette',
+  '바베큐 립':          'BBQ Ribs',
+  '바베큐 폭립':        'BBQ Spare Ribs',
+  '바질 카프레제':      'Basil Caprese',
+  '배추전':             'Cabbage Pancake',
+  '뱅어즈앤매쉬':       'Bangers & Mash',
+  '버섯 크림 수프':     'Mushroom Cream Soup',
+  '버섯볶음':           'Sautéed Mushrooms',
+  '버섯요리':           'Mushroom Dish',
+  '버터구이 가리비':    'Butter-Grilled Scallops',
+  '버터구이 새우':      'Butter-Grilled Shrimp',
+  '보쌈':               'Bossam',
+  '봉골레 파스타':      'Vongole Pasta',
+  '브라운 브레드':      'Brown Bread',
+  '브루스케타':         'Bruschetta',
+  '브리 치즈 구이':     'Baked Brie',
+  '블랙 올리브':        'Black Olives',
+  '블루치즈':           'Blue Cheese',
+  '빈대떡':             'Mung Bean Pancake',
+  '빵과 버터':          'Bread & Butter',
+  '사과 크럼블':        'Apple Crumble',
+  '살구 타르트':        'Apricot Tart',
+  '살라미':             'Salami',
+  '삶은 달걀':          'Soft-Boiled Egg',
+  '삼겹살':             'Samgyeopsal',
+  '새우칵테일':         'Shrimp Cocktail',
+  '생굴':               'Fresh Oysters',
+  '생선구이':           'Grilled Fish',
+  '소금 크래커':        'Salted Crackers',
+  '소꼬리찜':           'Braised Oxtail',
+  '소시지':             'Sausage',
+  '소시지구이':         'Grilled Sausage',
+  '수육':               'Boiled Pork Slices',
+  '순대국':             'Korean Sausage Soup',
+  '순대국밥':           'Sausage Rice Soup',
+  '쉬림프 칵테일':      'Shrimp Cocktail',
+  '스테이크':           'Steak',
+  '아보카도 딥':        'Avocado Dip',
+  '아이리시 스튜':      'Irish Stew',
+  '안티파스토':         'Antipasto',
+  '야키토리':           'Yakitori',
+  '양고기구이':         'Grilled Lamb',
+  '어니언링':           'Onion Rings',
+  '어묵탕':             'Fish Cake Soup',
+  '에다마메':           'Edamame',
+  '연어 니기리':        'Salmon Nigiri',
+  '연어 타르타르':      'Salmon Tartare',
+  '연어구이':           'Grilled Salmon',
+  '열무김치':           'Young Radish Kimchi',
+  '염소 치즈':          'Goat Cheese',
+  '오리 콩피':          'Duck Confit',
+  '오리가슴살':         'Duck Breast',
+  '오이무침':           'Cucumber Salad',
+  '오이소박이':         'Stuffed Cucumber Kimchi',
+  '올리브':             'Olives',
+  '올리브 핑거푸드':    'Olive Finger Food',
+  '우메보시':           'Umeboshi',
+  '유자 소르베':        'Yuzu Sorbet',
+  '육개장':             'Spicy Beef Soup',
+  '이베리코 하몽':      'Ibérico Ham',
+  '제육볶음':           'Spicy Pork Stir-Fry',
+  '조개구이':           'Grilled Clams',
+  '족발':               "Pig's Trotters",
+  '체다 치즈':          'Cheddar Cheese',
+  '체다버거':           'Cheddar Burger',
+  '초리소':             'Chorizo',
+  '초콜릿 퐁뒤':        'Chocolate Fondue',
+  '치즈 딥 & 칩스':     'Cheese Dip & Chips',
+  '치즈 플레이터':      'Cheese Platter',
+  '치즈버거':           'Cheeseburger',
+  '치즈스틱':           'Cheese Sticks',
+  '치즈퐁뒤':           'Cheese Fondue',
+  '치킨':               'Fried Chicken',
+  '카나페':             'Canapés',
+  '카망베르 치즈':      'Camembert',
+  '카프레제':           'Caprese',
+  '캐러멜 팝콘':        'Caramel Popcorn',
+  '캐비어':             'Caviar',
+  '콘도그':             'Corn Dog',
+  '쿠키':               'Cookies',
+  '크래커':             'Crackers',
+  '크루통 수프':        'Crouton Soup',
+  '크림 치즈 딥':       'Cream Cheese Dip',
+  '토마토 파스타':      'Tomato Pasta',
+  '트러플 리조또':      'Truffle Risotto',
+  '트러플 치즈':        'Truffle Cheese',
+  '트러플 팝콘':        'Truffle Popcorn',
+  '파르미지아노':       'Parmigiano',
+  '파전':               'Pajeon',
+  '편육':               'Sliced Boiled Meat',
+  '포르치니 버섯':      'Porcini Mushrooms',
+  '푸아그라':           'Foie Gras',
+  '프레첼':             'Pretzel',
+  '프루트 타르트':      'Fruit Tart',
+  '피자':               'Pizza',
+  '피자 슬라이스':      'Pizza Slice',
+  '피칸':               'Pecans',
+  '피칸 파이':          'Pecan Pie',
+  '피클':               'Pickles',
+  '핫 바질 스프':       'Hot Basil Soup',
+  '핫도그':             'Hot Dog',
+  '핫토디':             'Hot Toddy',
+  '해물파전':           'Seafood Pancake',
+  '해장국':             'Hangover Soup',
+  '허브 구이':          'Herb Roast',
+  '호두':               'Walnuts',
+  '홍합찜':             'Steamed Mussels',
+  '화이트 초콜릿 트러플': 'White Choc. Truffle',
+  '회':                 'Sashimi',
+  '훈제 고등어':        'Smoked Mackerel',
+  '훈제 굴':            'Smoked Oysters',
+  '훈제 소시지':        'Smoked Sausage',
+  '훈제 체다치즈':      'Smoked Cheddar',
+  '훈제 치즈':          'Smoked Cheese',
+  '훈제연어':           'Smoked Salmon',
+};
+
 function makeFoodCard(name) {
+  const label = (currentLang === 'en' && foodNameEn[name]) ? foodNameEn[name] : name;
   const emoji = foodFallbackEmoji[name] || '🍽️';
   const url = foodImgUrl(name);
   const card = document.createElement('div');
@@ -770,9 +933,9 @@ function makeFoodCard(name) {
       <div class="food-card-img-wrap">
         <div class="food-card-skeleton"></div>
         <div class="food-card-fallback">${emoji}</div>
-        <img src="${url}" alt="${name}" class="loading"/>
+        <img src="${url}" alt="${label}" class="loading"/>
       </div>
-      <div class="food-card-label">${name}</div>`;
+      <div class="food-card-label">${label}</div>`;
     const img = card.querySelector('img');
     const skeleton = card.querySelector('.food-card-skeleton');
     const fallback = card.querySelector('.food-card-fallback');
@@ -788,7 +951,7 @@ function makeFoodCard(name) {
   } else {
     card.innerHTML = `
       <div class="food-card-emoji">${emoji}</div>
-      <div class="food-card-label">${name}</div>`;
+      <div class="food-card-label">${label}</div>`;
   }
   return card;
 }
@@ -1229,7 +1392,7 @@ function showDrinkInfo(drink) {
   tags.innerHTML = drink.flavorTags.map(t => `<span class="flavor-tag">${t}</span>`).join('');
 
   const list = document.getElementById('di-pairing-list');
-  list.innerHTML = drink.items.map(i => `<span class="pairing-item">${i}</span>`).join('');
+  list.innerHTML = drink.items.map(i => `<span class="pairing-item">${(currentLang === 'en' && foodNameEn[i]) ? foodNameEn[i] : i}</span>`).join('');
   document.getElementById('di-pairing-note').textContent = txt.pairingNote;
 
   switchTab('history');
