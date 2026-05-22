@@ -573,6 +573,7 @@ select option {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
+  margin-bottom: 0;
 }
 
 .info-card {
@@ -593,6 +594,44 @@ select option {
   font-size: 0.84rem;
   color: rgba(255, 255, 255, 0.55);
   line-height: 1.65;
+}
+
+/* ── Info extra (pairing principles on index) ───────────────────────────── */
+.info-extra {
+  margin-top: 24px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 20px 22px;
+}
+
+.info-extra h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.pairing-principles-list {
+  padding-left: 20px;
+  margin-bottom: 12px;
+}
+
+.pairing-principles-list li {
+  font-size: 0.84rem;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.65;
+  margin-bottom: 6px;
+}
+
+.info-extra > p a {
+  color: #e94560;
+  font-size: 0.87rem;
+  text-decoration: none;
+}
+
+.info-extra > p a:hover {
+  text-decoration: underline;
 }
 
 /* ── Age disclaimer ──────────────────────────────────────────────────────── */
