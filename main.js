@@ -995,6 +995,7 @@ const ui_i18n = {
   ko: {
     'nav-about':           '서비스 소개',
     'nav-guide':           '페어링 가이드',
+    'nav-faq':             'FAQ',
     'nav-privacy':         '개인정보처리방침',
     'footer-home':         '홈',
     'footer-about':        '서비스 소개',
@@ -1045,6 +1046,7 @@ const ui_i18n = {
   en: {
     'nav-about':           'About',
     'nav-guide':           'Pairing Guide',
+    'nav-faq':             'FAQ',
     'nav-privacy':         'Privacy Policy',
     'footer-home':         'Home',
     'footer-about':        'About',
