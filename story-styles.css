@@ -187,11 +187,22 @@
   border-color: rgba(255,255,255,0.16);
   transform: translateY(-2px);
 }
-.sc-emoji {
-  font-size: 2.4rem;
+.sc-img-wrap {
+  width: 80px;
+  height: 80px;
   flex-shrink: 0;
-  line-height: 1;
-  margin-top: 2px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.05);
+}
+.sc-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.story-card:hover .sc-img {
+  transform: scale(1.1);
 }
 .sc-body { flex: 1; min-width: 0; }
 .sc-body h2 {
