@@ -1,0 +1,238 @@
+/* ── story-styles.css — shared styles for individual drink story pages ───── */
+
+.story-breadcrumb {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.35);
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.story-breadcrumb a {
+  color: rgba(255,255,255,0.45);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.story-breadcrumb a:hover { color: rgba(255,255,255,0.8); }
+
+.story-hero {
+  text-align: center;
+  padding: 8px 0 40px;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  margin-bottom: 44px;
+}
+.story-hero-emoji {
+  font-size: 4.5rem;
+  line-height: 1;
+  margin-bottom: 18px;
+  display: block;
+}
+.story-hero h1 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin: 0 0 10px;
+  background: linear-gradient(135deg, #fff 0%, rgba(255,255,255,0.72) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.2;
+}
+.story-hero-sub {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.5);
+  margin: 0 0 18px;
+  font-style: italic;
+}
+.story-badge {
+  display: inline-flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.45);
+  letter-spacing: 0.04em;
+}
+.story-badge span {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 20px;
+  padding: 3px 12px;
+}
+
+.story-content h2 {
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.88);
+  margin: 40px 0 14px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+.story-content h2:first-of-type { margin-top: 0; }
+
+.story-content p {
+  color: rgba(255,255,255,0.72);
+  line-height: 1.9;
+  font-size: 0.97rem;
+  margin-bottom: 18px;
+}
+
+.story-quote {
+  margin: 30px 0;
+  padding: 18px 24px;
+  border-left: 3px solid rgba(233,69,96,0.6);
+  background: rgba(233,69,96,0.06);
+  border-radius: 0 12px 12px 0;
+  font-style: italic;
+  color: rgba(255,255,255,0.8);
+  font-size: 0.97rem;
+  line-height: 1.82;
+}
+
+.story-pairing-box {
+  margin-top: 44px;
+  background: rgba(39,174,96,0.07);
+  border: 1px solid rgba(39,174,96,0.18);
+  border-radius: 16px;
+  padding: 22px 26px;
+}
+.story-pairing-box h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: rgba(39,174,96,0.88);
+  margin: 0 0 10px;
+}
+.story-pairing-box p {
+  color: rgba(255,255,255,0.68);
+  font-size: 0.92rem;
+  line-height: 1.78;
+  margin: 0;
+}
+
+.story-page-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 52px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255,255,255,0.07);
+  gap: 12px;
+}
+.story-page-nav a {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.5);
+  text-decoration: none;
+  padding: 12px 18px;
+  border: 1px solid rgba(255,255,255,0.09);
+  border-radius: 12px;
+  transition: all 0.2s;
+  background: rgba(255,255,255,0.03);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 120px;
+}
+.story-page-nav a:hover {
+  color: #fff;
+  border-color: rgba(255,255,255,0.22);
+  background: rgba(255,255,255,0.06);
+}
+.story-page-nav .nav-prev { text-align: left; }
+.story-page-nav .nav-next { text-align: right; }
+.story-page-nav .nav-label {
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.3);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.story-page-nav .nav-title { font-weight: 600; }
+.story-page-nav .nav-back {
+  text-align: center;
+  flex-shrink: 0;
+  align-self: center;
+  min-width: auto;
+  padding: 10px 14px;
+}
+
+/* Story index card grid */
+.story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 12px;
+}
+.story-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 20px;
+  text-decoration: none;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.story-card:hover {
+  background: rgba(255,255,255,0.07);
+  border-color: rgba(255,255,255,0.16);
+  transform: translateY(-2px);
+}
+.sc-emoji {
+  font-size: 2.4rem;
+  flex-shrink: 0;
+  line-height: 1;
+  margin-top: 2px;
+}
+.sc-body { flex: 1; min-width: 0; }
+.sc-body h2 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.9);
+  margin: 0 0 3px;
+}
+.sc-sub {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.42);
+  font-style: italic;
+  margin: 0 0 10px;
+}
+.sc-badges {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.sc-badges span {
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.4);
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.09);
+  border-radius: 20px;
+  padding: 1px 8px;
+}
+.sc-teaser {
+  font-size: 0.83rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.6;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.sc-arrow {
+  color: rgba(255,255,255,0.25);
+  font-size: 1rem;
+  flex-shrink: 0;
+  align-self: center;
+  transition: transform 0.2s;
+}
+.story-card:hover .sc-arrow { transform: translateX(4px); color: rgba(255,255,255,0.5); }
+
+@media (max-width: 640px) {
+  .story-grid { grid-template-columns: 1fr; }
+  .story-hero h1 { font-size: 1.8rem; }
+  .story-page-nav { flex-direction: column; }
+  .story-page-nav a { min-width: 0; }
+  .story-page-nav .nav-next { text-align: left; }
+}
