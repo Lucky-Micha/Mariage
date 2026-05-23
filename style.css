@@ -326,6 +326,51 @@ select option {
   }
 }
 
+.result-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin: 0 auto 28px;
+  max-width: 620px;
+}
+
+.result-action-btn {
+  flex: 1;
+  padding: 13px 16px;
+  border: none;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s, opacity 0.15s;
+}
+
+.result-action-btn.secondary {
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.result-action-btn.secondary:hover {
+  background: rgba(255, 255, 255, 0.14);
+  transform: translateY(-2px);
+}
+
+.result-action-btn.primary {
+  background: linear-gradient(135deg, #27ae60, #1e8449);
+  color: #ffffff;
+  box-shadow: 0 4px 18px rgba(39, 174, 96, 0.35);
+}
+
+.result-action-btn.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 26px rgba(39, 174, 96, 0.5);
+}
+
+.result-action-btn:active {
+  transform: translateY(0);
+}
+
 .result-tip {
   color: rgba(255, 255, 255, 0.45);
   font-size: 0.84rem;

@@ -979,6 +979,8 @@ const ui_i18n = {
     'weather-rainy':       '비 오는 날',
     'weather-snowy':       '눈 오는 날',
     'btn-recommend':       '안주 추천받기',
+    'btn-again':           '다시 추천받기',
+    'btn-reset':           '조건 바꾸기',
     'tab-history':         '스토리',
     'tab-chars':           '특성',
     'tab-pairing':         '어울리는 메뉴',
@@ -1027,6 +1029,8 @@ const ui_i18n = {
     'weather-rainy':       'Rainy day',
     'weather-snowy':       'Snowy day',
     'btn-recommend':       'Get Recommendations',
+    'btn-again':           'Try Again',
+    'btn-reset':           'Change Conditions',
     'tab-history':         'Story',
     'tab-chars':           'Characteristics',
     'tab-pairing':         'Pairings',
@@ -1527,7 +1531,11 @@ function recommend() {
     whiskey:   { hot:['올리브','견과류','훈제 치즈'], warm:['스테이크','훈제연어','소시지'], cool:['다크 초콜릿','블루치즈','호두'], cold:['핫토디','삶은 달걀','훈제 소시지'], rainy:['생굴','훈제연어','블랙 올리브'], snowy:['캐러멜 팝콘','트러플 치즈','견과류 믹스'] },
     cocktail:  { hot:['과일 플레이터','쉬림프 칵테일','아보카도 딥'], warm:['카나페','미니 브루스케타','바질 카프레제'], cool:['올리브 핑거푸드','치즈 플레이터','미니 타코'], cold:['핫 바질 스프','브리 치즈 구이','미트볼'], rainy:['피자 슬라이스','치즈 딥 & 칩스','쿠키'], snowy:['초콜릿 퐁뒤','마시멜로','크림 치즈 딥'] },
   };
-  const items = fallbackItems[category][weather];
+  const fallbackArr = fallbackItems[category][weather];
+  const drinkArr    = drink ? drink.items : [];
+  const pool        = [...new Set([...drinkArr, ...fallbackArr])];
+  const shuffled    = pool.slice().sort(() => Math.random() - 0.5);
+  const items       = shuffled.slice(0, 3);
 
   const title = currentLang === 'en'
     ? (drink ? weatherMoodEn[weather](drink.fullName) : `Best pairings for ${categoryLabelEn[category]}`)
@@ -1539,7 +1547,7 @@ function recommend() {
   document.getElementById('result-desc').textContent  = ctx.desc;
   document.getElementById('result-tip').textContent   = '💡 ' + tip;
 
-  lastRecommend = { drink, category, weather, items };
+  lastRecommend = { drink, category, weather, items, pool: shuffled, shownCount: 3 };
 
   const itemsEl = document.getElementById('result-items');
   itemsEl.innerHTML = '';
@@ -1548,4 +1556,40 @@ function recommend() {
   const resultBox = document.getElementById('result');
   resultBox.classList.remove('hidden');
   resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+function recommendAgain() {
+  if (!lastRecommend) return;
+  let { pool, shownCount } = lastRecommend;
+
+  if (shownCount >= pool.length) {
+    pool = pool.slice().sort(() => Math.random() - 0.5);
+    lastRecommend.pool = pool;
+    shownCount = 0;
+  }
+
+  const next = pool.slice(shownCount, shownCount + 3);
+  if (next.length < 3) {
+    const extra = pool.slice(0, 3 - next.length);
+    next.push(...extra);
+  }
+  lastRecommend.shownCount = shownCount + Math.min(3, pool.length - shownCount);
+  lastRecommend.items = next;
+
+  const itemsEl = document.getElementById('result-items');
+  itemsEl.innerHTML = '';
+  next.forEach(n => itemsEl.appendChild(makeFoodCard(n)));
+  document.getElementById('result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+function resetForm() {
+  document.getElementById('drink-input').value = '';
+  document.getElementById('weather-select').value = '';
+  document.getElementById('result').classList.add('hidden');
+  document.getElementById('drink-info').classList.remove('visible');
+  document.getElementById('drink-category-hint').classList.add('hidden');
+  document.getElementById('unrecognized-msg').classList.add('hidden');
+  lastRecommend = null;
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  document.getElementById('drink-input').focus();
 }
