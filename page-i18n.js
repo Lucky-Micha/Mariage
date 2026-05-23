@@ -4,6 +4,7 @@ const page_i18n = {
     // nav
     'nav-home':    '홈',
     'nav-about':   '서비스 소개',
+    'nav-drinks-story': '술이야기',
     'nav-guide':   '페어링 가이드',
     'nav-faq':     'FAQ',
     'nav-privacy': '개인정보처리방침',
@@ -79,6 +80,9 @@ const page_i18n = {
     'priv-s8-h2':     '8. 문의',
     'priv-s8-p1':     '개인정보처리방침에 관한 문의는 아래 이메일로 연락해 주세요.',
     'priv-s8-p2':     '<strong>이메일:</strong> jelee.3na@gmail.com',
+    // ── drinks-story.html ─────────────────────────────────────────────────
+    'ds-pg-title': '술 이야기',
+    'ds-lead':     '세계 명주들의 흥미로운 탄생 비화와 비하인드 스토리. 마시기 전에 알면 두 배로 맛있어지는 이야기들.',
     // ── faq.html ──────────────────────────────────────────────────────────
     'faq-pg-title': '자주 묻는 질문',
     'faq-lead':     'Mariage 서비스 이용에 관한 궁금증을 모았습니다.',
@@ -268,6 +272,7 @@ const page_i18n = {
     // nav
     'nav-home':    'Home',
     'nav-about':   'About',
+    'nav-drinks-story': 'Drink Stories',
     'nav-guide':   'Pairing Guide',
     'nav-faq':     'FAQ',
     'nav-privacy': 'Privacy Policy',
@@ -343,6 +348,9 @@ const page_i18n = {
     'priv-s8-h2':     '8. Contact',
     'priv-s8-p1':     'For questions about this Privacy Policy, please contact us by email.',
     'priv-s8-p2':     '<strong>Email:</strong> jelee.3na@gmail.com',
+    // ── drinks-story.html ─────────────────────────────────────────────────
+    'ds-pg-title': 'Drink Stories',
+    'ds-lead':     'Behind-the-scenes stories of the world\'s most famous drinks. Know the story before you pour.',
     // ── faq.html ──────────────────────────────────────────────────────────
     'faq-pg-title': 'FAQ',
     'faq-lead':     'Answers to common questions about Mariage.',

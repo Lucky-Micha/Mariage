@@ -994,6 +994,7 @@ function makeFoodCard(name) {
 const ui_i18n = {
   ko: {
     'nav-about':           '서비스 소개',
+    'nav-drinks-story':    '술이야기',
     'nav-guide':           '페어링 가이드',
     'nav-faq':             'FAQ',
     'nav-privacy':         '개인정보처리방침',
@@ -1045,6 +1046,7 @@ const ui_i18n = {
   },
   en: {
     'nav-about':           'About',
+    'nav-drinks-story':    'Drink Stories',
     'nav-guide':           'Pairing Guide',
     'nav-faq':             'FAQ',
     'nav-privacy':         'Privacy Policy',
