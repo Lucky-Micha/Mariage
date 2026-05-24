@@ -5,6 +5,9 @@
   margin: 0 auto 3.5rem;
   text-align: center;
 }
+.story-main-figure.story-main-figure--full {
+  width: 100%;
+}
 .story-main-img {
   width: 100%;
   height: auto;
