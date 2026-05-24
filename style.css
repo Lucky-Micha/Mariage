@@ -933,4 +933,10 @@ select option {
   .nav-links a:last-of-type {
     border-bottom: none;
   }
+
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 12px 20px;
+    padding: 0 8px;
+  }
 }
