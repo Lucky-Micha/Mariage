@@ -575,6 +575,23 @@ select option {
   letter-spacing: -0.5px;
 }
 
+.nav-hamburger {
+  display: none;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.1rem;
+  line-height: 1;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+.nav-hamburger:hover {
+  border-color: rgba(255, 255, 255, 0.45);
+  color: #fff;
+}
+
 .nav-links {
   display: flex;
   gap: 20px;
@@ -867,9 +884,39 @@ select option {
   .drink-grid {
     grid-template-columns: 1fr;
   }
-  .site-nav {
+
+  /* Mobile nav */
+  .nav-hamburger {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
+    gap: 0;
+    background: #1a1a2e;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 8px 24px 16px;
+    z-index: 100;
+  }
+  .nav-links.open {
+    display: flex;
+  }
+  .nav-links a {
+    padding: 11px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    font-size: 0.95rem;
+  }
+  .nav-links a:last-of-type {
+    border-bottom: none;
+  }
+  .lang-switcher {
+    padding: 12px 0 0;
+  }
+  .site-nav {
+    position: relative;
   }
 }

@@ -765,3 +765,21 @@ document.addEventListener('DOMContentLoaded', () => {
   const saved = localStorage.getItem('mariage-lang');
   if (saved === 'en') setLang('en');
 });
+
+function toggleNav() {
+  const links = document.querySelector('.nav-links');
+  const btn   = document.querySelector('.nav-hamburger');
+  if (!links) return;
+  const open = links.classList.toggle('open');
+  if (btn) btn.textContent = open ? '✕' : '☰';
+}
+
+// Close mobile nav when any link inside it is clicked
+document.addEventListener('click', e => {
+  if (e.target.closest('.nav-links a')) {
+    const links = document.querySelector('.nav-links');
+    const btn   = document.querySelector('.nav-hamburger');
+    if (links) links.classList.remove('open');
+    if (btn) btn.textContent = '☰';
+  }
+});
