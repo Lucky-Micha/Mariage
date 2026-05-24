@@ -1,11 +1,21 @@
 /* ── story-styles.css — shared styles for individual drink story pages ───── */
 
-.story-main-img {
+.story-main-figure {
   width: 50%;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+}
+.story-main-img {
+  width: 100%;
   height: auto;
   border-radius: 12px;
-  margin: 0 auto 2.5rem;
   display: block;
+}
+.story-img-caption {
+  margin-top: 6px;
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.28);
+  letter-spacing: 0.03em;
 }
 
 
@@ -255,5 +265,6 @@
   .story-page-nav { flex-direction: column; }
   .story-page-nav a { min-width: 0; }
   .story-page-nav .nav-next { text-align: left; }
+  .story-main-figure { width: 100%; }
   .story-main-img { width: 100%; }
 }
