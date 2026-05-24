@@ -270,4 +270,14 @@
   .story-page-nav .nav-next { text-align: left; }
   .story-main-figure { width: 100%; }
   .story-main-img { width: 100%; }
+
+  .story-card {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .sc-img-wrap {
+    width: 100%;
+    height: 160px;
+  }
+  .sc-arrow { display: none; }
 }
