@@ -857,6 +857,7 @@ const page_i18n = {
     'ds-wine-georgia-sub': '8,000 Years: The Country That Invented Wine',
     'ds-wine-georgia-badges': '<span>🇬🇪 Georgia</span><span>Wine</span><span>Qvevri Aging</span>',
     'ds-wine-georgia-teaser': 'The country that first made wine 8,000 years ago. Buried clay jars called qvevri, the Saperavi grape, and Bedovani — Georgia is wine\'s past and future at once.',
+    'ds-disclaimer': 'Content was written with reference to <a href="https://www.youtube.com/@juryuhak" target="_blank" rel="noopener" style="color: rgba(255,255,255,0.4);">주류학개론</a> and various other sources.',
   },
 };
 
