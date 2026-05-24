@@ -682,7 +682,7 @@ const foodPhotoIds = {
   '감자탕':     8896094,   '해장국': 8934866,    '순대국밥': 6426069,
   '김치전':     15622969,  '도토리묵': 20002050, '굴전': 15622969,
   '해물찜':     30649002,  '곱창구이': 5602464,
-  '전골':       8896094,   '매운탕': 8954298,    '어묵탕': 6063231,
+  '전골':       8896094,   '매운탕': 8954298,    '어묵탕': 'https://pixabay.com/images/download/grainlatte-udon-6691341_1920.jpg',
   '대구탕':     6063231,   '육개장': 11089809,   '오이무침': 8896107,
   '미나리전':   15622969,  '열무김치': 797646,   '빈대떡': 15622969,
   '해물파전':   15622969,  '도토리묵무침': 20002050, '감자전': 15622969,
@@ -751,9 +751,10 @@ const foodPhotoIds = {
 };
 
 function foodImgUrl(name) {
-  const id = foodPhotoIds[name];
-  if (!id) return null;
-  return `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&w=400&h=533&fit=crop`;
+  const val = foodPhotoIds[name];
+  if (!val) return null;
+  if (typeof val === 'string') return val;
+  return `https://images.pexels.com/photos/${val}/pexels-photo-${val}.jpeg?auto=compress&cs=tinysrgb&w=400&h=533&fit=crop`;
 }
 
 const foodFallbackEmoji = {
@@ -1048,7 +1049,7 @@ const ui_i18n = {
     'info-extra-li3':      '<strong>균형(Balance)</strong> — 강한 맛을 중화합니다. 매운 닭발 뒤에 마시는 차가운 맥주 한 모금이 타들어가는 입을 식혀주듯이요.',
     'info-extra-p':        '<a href="/guide.html">→ 페어링 완전 가이드에서 더 자세히 알아보기</a>',
     'disclaimer-html':     '⚠️ 본 서비스는 <strong>만 19세 이상</strong>을 대상으로 합니다. 음주는 건강에 해롭습니다. 임신 중 음주는 태아에게 위험합니다. 음주 후 운전은 금지되어 있습니다.',
-    'footer-copy-html':    '© 2026 Mariage. 이미지 제공: <a href="https://www.pexels.com" target="_blank" rel="noopener">Pexels</a>',
+    'footer-copy-html':    '© 2026 Mariage. 이미지 제공: <a href="https://www.pexels.com" target="_blank" rel="noopener">Pexels</a>, <a href="https://pixabay.com" target="_blank" rel="noopener">Pixabay</a>',
     'input-ph':            '마실 술을 입력하세요',
     'alert-weather':       '날씨를 선택해주세요!',
   },
@@ -1100,7 +1101,7 @@ const ui_i18n = {
     'info-extra-li3':      '<strong>Balance</strong> — Strong flavours neutralise each other. An icy beer sip after fiery spicy chicken feet is pure relief.',
     'info-extra-p':        '<a href="/guide.html">→ Learn more in the Complete Pairing Guide</a>',
     'disclaimer-html':     '⚠️ This service is intended for those <strong>aged 19 and over</strong>. Alcohol is harmful to health. Do not drink during pregnancy. Never drink and drive.',
-    'footer-copy-html':    '© 2026 Mariage. Photos by <a href="https://www.pexels.com" target="_blank" rel="noopener">Pexels</a>',
+    'footer-copy-html':    '© 2026 Mariage. Photos by <a href="https://www.pexels.com" target="_blank" rel="noopener">Pexels</a> &amp; <a href="https://pixabay.com" target="_blank" rel="noopener">Pixabay</a>',
     'input-ph':            'Enter your drink',
     'alert-weather':       'Please select the weather!',
   },
