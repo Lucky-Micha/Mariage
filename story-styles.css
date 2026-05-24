@@ -1,10 +1,10 @@
 /* ── story-styles.css — shared styles for individual drink story pages ───── */
 
 .story-main-img {
-  width: 100%;
+  width: 50%;
   height: auto;
   border-radius: 12px;
-  margin: 0 0 2.5rem;
+  margin: 0 auto 2.5rem;
   display: block;
 }
 
@@ -255,4 +255,5 @@
   .story-page-nav { flex-direction: column; }
   .story-page-nav a { min-width: 0; }
   .story-page-nav .nav-next { text-align: left; }
+  .story-main-img { width: 100%; }
 }
