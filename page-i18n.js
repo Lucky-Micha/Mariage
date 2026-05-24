@@ -885,6 +885,7 @@ function setLang(lang) {
 document.addEventListener('DOMContentLoaded', () => {
   const saved = localStorage.getItem('mariage-lang');
   if (saved === 'en') setLang('en');
+  else setLang('ko');
 });
 
 function toggleNav() {
