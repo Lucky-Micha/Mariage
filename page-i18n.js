@@ -862,7 +862,7 @@ const page_i18n = {
 };
 
 function setLang(lang) {
-  localStorage.setItem('mariage-lang', lang);
+  sessionStorage.setItem('mariage-lang', lang);
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.classList.toggle('active', btn.textContent.toLowerCase() === lang);
   });
@@ -883,7 +883,7 @@ function setLang(lang) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const saved = localStorage.getItem('mariage-lang');
+  const saved = sessionStorage.getItem('mariage-lang');
   if (saved === 'en') setLang('en');
   else setLang('ko');
 });
