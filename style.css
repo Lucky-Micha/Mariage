@@ -561,7 +561,7 @@ select option {
 .site-nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 16px;
   margin-bottom: 32px;
   padding-bottom: 16px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -573,10 +573,12 @@ select option {
   color: #e94560;
   text-decoration: none;
   letter-spacing: -0.5px;
+  order: 1;
 }
 
 .nav-hamburger {
   display: none;
+  order: 2;
   background: none;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 6px;
@@ -592,9 +594,17 @@ select option {
   color: #fff;
 }
 
+/* Desktop: logo … nav-links … KO/EN */
 .nav-links {
   display: flex;
+  align-items: center;
   gap: 20px;
+  order: 3;
+  margin-left: auto;
+}
+
+.lang-switcher {
+  order: 4;
 }
 
 .nav-links a {
@@ -885,38 +895,41 @@ select option {
     grid-template-columns: 1fr;
   }
 
-  /* Mobile nav */
+  /* Mobile nav: top bar [logo] [☰ auto-pushed-right] [KO EN] */
+  .site-nav {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
   .nav-hamburger {
     display: block;
+    order: 2;
+    margin-left: auto;   /* pushes ☰ to center-right */
   }
+  .lang-switcher {
+    order: 3;            /* KO/EN stays right of ☰ */
+  }
+  /* Nav links wrap to a new full-width row */
   .nav-links {
     display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
+    order: 5;
+    width: 100%;
+    margin-left: 0;
     flex-direction: column;
+    align-items: flex-start;
     gap: 0;
-    background: #1a1a2e;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 8px 24px 16px;
-    z-index: 100;
+    padding-top: 4px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
   }
   .nav-links.open {
     display: flex;
   }
   .nav-links a {
+    width: 100%;
     padding: 11px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.06);
     font-size: 0.95rem;
   }
   .nav-links a:last-of-type {
     border-bottom: none;
-  }
-  .lang-switcher {
-    padding: 12px 0 0;
-  }
-  .site-nav {
-    position: relative;
   }
 }
