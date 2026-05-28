@@ -1,0 +1,8 @@
+User-agent: Yeti
+Allow: /
+
+User-agent: *
+Allow: /
+Disallow: /node_modules/
+
+Sitemap: https://mariage-8qg.pages.dev/sitemap.xml
