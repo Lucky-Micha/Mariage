@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f0c1a"/>
+      <stop offset="100%" stop-color="#1e1535"/>
+    </linearGradient>
+    <linearGradient id="resultGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(233,69,96,0.18)"/>
+      <stop offset="100%" stop-color="rgba(233,69,96,0.06)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="5" fill="#e94560"/>
+
+  <!-- Brand name -->
+  <text x="600" y="74" text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="42" fill="white" font-weight="bold" letter-spacing="10">MARIAGE</text>
+
+  <!-- Tagline -->
+  <text x="600" y="104" text-anchor="middle"
+        font-family="sans-serif" font-size="15"
+        fill="rgba(255,255,255,0.42)" letter-spacing="3">오늘의 안주 추천</text>
+
+  <!-- Separator line -->
+  <line x1="470" y1="122" x2="730" y2="122" stroke="rgba(233,69,96,0.45)" stroke-width="1"/>
+
+  <!-- ===== BOX 1: 술 ===== -->
+  <rect x="60" y="148" width="300" height="318" rx="16"
+        fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+
+  <text x="210" y="186" text-anchor="middle"
+        font-family="sans-serif" font-size="13"
+        fill="#e94560" letter-spacing="4" font-weight="bold">마시는 술</text>
+
+  <line x1="100" y1="200" x2="320" y2="200" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+
+  <!-- Drink emojis 2x2 -->
+  <text x="130" y="263" text-anchor="middle" font-size="46">🍶</text>
+  <text x="130" y="290" text-anchor="middle" font-family="sans-serif" font-size="13" fill="rgba(255,255,255,0.52)">소주</text>
+
+  <text x="290" y="263" text-anchor="middle" font-size="46">🍺</text>
+  <text x="290" y="290" text-anchor="middle" font-family="sans-serif" font-size="13" fill="rgba(255,255,255,0.52)">맥주</text>
+
+  <text x="130" y="358" text-anchor="middle" font-size="46">🍷</text>
+  <text x="130" y="385" text-anchor="middle" font-family="sans-serif" font-size="13" fill="rgba(255,255,255,0.52)">와인</text>
+
+  <text x="290" y="358" text-anchor="middle" font-size="46">🥃</text>
+  <text x="290" y="385" text-anchor="middle" font-family="sans-serif" font-size="13" fill="rgba(255,255,255,0.52)">위스키</text>
+
+  <text x="210" y="430" text-anchor="middle"
+        font-family="sans-serif" font-size="12"
+        fill="rgba(255,255,255,0.3)">막걸리 · 칵테일 · 브랜드명 직접 입력</text>
+
+  <!-- ===== CONNECTOR + ===== -->
+  <text x="405" y="323" text-anchor="middle" dominant-baseline="central"
+        font-family="sans-serif" font-size="46"
+        fill="#e94560" font-weight="300">+</text>
+
+  <!-- ===== BOX 2: 날씨 ===== -->
+  <rect x="450" y="148" width="300" height="318" rx="16"
+        fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+
+  <text x="600" y="186" text-anchor="middle"
+        font-family="sans-serif" font-size="13"
+        fill="#e94560" letter-spacing="4" font-weight="bold">오늘의 날씨</text>
+
+  <line x1="490" y1="200" x2="710" y2="200" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+
+  <!-- Weather emojis 2x2 -->
+  <text x="520" y="263" text-anchor="middle" font-size="46">☀️</text>
+  <text x="520" y="290" text-anchor="middle" font-family="sans-serif" font-size="13" fill="rgba(255,255,255,0.52)">더운 날</text>
+
+  <text x="680" y="263" text-anchor="middle" font-size="46">🌧️</text>
+  <text x="680" y="290" text-anchor="middle" font-family="sans-serif" font-size="13" fill="rgba(255,255,255,0.52)">비 오는 날</text>
+
+  <text x="520" y="358" text-anchor="middle" font-size="46">❄️</text>
+  <text x="520" y="385" text-anchor="middle" font-family="sans-serif" font-size="13" fill="rgba(255,255,255,0.52)">추운 날</text>
+
+  <text x="680" y="358" text-anchor="middle" font-size="46">🌤️</text>
+  <text x="680" y="385" text-anchor="middle" font-family="sans-serif" font-size="13" fill="rgba(255,255,255,0.52)">선선한 날</text>
+
+  <text x="600" y="430" text-anchor="middle"
+        font-family="sans-serif" font-size="12"
+        fill="rgba(255,255,255,0.3)">따뜻한 날 · 눈 오는 날</text>
+
+  <!-- ===== CONNECTOR → ===== -->
+  <line x1="762" y1="307" x2="826" y2="307" stroke="#e94560" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="824,299 840,307 824,315" fill="#e94560"/>
+
+  <!-- ===== BOX 3: 결과 ===== -->
+  <rect x="840" y="148" width="300" height="318" rx="16"
+        fill="url(#resultGlow)" stroke="rgba(233,69,96,0.45)" stroke-width="1.5"/>
+
+  <text x="990" y="186" text-anchor="middle"
+        font-family="sans-serif" font-size="13"
+        fill="#e94560" letter-spacing="4" font-weight="bold">안주 추천</text>
+
+  <line x1="880" y1="200" x2="1100" y2="200" stroke="rgba(233,69,96,0.2)" stroke-width="1"/>
+
+  <!-- Three food emojis -->
+  <text x="922" y="278" text-anchor="middle" font-size="38">🥘</text>
+  <text x="990" y="278" text-anchor="middle" font-size="38">🥗</text>
+  <text x="1058" y="278" text-anchor="middle" font-size="38">🍖</text>
+
+  <!-- 3가지 -->
+  <text x="990" y="348" text-anchor="middle"
+        font-family="sans-serif" font-size="56"
+        fill="white" font-weight="bold">3가지</text>
+
+  <text x="990" y="378" text-anchor="middle"
+        font-family="sans-serif" font-size="14"
+        fill="rgba(255,255,255,0.48)">최적의 안주 조합</text>
+
+  <!-- CTA badge -->
+  <rect x="910" y="400" width="160" height="30" rx="15"
+        fill="rgba(233,69,96,0.18)" stroke="rgba(233,69,96,0.45)" stroke-width="1"/>
+  <text x="990" y="420" text-anchor="middle"
+        font-family="sans-serif" font-size="12"
+        fill="#e94560">무료 · 로그인 불필요</text>
+
+  <!-- Footer tagline -->
+  <text x="600" y="516" text-anchor="middle"
+        font-family="sans-serif" font-size="17"
+        fill="rgba(255,255,255,0.65)">마시는 술과 날씨를 선택하면 딱 맞는 안주 3가지를 추천해 드립니다</text>
+
+  <text x="600" y="552" text-anchor="middle"
+        font-family="sans-serif" font-size="13"
+        fill="rgba(255,255,255,0.22)" letter-spacing="1">mariage-8qg.pages.dev</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="625" width="1200" height="5" fill="#e94560"/>
+</svg>
