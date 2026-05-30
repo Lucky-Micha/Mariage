@@ -23,6 +23,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.json">
   <title>FAQ | Mariage - 오늘의 안주 추천</title>
   <meta name="description" content="Mariage 안주 추천 서비스에 대해 자주 묻는 질문과 답변입니다. 페어링 원칙, 이용 방법 등을 확인하세요." />
   <meta property="og:title" content="FAQ | Mariage" />
@@ -71,7 +72,7 @@
 </head>
 <body>
   <div class="container">
-    <div class="site-nav">
+    <header class="site-nav" role="banner">
       <a href="/" class="nav-logo">Mariage</a>
       <button class="nav-hamburger" onclick="toggleNav()" aria-label="메뉴">☰</button>
       <nav class="nav-links">
@@ -86,9 +87,9 @@
           <button class="lang-btn active" onclick="setLang('ko')">KO</button>
           <button class="lang-btn" onclick="setLang('en')">EN</button>
         </div>
-    </div>
+    </header>
 
-    <div class="page-content">
+    <main class="page-content">
       <h1 class="page-title" data-i18n="faq-pg-title">자주 묻는 질문</h1>
       <p class="page-lead" data-i18n="faq-lead">Mariage 서비스 이용에 관한 궁금증을 모았습니다.</p>
 
@@ -131,7 +132,7 @@
         <h2 data-i18n="faq-q8">Q. 더 궁금한 점이 있으면 어떻게 하나요?</h2>
         <p data-i18n-html="faq-a8">이메일로 문의해 주세요: <strong>jelee.3na@gmail.com</strong></p>
       </section>
-    </div>
+    </main>
 
     <footer class="site-footer">
       <div class="footer-links">

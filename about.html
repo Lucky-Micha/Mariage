@@ -23,6 +23,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.json">
   <title>서비스 소개 | Mariage - 오늘의 안주 추천</title>
   <meta name="description" content="Mariage는 마시는 술과 날씨에 딱 맞는 안주를 추천해 드리는 서비스입니다. 소주·맥주·막걸리·와인·위스키·칵테일까지, 오늘의 조합을 찾아보세요." />
   <meta property="og:title" content="서비스 소개 | Mariage" />
@@ -63,7 +64,7 @@
 </head>
 <body>
   <div class="container">
-    <div class="site-nav">
+    <header class="site-nav" role="banner">
       <a href="/" class="nav-logo">Mariage</a>
       <button class="nav-hamburger" onclick="toggleNav()" aria-label="메뉴">☰</button>
       <nav class="nav-links">
@@ -78,9 +79,9 @@
           <button class="lang-btn active" onclick="setLang('ko')">KO</button>
           <button class="lang-btn" onclick="setLang('en')">EN</button>
         </div>
-    </div>
+    </header>
 
-    <div class="page-content">
+    <main class="page-content">
       <h1 class="page-title" data-i18n="about-pg-title">Mariage란?</h1>
       <p class="page-lead" data-i18n="about-lead">마시는 술과 그날의 날씨에 맞는 안주를 추천해 드리는 서비스입니다.</p>
 
@@ -164,7 +165,7 @@
         <p data-i18n="about-s5-p1">서비스 관련 문의나 제안이 있으시면 아래 이메일로 연락해 주세요.</p>
         <p data-i18n-html="about-s5-p2"><strong>이메일:</strong> jelee.3na@gmail.com</p>
       </section>
-    </div>
+    </main>
 
     <footer class="site-footer">
       <div class="footer-links">

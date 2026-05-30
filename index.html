@@ -28,6 +28,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.json">
   <title>Mariage - 오늘의 안주 추천 | 술과 날씨에 맞는 안주</title>
   <meta name="description" content="마시는 술과 오늘의 날씨를 선택하면 딱 맞는 안주 3가지를 추천해 드립니다. 소주·맥주·막걸리·와인·위스키·칵테일까지, 최고의 페어링을 찾아보세요." />
   <meta name="keywords" content="안주 추천, 술 안주, 소주 안주, 맥주 안주, 막걸리 안주, 와인 안주, 위스키 안주, 페어링, 오늘의 안주" />
@@ -95,7 +96,7 @@
 </head>
 <body>
   <div class="container">
-    <div class="site-nav">
+    <header class="site-nav" role="banner">
       <a href="/" class="nav-logo">Mariage</a>
       <button class="nav-hamburger" onclick="toggleNav()" aria-label="메뉴">☰</button>
       <nav class="nav-links">
@@ -109,7 +110,7 @@
           <button class="lang-btn active" onclick="setLang('ko')">KO</button>
           <button class="lang-btn" onclick="setLang('en')">EN</button>
         </div>
-    </div>
+    </header>
 
     <div class="header">
       <h1 data-i18n="h1">오늘의 안주 추천</h1>

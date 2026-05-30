@@ -10,6 +10,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.json">
   <title data-i18n="wine-georgia-page-title">조지아 와인 이야기 | Mariage 브루잉 스토리</title>
   <meta name="description" data-i18n-content="wine-georgia-meta-desc" content="인류 최초의 와인 발상지 조지아. 8,000년 전통 크베브리 항아리 숙성과 베도바 사페라비가 만드는 오렌지 와인의 세계." />
   <meta property="og:title" content="조지아 와인 이야기 | Mariage" />
@@ -71,7 +72,7 @@
 </head>
 <body>
   <div class="container">
-    <div class="site-nav">
+    <header class="site-nav" role="banner">
       <a href="/" class="nav-logo">Mariage</a>
       <button class="nav-hamburger" onclick="toggleNav()" aria-label="메뉴">☰</button>
       <nav class="nav-links">
@@ -88,7 +89,7 @@
       </div>
     </div>
 
-    <div class="page-content">
+    <main class="page-content">
       <nav class="story-breadcrumb">
         <a href="/drinks-story.html" data-i18n="nav-drinks-story">브루잉 스토리</a> &rsaquo; 조지아 와인
       </nav>
@@ -146,7 +147,7 @@
         </a>
         <span style="flex:1"></span>
       </nav>
-    </div>
+    </main>
 
     <footer class="site-footer">
       <div class="footer-links">

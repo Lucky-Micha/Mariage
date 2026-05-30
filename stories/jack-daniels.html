@@ -10,6 +10,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.json">
   <title data-i18n="jack-daniels-page-title">잭다니엘 이야기 | Mariage 브루잉 스토리</title>
   <meta name="description" data-i18n-content="jack-daniels-meta-desc" content="주류 판매 금지 지역에서 만들어지는 세계 최고의 위스키, 금고를 발로 차다 사망한 창업자, 프랭크 시나트라와의 인연까지." />
   <meta property="og:title" content="잭다니엘 이야기 | Mariage" />
@@ -71,7 +72,7 @@
 </head>
 <body>
   <div class="container">
-    <div class="site-nav">
+    <header class="site-nav" role="banner">
       <a href="/" class="nav-logo">Mariage</a>
       <button class="nav-hamburger" onclick="toggleNav()" aria-label="메뉴">☰</button>
       <nav class="nav-links">
@@ -86,9 +87,9 @@
           <button class="lang-btn active" onclick="setLang('ko')">KO</button>
           <button class="lang-btn" onclick="setLang('en')">EN</button>
         </div>
-    </div>
+    </header>
 
-    <div class="page-content">
+    <main class="page-content">
       <nav class="story-breadcrumb">
         <a href="/drinks-story.html" data-i18n="nav-drinks-story">브루잉 스토리</a> &rsaquo; 잭다니엘
       </nav>
@@ -153,7 +154,7 @@
           <span class="nav-title"><span data-i18n="dom-perignon-name">돔 페리뇽</span> →</span>
         </a>
       </nav>
-    </div>
+    </main>
 
     <footer class="site-footer">
       <div class="footer-links">

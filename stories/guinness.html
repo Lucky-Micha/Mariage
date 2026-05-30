@@ -10,6 +10,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.json">
   <title data-i18n="guinness-page-title">기네스 이야기 | Mariage 브루잉 스토리</title>
   <meta name="description" data-i18n-content="guinness-meta-desc" content="9,000년 임대 계약, 기네스 세계기록의 탄생, 질소 거품의 과학까지. 기네스 스타우트의 놀라운 비하인드 스토리." />
   <meta property="og:title" content="기네스 이야기 | Mariage" />
@@ -71,7 +72,7 @@
 </head>
 <body>
   <div class="container">
-    <div class="site-nav">
+    <header class="site-nav" role="banner">
       <a href="/" class="nav-logo">Mariage</a>
       <button class="nav-hamburger" onclick="toggleNav()" aria-label="메뉴">☰</button>
       <nav class="nav-links">
@@ -86,9 +87,9 @@
           <button class="lang-btn active" onclick="setLang('ko')">KO</button>
           <button class="lang-btn" onclick="setLang('en')">EN</button>
         </div>
-    </div>
+    </header>
 
-    <div class="page-content">
+    <main class="page-content">
       <nav class="story-breadcrumb">
         <a href="/drinks-story.html" data-i18n="nav-drinks-story">브루잉 스토리</a> &rsaquo; 기네스
       </nav>
@@ -150,7 +151,7 @@
           <span class="nav-title"><span data-i18n="jack-daniels-name">잭다니엘</span> →</span>
         </a>
       </nav>
-    </div>
+    </main>
 
     <footer class="site-footer">
       <div class="footer-links">
