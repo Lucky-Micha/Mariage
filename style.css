@@ -944,10 +944,12 @@ select option {
 /* ── SNS 공유 공통 스타일 ──────────────────────────────────────────────── */
 
 .sns-btn {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: center;
   gap: 7px;
-  padding: 10px 16px;
+  width: 100%;
+  padding: 11px 16px;
   border: none;
   border-radius: 50px;
   font-size: 0.88rem;
@@ -986,10 +988,12 @@ select option {
   letter-spacing: 0.2px;
 }
 .result-share-btns {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
-  justify-content: center;
+}
+.result-share-btns .sns-btn:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
 }
 
 /* ── 스토리 공유 바 ──────────────────────────────────────────────────── */
@@ -1007,10 +1011,12 @@ select option {
   margin-bottom: 16px;
 }
 .story-share-btns {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
-  justify-content: center;
+}
+.story-share-btns .sns-btn:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
 }
 
 /* ── 토스트 알림 ─────────────────────────────────────────────────────── */
@@ -1038,8 +1044,17 @@ select option {
   transform: translateX(-50%) translateY(0);
 }
 
+@media (min-width: 600px) {
+  .result-share-btns,
+  .story-share-btns {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .result-share-btns .sns-btn:last-child:nth-child(odd),
+  .story-share-btns  .sns-btn:last-child:nth-child(odd) {
+    grid-column: auto;
+  }
+}
+
 @media (max-width: 480px) {
   .sns-btn { font-size: 0.82rem; padding: 9px 13px; gap: 5px; }
-  .result-share-btns { gap: 8px; }
-  .story-share-btns  { gap: 8px; }
 }
