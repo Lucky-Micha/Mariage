@@ -982,10 +982,12 @@ select option {
   margin-bottom: 8px;
 }
 .result-share-label {
-  font-size: 0.85rem;
-  color: rgba(255,255,255,0.45);
+  font-size: 1rem;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 700;
+  color: rgba(255,255,255,0.85);
   margin-bottom: 14px;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.5px;
 }
 .result-share-btns {
   display: grid;
@@ -1006,9 +1008,12 @@ select option {
   border-radius: 16px;
 }
 .story-share-label {
-  font-size: 0.95rem;
-  color: rgba(255,255,255,0.55);
+  font-size: 1rem;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 700;
+  color: rgba(255,255,255,0.85);
   margin-bottom: 16px;
+  letter-spacing: 0.5px;
 }
 .story-share-btns {
   display: grid;

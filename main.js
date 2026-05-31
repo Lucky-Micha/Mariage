@@ -1613,7 +1613,7 @@ function buildResultShareBtns(title, items) {
   const btnsEl = document.getElementById('result-share-btns');
   if (!btnsEl || typeof snsShareKakao === 'undefined') return;
   const foods = items.join(', ');
-  const serviceTitle = currentLang === 'en' ? 'Mariage – Today\'s Pairing' : 'Mariage 오늘의 안주 추천';
+  const serviceTitle = currentLang === 'en' ? 'Mariage - Today\'s Pairing' : 'Mariage - 오늘의 안주 추천';
   const kakaoDesc = currentLang === 'en'
     ? title + '\nPairing: ' + foods
     : title + '\n추천 안주: ' + foods;
