@@ -940,3 +940,102 @@ select option {
     padding: 0 8px;
   }
 }
+
+/* ── SNS 공유 공통 스타일 ──────────────────────────────────────────────── */
+
+.sns-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 50px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.15s, opacity 0.15s, box-shadow 0.15s;
+  white-space: nowrap;
+}
+.sns-btn:hover  { transform: translateY(-2px); opacity: 0.9; }
+.sns-btn:active { transform: translateY(0);    opacity: 1; }
+
+.sns-kakao  { background: #FEE500; color: #191600; }
+.sns-kakao:hover  { box-shadow: 0 6px 20px rgba(254,229,0,0.4); }
+.sns-twitter  { background: #000; color: #fff; }
+.sns-twitter:hover  { box-shadow: 0 6px 20px rgba(0,0,0,0.5); }
+.sns-copy   { background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.85); border: 1px solid rgba(255,255,255,0.18); }
+.sns-copy:hover   { background: rgba(255,255,255,0.18); box-shadow: 0 6px 20px rgba(0,0,0,0.3); }
+.sns-native { background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: #fff; }
+.sns-native:hover { box-shadow: 0 6px 20px rgba(108,92,231,0.45); }
+
+/* ── 메인 결과 공유 섹션 ─────────────────────────────────────────────── */
+.result-share {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  margin-bottom: 8px;
+}
+.result-share-label {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.45);
+  margin-bottom: 14px;
+  letter-spacing: 0.2px;
+}
+.result-share-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* ── 스토리 공유 바 ──────────────────────────────────────────────────── */
+.story-share-bar {
+  text-align: center;
+  padding: 28px 24px;
+  margin: 44px 0 36px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.09);
+  border-radius: 16px;
+}
+.story-share-label {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.55);
+  margin-bottom: 16px;
+}
+.story-share-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* ── 토스트 알림 ─────────────────────────────────────────────────────── */
+.sns-share-toast {
+  position: fixed;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background: rgba(30, 30, 50, 0.95);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 50px;
+  border: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s, transform 0.25s;
+  z-index: 9999;
+  white-space: nowrap;
+}
+.sns-share-toast.visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+@media (max-width: 480px) {
+  .sns-btn { font-size: 0.82rem; padding: 9px 13px; gap: 5px; }
+  .result-share-btns { gap: 8px; }
+  .story-share-btns  { gap: 8px; }
+}

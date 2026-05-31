@@ -1600,9 +1600,51 @@ function recommend() {
   itemsEl.innerHTML = '';
   items.forEach(n => itemsEl.appendChild(makeFoodCard(n)));
 
+  buildResultShareBtns(title, items);
+
   const resultBox = document.getElementById('result');
   resultBox.classList.remove('hidden');
   resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+function buildResultShareBtns(title, items) {
+  const btnsEl = document.getElementById('result-share-btns');
+  if (!btnsEl || typeof snsShareKakao === 'undefined') return;
+  const foods = items.join(', ');
+  const shareText = currentLang === 'en'
+    ? title + '\nRecommended: ' + foods + '\nFind your perfect pairing at Mariage!'
+    : title + ' 🥂\n추천 안주: ' + foods + '\nMariage에서 직접 추천받아보세요!';
+  const pageUrl = 'https://mariage-8qg.pages.dev/';
+  const ogImage = 'https://mariage-8qg.pages.dev/og-image-v2.png';
+
+  btnsEl.innerHTML = '';
+
+  const kakaoBtn = document.createElement('button');
+  kakaoBtn.className = 'sns-btn sns-kakao';
+  kakaoBtn.innerHTML = '<svg width="17" height="17" viewBox="0 0 17 17" fill="none" aria-hidden="true"><path d="M8.5 1.5C4.36 1.5 1 4.11 1 7.35c0 2.07 1.35 3.9 3.39 4.95l-.69 2.7c-.06.21.12.39.33.27l3.63-2.37c.27.03.57.06.84.06 4.14 0 7.5-2.61 7.5-5.85S12.64 1.5 8.5 1.5z" fill="currentColor"/></svg><span>카카오톡</span>';
+  kakaoBtn.addEventListener('click', function () { snsShareKakao(title, shareText, ogImage, pageUrl); });
+
+  const twitterBtn = document.createElement('button');
+  twitterBtn.className = 'sns-btn sns-twitter';
+  twitterBtn.innerHTML = '<svg width="17" height="17" viewBox="0 0 17 17" fill="none" aria-hidden="true"><path d="M13.1 1.5h2.4L9.9 8.1 16 15.5h-4.5l-3.4-4.4-3.8 4.4H1.9l5.7-6.5L1.5 1.5h4.6l3.1 3.9 4-3.9zm-.8 12.6h1.3L4.8 2.9H3.4l8.9 11.2z" fill="currentColor"/></svg><span>X</span>';
+  twitterBtn.addEventListener('click', function () { snsShareTwitter(shareText, pageUrl); });
+
+  const copyBtn = document.createElement('button');
+  copyBtn.className = 'sns-btn sns-copy';
+  copyBtn.innerHTML = '<svg width="17" height="17" viewBox="0 0 17 17" fill="none" aria-hidden="true"><path d="M7 2a3 3 0 0 0-3 3v.5h1V5a2 2 0 1 1 4 0v4a2 2 0 0 1-2 2H6.5v1H7a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3zM10 8.5H9.5V9a2 2 0 0 1-4 0V5a2 2 0 0 1 4 0v.5H10v-.5a3 3 0 1 0-6 0v4a3 3 0 1 0 6 0V8.5z" fill="currentColor"/></svg><span>링크 복사</span>';
+  copyBtn.addEventListener('click', function () { snsShareCopyLink(pageUrl); });
+
+  btnsEl.appendChild(kakaoBtn);
+  btnsEl.appendChild(twitterBtn);
+  btnsEl.appendChild(copyBtn);
+
+  if (typeof navigator.share !== 'undefined') {
+    const nativeBtn = document.createElement('button');
+    nativeBtn.className = 'sns-btn sns-native';
+    nativeBtn.innerHTML = '<svg width="17" height="17" viewBox="0 0 17 17" fill="none" aria-hidden="true"><path d="M13 1.5a2 2 0 1 1-1.89 2.63L5.98 6.91a2 2 0 0 1 0 3.18l5.13 2.78A2 2 0 1 1 10.6 14L5.47 11.22A2 2 0 1 1 5.47 5.78l5.13-2.78A2 2 0 0 1 13 1.5z" fill="currentColor"/></svg><span>공유하기</span>';
+    nativeBtn.addEventListener('click', function () { snsShareNative(title, shareText, pageUrl); });
+    btnsEl.appendChild(nativeBtn);
+  }
 }
 
 function recommendAgain() {

@@ -226,6 +226,10 @@
       </div>
       <p id="result-desc" class="result-desc"></p>
       <div id="result-items" class="result-items"></div>
+      <div id="result-share" class="result-share">
+        <p class="result-share-label">이 추천 공유하기 🍻</p>
+        <div class="result-share-btns" id="result-share-btns"></div>
+      </div>
       <div class="result-actions">
         <button class="result-action-btn secondary" onclick="resetForm()" data-i18n="btn-reset">조건 바꾸기</button>
         <button class="result-action-btn primary" onclick="recommendAgain()" data-i18n="btn-again">다시 추천받기</button>
@@ -293,5 +297,6 @@
 
   <script src="/page-i18n.js"></script>
   <script defer type="text/javascript" src="/main.js"></script>
+  <script defer src="/share.js"></script>
 </body>
 </html>
