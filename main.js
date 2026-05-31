@@ -1613,9 +1613,13 @@ function buildResultShareBtns(title, items) {
   const btnsEl = document.getElementById('result-share-btns');
   if (!btnsEl || typeof snsShareKakao === 'undefined') return;
   const foods = items.join(', ');
+  const serviceTitle = currentLang === 'en' ? 'Mariage – Today\'s Pairing' : 'Mariage 오늘의 안주 추천';
+  const kakaoDesc = currentLang === 'en'
+    ? title + '\nPairing: ' + foods
+    : title + '\n추천 안주: ' + foods;
   const shareText = currentLang === 'en'
-    ? title + '\nRecommended: ' + foods + '\nFind your perfect pairing at Mariage!'
-    : title + ' 🥂\n추천 안주: ' + foods + '\nMariage에서 직접 추천받아보세요!';
+    ? '[Mariage] ' + title + '\nPairing: ' + foods + '\nFind your perfect match!'
+    : '[Mariage 안주추천] ' + title + ' 🥂\n추천 안주: ' + foods + '\nMariage에서 직접 추천받아보세요!';
   const pageUrl = location.href;
   const ogImage = 'https://mariage-8qg.pages.dev/og-image-v2.png';
 
@@ -1633,7 +1637,7 @@ function buildResultShareBtns(title, items) {
   // 카카오톡
   btnsEl.appendChild(makeBtn('sns-kakao',
     '<path d="M8.5 1.5C4.36 1.5 1 4.11 1 7.35c0 2.07 1.35 3.9 3.39 4.95l-.69 2.7c-.06.21.12.39.33.27l3.63-2.37c.27.03.57.06.84.06 4.14 0 7.5-2.61 7.5-5.85S12.64 1.5 8.5 1.5z" fill="currentColor"/>',
-    '카카오톡', function () { snsShareKakao(title, shareText, ogImage, pageUrl); }
+    '카카오톡', function () { snsShareKakao(serviceTitle, kakaoDesc, ogImage, pageUrl); }
   ));
 
   // 인스타그램
