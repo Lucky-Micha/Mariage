@@ -37,10 +37,27 @@ function snsShareKakao(title, desc, imageUrl, pageUrl) {
   }
 }
 
-function snsShareTwitter(text, url) {
+function snsShareInstagram(title, text, url) {
+  // 인스타그램은 웹 공유 URL 미지원 → 모바일 Web Share API, 데스크탑 링크 복사
+  if (typeof navigator.share !== 'undefined') {
+    navigator.share({ title: title, text: text, url: url }).catch(function () {});
+  } else {
+    snsShareCopyLink(url);
+    showSnsToast('링크가 복사됐어요! 인스타그램에 붙여넣기해보세요 📸');
+  }
+}
+
+function snsShareFacebook(url) {
   window.open(
-    'https://twitter.com/intent/tweet?text=' + encodeURIComponent(text) + '&url=' + encodeURIComponent(url),
-    '_blank', 'noopener,width=560,height=480'
+    'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(url),
+    '_blank', 'noopener,width=600,height=400'
+  );
+}
+
+function snsShareThreads(text, url) {
+  window.open(
+    'https://www.threads.net/intent/post?text=' + encodeURIComponent(text + ' ' + url),
+    '_blank', 'noopener,width=600,height=600'
   );
 }
 
@@ -113,35 +130,40 @@ function buildStoryShareBar() {
   var btns = document.createElement('div');
   btns.className = 'story-share-btns';
 
-  // 카카오톡 버튼
+  // 카카오톡
   btns.appendChild(_makeSnsBtn('sns-kakao',
     '<path d="M8.5 1.5C4.36 1.5 1 4.11 1 7.35c0 2.07 1.35 3.9 3.39 4.95l-.69 2.7c-.06.21.12.39.33.27l3.63-2.37c.27.03.57.06.84.06 4.14 0 7.5-2.61 7.5-5.85S12.64 1.5 8.5 1.5z" fill="currentColor"/>',
     '카카오톡',
     function () { snsShareKakao(ogTitle, ogDesc, ogImage, pageUrl); }
   ));
 
-  // X(트위터) 버튼
-  btns.appendChild(_makeSnsBtn('sns-twitter',
-    '<path d="M13.1 1.5h2.4L9.9 8.1 16 15.5h-4.5l-3.4-4.4-3.8 4.4H1.9l5.7-6.5L1.5 1.5h4.6l3.1 3.9 4-3.9zm-.8 12.6h1.3L4.8 2.9H3.4l8.9 11.2z" fill="currentColor"/>',
-    'X',
-    function () { snsShareTwitter(shareText, pageUrl); }
+  // 인스타그램
+  btns.appendChild(_makeSnsBtn('sns-instagram',
+    '<path d="M8.5 1.5h-1C5.2 1.5 4.6 1.5 3.9 1.8 3.2 2 2.7 2.4 2.2 3c-.5.6-.7 1.2-.8 2-.1.7-.1 1-.1 3s0 2.3.1 3c.1.8.3 1.4.8 2 .5.6 1 1 1.7 1.2.7.2 1.3.3 2.1.3h4c.8 0 1.4-.1 2.1-.3.7-.2 1.2-.6 1.7-1.2.5-.6.7-1.2.8-2 .1-.7.1-1 .1-3s0-2.3-.1-3c-.1-.8-.3-1.4-.8-2-.5-.6-1-1-1.7-1.2-.7-.2-1.3-.3-2.1-.3h-1zm0 1.3h1c.7 0 1.2.1 1.7.2.5.2.9.4 1.2.8.3.4.5.8.6 1.3.1.5.1.8.1 2.9s0 2.4-.1 2.9c-.1.5-.3.9-.6 1.3-.3.4-.7.6-1.2.8-.5.1-1 .2-1.7.2h-4c-.7 0-1.2-.1-1.7-.2-.5-.2-.9-.4-1.2-.8-.3-.4-.5-.8-.6-1.3-.1-.5-.1-.8-.1-2.9s0-2.4.1-2.9c.1-.5.3-.9.6-1.3.3-.4.7-.6 1.2-.8.5-.1 1-.2 1.7-.2zm1 1.4a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4zm0 1.3a1.9 1.9 0 1 1 0 3.8 1.9 1.9 0 0 1 0-3.8zm3.4-.3a.8.8 0 1 0 0 1.6.8.8 0 0 0 0-1.6z" fill="currentColor"/>',
+    '인스타그램',
+    function () { snsShareInstagram(ogTitle, shareText, pageUrl); }
   ));
 
-  // 링크 복사 버튼
+  // 페이스북
+  btns.appendChild(_makeSnsBtn('sns-facebook',
+    '<path d="M15 8.5a6.5 6.5 0 1 0-7.5 6.42V10.7H5.7V8.5H7.5V6.94c0-1.78 1.06-2.76 2.68-2.76.78 0 1.59.14 1.59.14v1.75h-.9c-.88 0-1.16.55-1.16 1.11V8.5h1.97l-.31 2.2H9.71v4.22A6.5 6.5 0 0 0 15 8.5z" fill="currentColor"/>',
+    '페이스북',
+    function () { snsShareFacebook(pageUrl); }
+  ));
+
+  // 스레드
+  btns.appendChild(_makeSnsBtn('sns-threads',
+    '<path d="M8.5 1.5C4.6 1.5 1.5 4.6 1.5 8.5S4.6 15.5 8.5 15.5 15.5 12.4 15.5 8.5 12.4 1.5 8.5 1.5zm1.7 10.6c-1.7.3-3-.2-3.8-1.2-.6-.8-.7-1.8-.4-2.7.4-1 1.2-1.6 2.2-1.7 1.5-.1 2.5.8 2.6 2.3 0 .2 0 .4-.1.6-.2.8-.8 1.2-1.6 1.2-.4 0-.7-.2-.8-.5-.3.5-.7.7-1.2.7-.8 0-1.4-.7-1.3-1.6.1-.8.7-1.4 1.6-1.4.3 0 .5.1.7.2l.1-.2h.7l-.4 2c0 .3.1.5.4.5.6 0 1-.4 1.1-1 .1-.3.1-.6.1-.9-.1-1.6-1.2-2.6-2.8-2.5-1.2.1-2.1.8-2.4 2-.3.9-.1 1.9.5 2.6.8 1 2.2 1.4 3.7 1.1l.1.5z" fill="currentColor"/>',
+    '스레드',
+    function () { snsShareThreads(shareText, pageUrl); }
+  ));
+
+  // 링크 복사
   btns.appendChild(_makeSnsBtn('sns-copy',
     '<path d="M7 2a3 3 0 0 0-3 3v.5h1V5a2 2 0 1 1 4 0v4a2 2 0 0 1-2 2H6.5v1H7a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3zM10 8.5H9.5V9a2 2 0 0 1-4 0V5a2 2 0 0 1 4 0v.5H10v-.5a3 3 0 1 0-6 0v4a3 3 0 1 0 6 0V8.5z" fill="currentColor"/>',
     '링크 복사',
     function () { snsShareCopyLink(pageUrl); }
   ));
-
-  // Web Share API 버튼 (모바일)
-  if (typeof navigator.share !== 'undefined') {
-    btns.appendChild(_makeSnsBtn('sns-native',
-      '<path d="M13 1.5a2 2 0 1 1-1.89 2.63L5.98 6.91a2 2 0 0 1 0 3.18l5.13 2.78A2 2 0 1 1 10.6 14L5.47 11.22A2 2 0 1 1 5.47 5.78l5.13-2.78A2 2 0 0 1 13 1.5z" fill="currentColor"/>',
-      '공유하기',
-      function () { snsShareNative(ogTitle, shareText, pageUrl); }
-    ));
-  }
 
   bar.appendChild(label);
   bar.appendChild(btns);

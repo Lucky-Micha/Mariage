@@ -959,14 +959,18 @@ select option {
 .sns-btn:hover  { transform: translateY(-2px); opacity: 0.9; }
 .sns-btn:active { transform: translateY(0);    opacity: 1; }
 
-.sns-kakao  { background: #FEE500; color: #191600; }
-.sns-kakao:hover  { box-shadow: 0 6px 20px rgba(254,229,0,0.4); }
-.sns-twitter  { background: #000; color: #fff; }
-.sns-twitter:hover  { box-shadow: 0 6px 20px rgba(0,0,0,0.5); }
-.sns-copy   { background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.85); border: 1px solid rgba(255,255,255,0.18); }
-.sns-copy:hover   { background: rgba(255,255,255,0.18); box-shadow: 0 6px 20px rgba(0,0,0,0.3); }
-.sns-native { background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: #fff; }
-.sns-native:hover { box-shadow: 0 6px 20px rgba(108,92,231,0.45); }
+.sns-kakao     { background: #FEE500; color: #191600; }
+.sns-kakao:hover     { box-shadow: 0 6px 20px rgba(254,229,0,0.4); }
+.sns-instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); color: #fff; }
+.sns-instagram:hover { box-shadow: 0 6px 20px rgba(220,39,67,0.45); }
+.sns-facebook  { background: #1877F2; color: #fff; }
+.sns-facebook:hover  { box-shadow: 0 6px 20px rgba(24,119,242,0.45); }
+.sns-threads   { background: #101010; color: #fff; }
+.sns-threads:hover   { box-shadow: 0 6px 20px rgba(0,0,0,0.5); }
+.sns-copy      { background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.85); border: 1px solid rgba(255,255,255,0.18); }
+.sns-copy:hover      { background: rgba(255,255,255,0.18); box-shadow: 0 6px 20px rgba(0,0,0,0.3); }
+.sns-native    { background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: #fff; }
+.sns-native:hover    { box-shadow: 0 6px 20px rgba(108,92,231,0.45); }
 
 /* ── 메인 결과 공유 섹션 ─────────────────────────────────────────────── */
 .result-share {
