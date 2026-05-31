@@ -1600,6 +1600,8 @@ function recommend() {
   itemsEl.innerHTML = '';
   items.forEach(n => itemsEl.appendChild(makeFoodCard(n)));
 
+  // URL에 추천 조건 반영 → 공유 시 결과 재현 가능
+  history.pushState(null, '', '?drink=' + encodeURIComponent(drinkInput) + '&weather=' + encodeURIComponent(weather));
   buildResultShareBtns(title, items);
 
   const resultBox = document.getElementById('result');
@@ -1614,7 +1616,7 @@ function buildResultShareBtns(title, items) {
   const shareText = currentLang === 'en'
     ? title + '\nRecommended: ' + foods + '\nFind your perfect pairing at Mariage!'
     : title + ' 🥂\n추천 안주: ' + foods + '\nMariage에서 직접 추천받아보세요!';
-  const pageUrl = 'https://mariage-8qg.pages.dev/';
+  const pageUrl = location.href;
   const ogImage = 'https://mariage-8qg.pages.dev/og-image-v2.png';
 
   btnsEl.innerHTML = '';
@@ -1691,6 +1693,19 @@ function resetForm() {
   document.getElementById('drink-category-hint').classList.add('hidden');
   document.getElementById('unrecognized-msg').classList.add('hidden');
   lastRecommend = null;
+  history.pushState(null, '', '/');
   window.scrollTo({ top: 0, behavior: 'smooth' });
   document.getElementById('drink-input').focus();
 }
+
+// ── URL 파라미터로 결과 자동 복원 ─────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', function () {
+  const params = new URLSearchParams(location.search);
+  const drink  = params.get('drink');
+  const weather = params.get('weather');
+  if (drink && weather) {
+    document.getElementById('drink-input').value = drink;
+    document.getElementById('weather-select').value = weather;
+    recommend();
+  }
+});
