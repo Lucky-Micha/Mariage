@@ -3,7 +3,7 @@
 // 1. https://developers.kakao.com/ 에서 앱 등록
 // 2. JavaScript 키를 아래 KAKAO_JS_KEY 에 입력
 // 3. 플랫폼 > Web 에서 mariage-8qg.pages.dev 도메인 추가
-const KAKAO_JS_KEY = '';
+const KAKAO_JS_KEY = '1d1a12bc7fe37bbd7300cfd4326b7908';
 
 const SITE_URL   = 'https://mariage-8qg.pages.dev';
 const SITE_IMAGE = 'https://mariage-8qg.pages.dev/og-image-v2.png';
